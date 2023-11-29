@@ -29,26 +29,32 @@ const bookLists = [
   },
 ];
 
-const userPrompt = "Courage Is Calling";
+const userPrompt = "Think Like A Monk";
 
-const findBook = bookLists.filter(function (value) {
+const findHours = bookLists
+  .filter(function (value) {
+    return value.bookName === userPrompt;
+  })
+  .map(function (value) {
+    return parseInt(value.words);
+  }); 
+  
+  // This will return an array! using parseInt converted the array into an Number.
+
+const findBookDetails = bookLists.find(function (value) {
   return value.bookName === userPrompt;
-}).map(function(value){
-  return parseInt(value.words);
-}) // This will return an array! using parseInt converted the array into an Number. 
+});
 
 // Todo: Source : https://www.tutorialspoint.com/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript
 
-if (findBook) {
-  const totalHours = ((findBook / 238) / 60).toFixed(2)
+if (findHours) {
+  const totalHours = (findHours / 238 / 60).toFixed(2);
   console.log(`
 
-    📕 Book Name: ${findBook.bookName}.
-    ✍🏽 Author: ${findBook.author}.
+    📕 Book Name: ${findBookDetails.bookName}.
+    ✍🏽 Author: ${findBookDetails.author}.
     ⌛ Hours to Complete: ${totalHours} Hours.  
-    `
-  );
+    `);
 } else {
-  console.log("Nothing happened");
+  console.log("Enter A Correct Book On Our Data Collection");
 }
-
