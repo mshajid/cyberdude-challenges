@@ -1,4 +1,4 @@
-# If-Else (Javascript Challenge)
+# Object (CRUD) (Javascript Challenge)
 This challenge is part of free internship (Fullstack Engineer) offered by [CyberDude Networks Pvt. Ltd.](https://cyberdudenetworks.com) You can find all the source code and live links below.
 
 > **Task #1** : Create an Object About Your Self, and You Should Manipulate the Object as well (Create, Read, Update, Delete).
