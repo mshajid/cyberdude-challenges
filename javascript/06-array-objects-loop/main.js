@@ -30,6 +30,10 @@ const bookLists = [
 ];
 
 const userPrompt = "Think Like A Monk";
+const readerStyle = {
+  silentReader: 238,
+  loudReader: 183,
+};
 
 const findHours = bookLists
   .filter(function (value) {
@@ -37,9 +41,9 @@ const findHours = bookLists
   })
   .map(function (value) {
     return parseInt(value.words);
-  }); 
-  
-  // This will return an array! using parseInt converted the array into an Number.
+  });
+
+// This will return an array! using parseInt converted the array into an Number.
 
 const findBookDetails = bookLists.find(function (value) {
   return value.bookName === userPrompt;
@@ -48,7 +52,7 @@ const findBookDetails = bookLists.find(function (value) {
 // Todo: Source : https://www.tutorialspoint.com/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript
 
 if (findHours) {
-  const totalHours = (findHours / 238 / 60).toFixed(2);
+  const totalHours = (findHours / readerStyle.loudReader / 60).toFixed(2);
   console.log(`
 
     📕 Book Name: ${findBookDetails.bookName}.
