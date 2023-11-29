@@ -1,6 +1,7 @@
 // I need to create a book lists in an Array of Objects.
 // Each object should contain Book Name / Book Author / Pages / Genre
 // Logic: I wanted to find How many hours would go to complete each book.
+
 // ! 238 Words Per Minute (Silent Reader)
 // ! 183 Words Per Minute (Loud Reader)
 // ! Formula -> 2500 Words / 238 Words Per Minute = 10.50 (It Will take approximately ~10 Minutes) (Avergae Silent Reader);
@@ -29,7 +30,7 @@ const bookLists = [
   },
 ];
 
-const userPrompt = "Think Like A Monk";
+const userPrompt = "Courage Is Calling";
 const readerStyle = {
   silentReader: 238,
   loudReader: 183,
@@ -52,12 +53,15 @@ const findBookDetails = bookLists.find(function (value) {
 // Todo: Source : https://www.tutorialspoint.com/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript
 
 if (findHours) {
-  const totalHours = (findHours / readerStyle.loudReader / 60).toFixed(2);
+  const loudReaders = (findHours / readerStyle.loudReader / 60).toFixed(1);
+  const silentReaders = (findHours / readerStyle.silentReader / 60).toFixed(1)
   console.log(`
 
     📕 Book Name: ${findBookDetails.bookName}.
     ✍🏽 Author: ${findBookDetails.author}.
-    ⌛ Hours to Complete: ${totalHours} Hours.  
+    🔇 Silent Readers: ${silentReaders} Hours.  
+    🔊 Loud Readers: ${loudReaders} Hours.  
+
     `);
 } else {
   console.log("Enter A Correct Book On Our Data Collection");
