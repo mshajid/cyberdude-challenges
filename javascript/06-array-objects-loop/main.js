@@ -1,5 +1,6 @@
+
 // I need to create a book lists in an Array of Objects.
-// Each object should contain Book Name / Book Author / Pages / Genre
+// Each object should contain Book Name / Book Author / Words / Genre
 // Logic: I wanted to find How many hours would go to complete each book.
 
 // ! 238 Words Per Minute (Silent Reader)
@@ -54,7 +55,7 @@ const findBookDetails = bookLists.find(function (value) {
 
 if (findHours) {
   const loudReaders = (findHours / readerStyle.loudReader / 60).toFixed(1);
-  const silentReaders = (findHours / readerStyle.silentReader / 60).toFixed(1)
+  const silentReaders = (findHours / readerStyle.silentReader / 60).toFixed(1);
   console.log(`
 
     📕 Book Name: ${findBookDetails.bookName}.
@@ -66,3 +67,4 @@ if (findHours) {
 } else {
   console.log("Enter A Correct Book On Our Data Collection");
 }
+
