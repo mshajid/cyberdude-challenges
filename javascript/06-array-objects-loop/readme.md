@@ -77,7 +77,6 @@ if (findHours) {
 
 ```
 ### Live link -> 
-Deploy it and put the link here.
 
 
 ## Acknowledgement:
