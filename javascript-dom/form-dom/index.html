@@ -64,18 +64,31 @@
           </div>
           <!-- ! Radio Card 2 Ends Here -->
         </div>
-
-      <div class="flex gap-x-2">
-        <div class="flex flex-col text-sm">
-          <label for="card">Enter Credit Card Number</label>
-          <input id="card" name="card" type="number" placeholder="Enter Your Credit Card Number" class="bg-red-500 pl-2 pr-10 py-1 outline-none">
+        <!-- ! Card Details Div Start Here -->
+        <div class="mt-5">
+          <div class="flex gap-x-2">
+            <div class="flex flex-col text-sm gap-y-1">
+              <label for="card" class="font-semibold">Enter Credit Card Number</label>
+              <input
+                id="card"
+                name="card"
+                type="number"
+                placeholder="Enter Credit Card Number"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+              />
+            </div>
+            <div class="flex flex-col text-sm gap-y-1">
+              <label for="cvv" class="font-semibold">CVV Number</label>
+              <input
+                id="cvv"
+                type="number"
+                placeholder="3 digits CVV"
+                class="border border-gray-600 pl-2 pr-10 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] w-[120px]"
+              />
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col text-sm">
-          <label for="cvv" name>Enter CVV Number</label>
-          <input id="cvv" type="number" placeholder="Enter Your CVV Number" class="bg-red-500 pl-2 pr-10 py-1 outline-none">
-        </div>
-      </div>
-
+        <!-- ! Card Details Div Ends Here -->
       </form>
       <!-- ! Form Ends Here -->
     </main>
