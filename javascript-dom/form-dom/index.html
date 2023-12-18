@@ -15,12 +15,57 @@
     />
   </head>
   <body class="font-jakarta">
+    <!-- ! Main Div Started Here -->
     <main class="max-w-2xl mx-auto mt-10">
       <div class="flex flex-col gap-y-0.5">
         <span class="font-bold text-2xl">Choose your payment method</span>
-        <span class="font-light text-lg">Your payment information are secure and not sharing with third parties.</span>
+        <span class="font-light text-lg"
+          >Your payment information are secure and not sharing with third
+          parties.</span
+        >
       </div>
-      <form></form>
+      <!-- ! Form Starts Here -->
+      <form>
+        <div class="flex gap-x-2 mt-4">
+          <!-- ! Radio Card 1 Starts Here -->
+          <div
+            class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+          >
+            <div>
+              <input type="radio" name="options" />
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <img src="./assets/images/credit-card.png" class="w-8" />
+              <label name="options" class="text-lg font-semibold"
+                >Credit Card</label
+              >
+              <span class="text-xs font-light"
+                >Safe money transfer using your bank account: visa,
+                maestro</span
+              >
+            </div>
+          </div>
+          <!-- ! Radio Card 1 Ends Heres -->
+          <!-- ! Radio Card 2 Starts Here -->
+          <div
+            class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+          >
+            <div>
+              <input type="radio" name="options" />
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <img src="./assets/images/PayPal.png" class="w-8" />
+              <label name="options" class="text-lg font-semibold">Paypal</label>
+              <span class="text-xs font-light"
+                >Safe money transfer using your bank account: visa,
+                maestro</span
+              >
+            </div>
+          </div>
+          <!-- ! Radio Card 2 Ends Here -->
+        </div>
+      </form>
+      <!-- ! Form Ends Here -->
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
