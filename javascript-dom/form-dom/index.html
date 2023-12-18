@@ -31,14 +31,15 @@
           <div class="flex gap-x-2 mt-4">
             <!-- ! Radio Card 1 Starts Here -->
             <div
-              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md p-2 max-w-xs"
+              id="creditCardDiv"
             >
               <div>
-                <input type="radio" name="options" />
+                <input type="radio" name="options" id="creditRadio" />
               </div>
               <div class="flex flex-col gap-y-1">
                 <img src="./assets/images/credit-card.png" class="w-8" />
-                <label name="options" class="text-lg font-semibold"
+                <label for="options" class="text-lg font-semibold"
                   >Credit Card</label
                 >
                 <span class="text-xs font-light"
@@ -229,7 +230,6 @@
           <button type="submit" class="bg-[#711DB0] px-5 py-2 text-white font-bold rounded-lg">VERIFY & PAY NOW</button>
         </div>
       </div>
-
       <!-- ! Right Section Ends Herer-->
     </main>
     <script src="./assets/js/main.js"></script>
