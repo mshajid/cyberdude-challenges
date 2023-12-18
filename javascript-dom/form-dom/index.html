@@ -68,7 +68,9 @@
         <div class="mt-5">
           <div class="flex gap-x-2">
             <div class="flex flex-col text-sm gap-y-1">
-              <label for="card" class="font-semibold">Enter Credit Card Number</label>
+              <label for="card" class="font-semibold"
+                >Enter Credit Card Number</label
+              >
               <input
                 id="card"
                 name="card"
@@ -89,6 +91,87 @@
           </div>
         </div>
         <!-- ! Card Details Div Ends Here -->
+        <hr class="mt-6" />
+        <div class="my-4">
+          <h2 class="font-semibold text-lg">Delivery Information</h2>
+        </div>
+
+        <div class="flex flex-col gap-y-3">
+          <!-- ! FirstName LastName Div Starts Here -->
+          <div class="flex flex-row text-sm items-center gap-x-5">
+            <div class="flex flex-col">
+              <label for="firstName" class="font-semibold">First Name</label>
+              <input
+                id="firstName"
+                type="text"
+                placeholder="Enter your name"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="firstName" class="font-semibold">Last Name</label>
+              <input
+                id="firstName"
+                type="text"
+                placeholder="Enter your name"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
+              />
+            </div>
+          </div>
+          <!-- ! FirstName LastName Div Ends Here -->
+          <!-- ! Delivery Address Div Starts Here -->
+          <div class="flex flex-col text-sm">
+            <label class="font-semibold">Delivery Address</label>
+            <input
+              type="text"
+              placeholder="Enter your delivery address"
+              class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+            />
+          </div>
+          <!-- ! Delivery Address Div Ends Here -->
+
+          <!-- ! Email Address Div Starts Here -->
+          <div class="flex flex-col text-sm">
+            <label class="font-semibold">Email Address</label>
+            <input
+              type="text"
+              placeholder="xyz@email.com"
+              class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+            />
+          </div>
+          <!-- ! Email Address Div Ends Here -->
+          <!-- ! Mobile Numbers Div Starts Here -->
+          <div class="flex flex-row gap-x-5">
+            <div class="flex flex-col text-sm">
+              <label class="font-semibold">Primary Contact Number</label>
+              <input
+                type="text"
+                placeholder="Primary"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+              />
+            </div>
+            <div class="flex flex-col text-sm">
+              <label class="font-semibold">Secondary Contact Number</label>
+              <input
+                type="text"
+                placeholder="Secondary"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+              />
+            </div>
+          </div>
+          <!-- ! Mobile Numbers Div Ends Here -->
+        </div>
+
+        <!-- ! Submit Button Starts Here -->
+        <div class="mt-10">
+          <button
+            type="submit"
+            class="bg-[#0075FF] px-7 py-1 rounded-md text-white"
+          >
+            Submit Now
+          </button>
+        </div>
+        <!-- ! Submit Button End Here -->
       </form>
       <!-- ! Form Ends Here -->
     </main>
