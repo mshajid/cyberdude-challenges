@@ -16,169 +16,224 @@
   </head>
   <body class="font-jakarta">
     <!-- ! Main Div Started Here -->
-    <main class="max-w-2xl mx-auto mt-10">
-      <div class="flex flex-col gap-y-0.5">
-        <span class="font-bold text-3xl">Choose your payment method</span>
-        <span class="font-light text-lg"
-          >Your payment information are secure and not sharing with third
-          parties.</span
-        >
+    <main class="flex justify-center gap-x-10">
+      <!-- ! Left Section Starts Here -->
+      <!-- max-w-2xl mx-auto mt-10 -->
+      <div class="p-2 my-2">
+        <div class="flex flex-col gap-y-0.5">
+          <span class="font-bold text-3xl">Choose your payment method</span>
+          <span class="font-light text-lg"
+            >Your payment information are secure and not sharing with third
+            parties.</span
+          >
+        </div>
+        <!-- ! Form Starts Here -->
+        <form>
+          <div class="flex gap-x-2 mt-4">
+            <!-- ! Radio Card 1 Starts Here -->
+            <div
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+            >
+              <div>
+                <input type="radio" name="options" />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <img src="./assets/images/credit-card.png" class="w-8" />
+                <label name="options" class="text-lg font-semibold"
+                  >Credit Card</label
+                >
+                <span class="text-xs font-light"
+                  >Safe money transfer using your bank account: visa,
+                  maestro</span
+                >
+              </div>
+            </div>
+            <!-- ! Radio Card 1 Ends Heres -->
+            <!-- ! Radio Card 2 Starts Here -->
+            <div
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+            >
+              <div>
+                <input type="radio" name="options" />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <img src="./assets/images/PayPal.png" class="w-8" />
+                <label name="options" class="text-lg font-semibold"
+                  >Paypal</label
+                >
+                <span class="text-xs font-light"
+                  >Safe money transfer using your bank account: visa,
+                  maestro</span
+                >
+              </div>
+            </div>
+            <!-- ! Radio Card 2 Ends Here -->
+          </div>
+          <!-- ! Card Details Div Start Here -->
+          <div class="mt-5">
+            <div class="flex gap-x-2">
+              <div class="flex flex-col text-sm gap-y-1">
+                <label for="card" class="font-semibold"
+                  >Enter Credit Card Number</label
+                >
+                <input
+                  id="card"
+                  name="card"
+                  type="number"
+                  placeholder="Enter Credit Card Number"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+                />
+              </div>
+              <div class="flex flex-col text-sm gap-y-1">
+                <label for="cvv" class="font-semibold">CVV Number</label>
+                <input
+                  id="cvv"
+                  type="number"
+                  placeholder="3 digits CVV"
+                  class="border border-gray-600 pl-2 pr-10 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] w-[120px]"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ! Card Details Div Ends Here -->
+          <hr class="mt-6" />
+          <div class="my-4">
+            <h2 class="font-semibold text-lg">Delivery Information</h2>
+          </div>
+
+          <!-- Todo Input Elements Div Starts Here -->
+          <div class="flex flex-col gap-y-3">
+            <!-- ! FirstName LastName Div Starts Here -->
+            <div class="flex flex-row text-sm items-center gap-x-5">
+              <div class="flex flex-col">
+                <label for="firstName" class="font-semibold">First Name</label>
+                <input
+                  id="firstName"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="lastName" class="font-semibold">Last Name</label>
+                <input
+                  id="lastName"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
+                />
+              </div>
+            </div>
+            <!-- ! FirstName LastName Div Ends Here -->
+            <!-- ! Delivery Address Div Starts Here -->
+            <div class="flex flex-col text-sm">
+              <label for="delivery" class="font-semibold"
+                >Delivery Address</label
+              >
+              <input
+                id="delivery"
+                type="text"
+                placeholder="Enter your delivery address"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+              />
+            </div>
+            <!-- ! Delivery Address Div Ends Here -->
+
+            <!-- ! Email Address Div Starts Here -->
+            <div class="flex flex-col text-sm">
+              <label for="email" class="font-semibold">Email Address</label>
+              <input
+                id="email"
+                type="text"
+                placeholder="xyz@email.com"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+              />
+            </div>
+            <!-- ! Email Address Div Ends Here -->
+            <!-- ! Mobile Numbers Div Starts Here -->
+            <div class="flex flex-row gap-x-5">
+              <div class="flex flex-col text-sm">
+                <label class="font-semibold">Primary Contact Number</label>
+                <input
+                  type="text"
+                  placeholder="Primary"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+                />
+              </div>
+              <div class="flex flex-col text-sm">
+                <label class="font-semibold">Secondary Contact Number</label>
+                <input
+                  type="text"
+                  placeholder="Secondary"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
+                />
+              </div>
+            </div>
+            <!-- ! Mobile Numbers Div Ends Here -->
+          </div>
+          <!-- Todo Input Elements Div Ends Herer -->
+
+          <!-- ! Submit Button Starts Here -->
+          <div class="mt-10">
+            <button
+              type="submit"
+              class="bg-[#0075FF] px-7 py-1 rounded-md text-white"
+            >
+              Submit Now
+            </button>
+          </div>
+          <!-- ! Submit Button End Here -->
+        </form>
+        <!-- ! Form Ends Here -->
       </div>
-      <!-- ! Form Starts Here -->
-      <form>
-        <div class="flex gap-x-2 mt-4">
-          <!-- ! Radio Card 1 Starts Here -->
-          <div
-            class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
-          >
-            <div>
-              <input type="radio" name="options" />
-            </div>
-            <div class="flex flex-col gap-y-1">
-              <img src="./assets/images/credit-card.png" class="w-8" />
-              <label name="options" class="text-lg font-semibold"
-                >Credit Card</label
-              >
-              <span class="text-xs font-light"
-                >Safe money transfer using your bank account: visa,
-                maestro</span
-              >
-            </div>
-          </div>
-          <!-- ! Radio Card 1 Ends Heres -->
-          <!-- ! Radio Card 2 Starts Here -->
-          <div
-            class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
-          >
-            <div>
-              <input type="radio" name="options" />
-            </div>
-            <div class="flex flex-col gap-y-1">
-              <img src="./assets/images/PayPal.png" class="w-8" />
-              <label name="options" class="text-lg font-semibold">Paypal</label>
-              <span class="text-xs font-light"
-                >Safe money transfer using your bank account: visa,
-                maestro</span
-              >
-            </div>
-          </div>
-          <!-- ! Radio Card 2 Ends Here -->
+      <!-- ! Left Section Ends Here -->
+
+      <!-- ! Right Section Starts Here -->
+      <div class="flex flex-col gap-y-5 px-5 py-2 my-2 bg-[#FFA732]">
+        <div class="flex gap-x-2">
+          <h2 class="font-bold text-3xl">Hello</h2>
+          <span class="font-normal text-3xl">Shajid</span>
         </div>
-        <!-- ! Card Details Div Start Here -->
-        <div class="mt-5">
-          <div class="flex gap-x-2">
-            <div class="flex flex-col text-sm gap-y-1">
-              <label for="card" class="font-semibold"
-                >Enter Credit Card Number</label
-              >
-              <input
-                id="card"
-                name="card"
-                type="number"
-                placeholder="Enter Credit Card Number"
-                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
-              />
-            </div>
-            <div class="flex flex-col text-sm gap-y-1">
-              <label for="cvv" class="font-semibold">CVV Number</label>
-              <input
-                id="cvv"
-                type="number"
-                placeholder="3 digits CVV"
-                class="border border-gray-600 pl-2 pr-10 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] w-[120px]"
-              />
-            </div>
-          </div>
+  
+        <div>
+          <img src="./assets/images/PS5-Hero-Packshot-us.webp" class="w-48" />
         </div>
-        <!-- ! Card Details Div Ends Here -->
-        <hr class="mt-6" />
-        <div class="my-4">
-          <h2 class="font-semibold text-lg">Delivery Information</h2>
+  
+        <div class="flex flex-col text-sm">
+          <span>Sony PlayStation 5 Slim PRO CFI-2000</span>
+          <span>Price: $500.00 (Inclusive VAT%)</span>
+          <span>Delivery: $25.00</span>
+        </div>
+  
+        <div>
+          <button class="bg-red-500 px-5 py-2 text-white font-bold rounded-lg">$525.00</button>
+        </div>
+  
+        <div class="flex flex-col text-sm">
+          <span>Estimate Delivery: 3 - 5 Working Days.</span>
+          <span>Delivery Partner: FedEx Express</span>
         </div>
 
-        <!-- Todo Input Elements Div Starts Here -->
-        <div class="flex flex-col gap-y-3">
-          <!-- ! FirstName LastName Div Starts Here -->
-          <div class="flex flex-row text-sm items-center gap-x-5">
-            <div class="flex flex-col">
-              <label for="firstName" class="font-semibold">First Name</label>
-              <input
-                id="firstName"
-                type="text"
-                placeholder="Enter your name"
-                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
-              />
-            </div>
-            <div class="flex flex-col">
-              <label for="lastName" class="font-semibold">Last Name</label>
-              <input
-                id="lastName"
-                type="text"
-                placeholder="Enter your name"
-                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff]"
-              />
-            </div>
-          </div>
-          <!-- ! FirstName LastName Div Ends Here -->
-          <!-- ! Delivery Address Div Starts Here -->
-          <div class="flex flex-col text-sm">
-            <label for="delivery" class="font-semibold">Delivery Address</label>
-            <input
-              id="delivery"
-              type="text"
-              placeholder="Enter your delivery address"
-              class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
-            />
-          </div>
-          <!-- ! Delivery Address Div Ends Here -->
-
-          <!-- ! Email Address Div Starts Here -->
-          <div class="flex flex-col text-sm">
-            <label for="email" class="font-semibold">Email Address</label>
-            <input
-            id="email"
-              type="text"
-              placeholder="xyz@email.com"
-              class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
-            />
-          </div>
-          <!-- ! Email Address Div Ends Here -->
-          <!-- ! Mobile Numbers Div Starts Here -->
-          <div class="flex flex-row gap-x-5">
-            <div class="flex flex-col text-sm">
-              <label class="font-semibold">Primary Contact Number</label>
-              <input
-                type="text"
-                placeholder="Primary"
-                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
-              />
-            </div>
-            <div class="flex flex-col text-sm">
-              <label class="font-semibold">Secondary Contact Number</label>
-              <input
-                type="text"
-                placeholder="Secondary"
-                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF]"
-              />
-            </div>
-          </div>
-          <!-- ! Mobile Numbers Div Ends Here -->
+        <div class="flex flex-col text-sm">
+          <span>Shajid Shafee</span>
+          <span>No 49/4, 1/1, Mosque Lane, Nawala Road, Rajagiriya</span>
+          <span>0757219533</span>
+          <span>shajid1biz@gmail.com</span>
         </div>
-        <!-- Todo Input Elements Div Ends Herer -->
 
-
-        <!-- ! Submit Button Starts Here -->
-        <div class="mt-10">
-          <button
-            type="submit"
-            class="bg-[#0075FF] px-7 py-1 rounded-md text-white"
-          >
-            Submit Now
-          </button>
+        <div class="text-xs flex items-center gap-x-2">
+          <input id="checkbox" type="checkbox" required>
+          <label for="checkbox">I agree to the terms and condition</label>
         </div>
-        <!-- ! Submit Button End Here -->
-      </form>
-      <!-- ! Form Ends Here -->
+
+        <div class="flex justify-center">
+          <button type="submit" class="bg-red-500 px-5 py-2 text-white font-bold rounded-lg">PAY NOW</button>
+        </div>
+      </div>
+
+     
+
+      <!-- ! Right Section Ends Herer-->
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
