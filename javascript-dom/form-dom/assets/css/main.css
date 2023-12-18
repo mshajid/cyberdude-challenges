@@ -8,4 +8,7 @@
       -webkit-appearance: none;
       margin: 0;
     }
-  }
+}
+
+/* Thanks to StackOverflow. */
+/* https://stackoverflow.com/questions/71296535/how-to-remove-arrow-on-input-type-number-with-tailwind-css */

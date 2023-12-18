@@ -18,7 +18,7 @@
     <!-- ! Main Div Started Here -->
     <main class="max-w-2xl mx-auto mt-10">
       <div class="flex flex-col gap-y-0.5">
-        <span class="font-bold text-2xl">Choose your payment method</span>
+        <span class="font-bold text-3xl">Choose your payment method</span>
         <span class="font-light text-lg"
           >Your payment information are secure and not sharing with third
           parties.</span
@@ -66,13 +66,13 @@
         </div>
 
       <div class="flex gap-x-2">
-        <div class="flex flex-col">
-          <label>Enter Credit Card Number</label>
-          <input type="number" placeholder="Enter Your Credit Card Number" class="bg-red-500 pl-2 pr-10">
+        <div class="flex flex-col text-sm">
+          <label for="card">Enter Credit Card Number</label>
+          <input id="card" name="card" type="number" placeholder="Enter Your Credit Card Number" class="bg-red-500 pl-2 pr-10 py-1 outline-none">
         </div>
-        <div class="flex flex-col">
-          <label>Enter CVV Number</label>
-          <input type="number" placeholder="Enter Your Credit Card Number" class="bg-red-500">
+        <div class="flex flex-col text-sm">
+          <label for="cvv" name>Enter CVV Number</label>
+          <input id="cvv" type="number" placeholder="Enter Your CVV Number" class="bg-red-500 pl-2 pr-10 py-1 outline-none">
         </div>
       </div>
 
