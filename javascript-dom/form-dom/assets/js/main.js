@@ -13,9 +13,25 @@ const creditRadioBtn = document.querySelector("#creditRadio");
 const creditCardDivEl = document.getElementById("creditCardDiv");
 const payPalRadioBtn = document.getElementById("payPalRadioBtn");
 const payPalDivEl = document.getElementById("payPalDiv");
+const cardNumberInput = document.getElementById("card") // CreditCard Number Input
+const submitBtnEl = document.querySelector("button")
 
-// console.log(payPalDivEl, payPalRadioBtn);
 
+// console.log(cardNumberInput.value);
+
+submitBtnEl.addEventListener("click", () => {
+    console.log();
+    const cardNumberLength = cardNumberInput.value.length
+    if(cardNumberLength < 16 || cardNumberLength > 16) {
+        console.log("Please Enter The Valid Card Number")
+    } else {
+        console.log(`"Entered the correct card number" ${cardNumberInput.value}`)
+    }
+})
+
+
+
+// To Indicate Which Payment Method You Prefer
 creditRadioBtn.addEventListener("change", (e) => {
     if(creditRadioBtn.checked) {
         payPalDivEl.classList.remove("bg-[#0075FF]/20","border-[#0075FF]")
@@ -31,7 +47,3 @@ payPalRadioBtn.addEventListener("change", (e) => {
 });
 
 
-// if(payPalRadioBtn.checked) {
-//     payPalDivEl.classList.add("bg-[#0075FF]/20","border-[#0075FF]")
-//     creditCardDivEl.classList.remove("bg-[#0075FF]/20", "border-[#0075FF]")
-// }
