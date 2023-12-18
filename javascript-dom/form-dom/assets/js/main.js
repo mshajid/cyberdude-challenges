@@ -11,22 +11,27 @@
 
 const creditRadioBtn = document.querySelector("#creditRadio");
 const creditCardDivEl = document.getElementById("creditCardDiv");
+const payPalRadioBtn = document.getElementById("payPalRadioBtn");
+const payPalDivEl = document.getElementById("payPalDiv");
 
-console.log(creditRadioBtn);
+// console.log(payPalDivEl, payPalRadioBtn);
 
-
-creditRadioBtn.addEventListener("change", () => {
+creditRadioBtn.addEventListener("change", (e) => {
     if(creditRadioBtn.checked) {
-        creditCardDivEl.classList.add("bg-[#0075FF]/20","bg-opacity-100")
+        payPalDivEl.classList.remove("bg-[#0075FF]/20","border-[#0075FF]")
+        creditCardDivEl.classList.add("bg-[#0075FF]/20","border-[#0075FF]")
     }
 })
 
-// console.log(nameEl.checked);
+payPalRadioBtn.addEventListener("change", (e) => {
+    if(payPalRadioBtn.checked) {
+        creditCardDivEl.classList.remove("bg-[#0075FF]/20","border-[#0075FF]")
+        payPalDivEl.classList.add("bg-[#0075FF]/20","border-[#0075FF]")
+    }
+});
 
 
-
-// if(nameEl.checked === true) {
-//     creditCardDivEl.classList.add("bg-red-500")
-// } else {
-//     console.log('Not true')
+// if(payPalRadioBtn.checked) {
+//     payPalDivEl.classList.add("bg-[#0075FF]/20","border-[#0075FF]")
+//     creditCardDivEl.classList.remove("bg-[#0075FF]/20", "border-[#0075FF]")
 // }
