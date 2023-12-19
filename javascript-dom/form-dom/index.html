@@ -39,7 +39,7 @@
               </div>
               <div class="flex flex-col gap-y-1">
                 <img src="./assets/images/credit-card.png" class="w-8" />
-                <label for="options" class="text-lg font-semibold"
+                <label for="creditcard" class="text-lg font-semibold"
                   >Credit Card</label
                 >
                 <span class="text-xs font-light"
@@ -51,14 +51,15 @@
             <!-- ! Radio Card 1 Ends Heres -->
             <!-- ! Radio Card 2 Starts Here -->
             <div
-              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md bg-[#fff] p-2 max-w-xs"
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md p-2 max-w-xs"
+              id="payPalDiv"
             >
               <div>
-                <input type="radio" name="options" />
+                <input type="radio" name="options" id="payPalRadioBtn" />
               </div>
               <div class="flex flex-col gap-y-1">
                 <img src="./assets/images/PayPal.png" class="w-8" />
-                <label name="options" class="text-lg font-semibold"
+                <label for="paypal" class="text-lg font-semibold"
                   >Paypal</label
                 >
                 <span class="text-xs font-light"
@@ -77,8 +78,10 @@
                   >Enter Credit Card Number</label
                 >
                 <input
+                  required
                   id="card"
                   name="card"
+                  value=""
                   type="number"
                   placeholder="Enter Credit Card Number"
                   class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
@@ -87,6 +90,7 @@
               <div class="flex flex-col text-sm gap-y-1">
                 <label for="cvv" class="font-semibold">CVV Number</label>
                 <input
+                  required
                   id="cvv"
                   type="number"
                   placeholder="3 digits CVV"
@@ -131,7 +135,8 @@
                 >Delivery Address</label
               >
               <input
-                id="delivery"
+                name="delivery"
+                required
                 type="text"
                 placeholder="Enter your delivery address"
                 class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
@@ -143,6 +148,7 @@
             <div class="flex flex-col text-sm">
               <label for="email" class="font-semibold">Email Address</label>
               <input
+                required
                 id="email"
                 type="text"
                 placeholder="xyz@email.com"
@@ -171,6 +177,7 @@
             </div>
             <!-- ! Mobile Numbers Div Ends Here -->
           </div>
+
           <!-- Todo Input Elements Div Ends Herer -->
 
           <!-- ! Submit Button Starts Here -->
@@ -182,6 +189,8 @@
               Submit Now
             </button>
           </div>
+
+          
           <!-- ! Submit Button End Here -->
         </form>
         <!-- ! Form Ends Here -->
