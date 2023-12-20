@@ -19,6 +19,8 @@ const validationDot = document.getElementById("validationDot")
 const lastNameDot = document.getElementById("lastNameIndicator")
 const deliveryDot = document.getElementById("deliveryDot")
 const emailDot = document.getElementById("emailDot");
+const primaryDot = document.getElementById("primaryDot")
+const secondaryDot = document.getElementById("secondaryDot");
 
 const checkOutForm = document.forms[0];
 const verifyForm = document.forms[1];
@@ -35,15 +37,16 @@ const {
 } = checkOutForm.elements;
 
 const allDivEl = document.querySelectorAll("div");
-const fullName = allDivEl[30].children[0];
-const fullAddress = allDivEl[30].children[1];
-const contactNumber = allDivEl[30].children[2];
-const verifiedEmail = allDivEl[30].children[3];
+const fullName = allDivEl[36].children[0];
+const fullAddress = allDivEl[36].children[1];
+const contactNumber = allDivEl[36].children[2];
+const verifiedEmail = allDivEl[36].children[3];
+
+console.log(allDivEl)
 
 // ! Validations Starts Here.
 const handleCheckForm = (event) => {
   event.preventDefault();
-
   if (card.value.length < 16 || card.value.length > 16) {
     alert("Please Enter the Correct Credit Card Number");
   } else {
@@ -87,6 +90,8 @@ const handleCheckForm = (event) => {
     verifiedEmail.textContent = email.value;
   }
 }
+
+checkOutForm.addEventListener("submit", handleCheckForm);
 // ! Validation Ends Here
 
 const firstNameIndicator = (e) => {
@@ -114,6 +119,20 @@ const emailIndicator = (e) => {
   if(e.type = "change"){
     emailDot.classList.remove("hidden");
     email.classList.add("border-green-500", "shadow-md");
+  }
+}
+
+const primaryIndicator = (e) => {
+  if(e.type = "change") {
+    primaryDot.classList.remove("hidden");
+    primary.classList.add("border-green-500", "shadow-md");
+  }
+}
+
+const secondaryIndicator = (e) => {
+  if(e.type = "change") {
+    secondaryDot.classList.remove("hidden");
+    secondary.classList.add("border-green-500", "shadow-md");
   }
 }
 
@@ -150,7 +169,6 @@ const handlePayPalRadioBtn = (e) => {
       "border-[#0075FF]",
       "shadow-lg"
     );
-    console.log(e.target.checked);
   }
 }
 
@@ -175,11 +193,20 @@ firstName.addEventListener("change", firstNameIndicator)
 lastName.addEventListener("change", secondNameIndicator);
 delivery.addEventListener("change", deliveryIndicator)
 email.addEventListener("change", emailIndicator);
-
+primary.addEventListener("change", primaryIndicator);
+secondary.addEventListener("change", secondaryIndicator)
 
 // Lists of Event Listeners. 
-checkOutForm.addEventListener("submit", handleCheckForm);
+
 firstName.addEventListener("input", handleInputGreet);
+verifyForm.addEventListener("submit", handleGreet);
+
+// Disable Paste Event Listeners.
 card.addEventListener("paste", handlePaste);
 cvvNumber.addEventListener("paste", handlePaste);
-verifyForm.addEventListener("submit", handleGreet);
+
+// npm install vite -g
+// vite build --base=./
+// cd .. 
+// git add . push
+//  
