@@ -15,6 +15,10 @@ const payPalRadioBtn = document.getElementById("payPalRadioBtn");
 const payPalDivEl = document.getElementById("payPalDiv");
 const greetNameEl = document.getElementById("greetName");
 const verifyBtnEl = document.getElementById("verifyBtn");
+const validationDot = document.getElementById("validationDot")
+const lastNameDot = document.getElementById("lastNameIndicator")
+const deliveryDot = document.getElementById("deliveryDot")
+const emailDot = document.getElementById("emailDot");
 
 const checkOutForm = document.forms[0];
 const verifyForm = document.forms[1];
@@ -36,7 +40,7 @@ const fullAddress = allDivEl[30].children[1];
 const contactNumber = allDivEl[30].children[2];
 const verifiedEmail = allDivEl[30].children[3];
 
-// Validations Starts Here.
+// ! Validations Starts Here.
 const handleCheckForm = (event) => {
   event.preventDefault();
 
@@ -81,6 +85,35 @@ const handleCheckForm = (event) => {
     alert("email cannot be empty");
   } else {
     verifiedEmail.textContent = email.value;
+  }
+}
+// ! Validation Ends Here
+
+const firstNameIndicator = (e) => {
+  if(e.type = "change"){
+    validationDot.classList.remove("hidden")
+    firstName.classList.add("border-green-500","shadow-md")
+  }
+}
+
+const secondNameIndicator = (e) => {
+  if(e.type = "change") {
+    lastNameDot.classList.remove("hidden");
+    lastName.classList.add("border-green-500", "shadow-md");
+  }
+}
+
+const deliveryIndicator = (e) => {
+  if(e.type = "change"){
+    deliveryDot.classList.remove("hidden");
+    delivery.classList.add("border-green-500", "shadow-md");
+  }
+}
+
+const emailIndicator = (e) => {
+  if(e.type = "change"){
+    emailDot.classList.remove("hidden");
+    email.classList.add("border-green-500", "shadow-md");
   }
 }
 
@@ -136,6 +169,13 @@ const handlePaste = (event) => {
 // To Indicate Which Payment Method You Prefer
 creditRadioBtn.addEventListener("change", handleCreditRadioBtn);
 payPalRadioBtn.addEventListener("change", handlePayPalRadioBtn);
+
+// Indication Event Listeners
+firstName.addEventListener("change", firstNameIndicator)
+lastName.addEventListener("change", secondNameIndicator);
+delivery.addEventListener("change", deliveryIndicator)
+email.addEventListener("change", emailIndicator);
+
 
 // Lists of Event Listeners. 
 checkOutForm.addEventListener("submit", handleCheckForm);
