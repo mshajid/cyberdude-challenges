@@ -167,7 +167,7 @@
             <!-- ! Email Address Div Ends Here -->
             <!-- ! Mobile Numbers Div Starts Here -->
             <div class="flex flex-row gap-x-5">
-              <div class="flex flex-col text-sm">
+              <div class="flex flex-col text-sm relative">
                 <label class="font-semibold">Primary Contact Number</label>
                 <input
                   required
@@ -176,8 +176,9 @@
                   placeholder="+94 123419533"
                   class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
                 />
+                <div id="primaryDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
               </div>
-              <div class="flex flex-col text-sm">
+              <div class="flex flex-col text-sm relative">
                 <label class="font-semibold">Secondary Contact Number</label>
                 <input
                   name="secondary"
@@ -185,6 +186,7 @@
                   placeholder="+94 123419533"
                   class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
                 />
+                <div id="secondaryDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
               </div>
             </div>
             <!-- ! Mobile Numbers Div Ends Here -->
