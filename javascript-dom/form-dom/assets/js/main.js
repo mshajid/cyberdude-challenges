@@ -1,19 +1,21 @@
 // If I Click "Submit Now", It should display on the right div.
 
-// Todo Logic.
+// Todo Logic. (These Are My Fiction Logics Only)
 // * Credit Card Number Should be in 16 digits.
 // * CVV Number should be 3 digits.
 // * First Name & Last Name Required.
 // * Primary & Secondary Contact Number Allowed Digits only.
-// * Submit Now button add listen.
+// * Submit FORM Now button add listen.
+// Hello Name Should Implied With Input Event Type. 
 
 const creditRadioBtn = document.querySelector("#creditRadio");
 const creditCardDivEl = document.getElementById("creditCardDiv");
 const payPalRadioBtn = document.getElementById("payPalRadioBtn");
 const payPalDivEl = document.getElementById("payPalDiv");
+const greetNameEl = document.getElementById("greetName");
+console.log(greetNameEl);
 
 const checkOutForm = document.forms[0];
-console.log(checkOutForm);
 
 const {
   card,
@@ -33,8 +35,6 @@ const fullAddress = allDivEl[30].children[1];
 const contactNumber = allDivEl[30].children[2];
 const verifiedEmail = allDivEl[30].children[3];
 
-// if Submit,
-// Credit Card Number.
 
 checkOutForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -55,6 +55,7 @@ checkOutForm.addEventListener("submit", (event) => {
     console.log("Kindly, Enter Your Proper First Name")
   } else {
     fullName.textContent = firstName.value;
+    greetNameEl.textContent = firstName.value;
   }
 
   if(lastName.value.length < 2 || lastName.value.length > 15) {
@@ -83,8 +84,12 @@ checkOutForm.addEventListener("submit", (event) => {
 });
 
 
+
+firstName.addEventListener("input", (event) => {
+  greetNameEl.textContent = firstName.value
+})
+
 // To Indicate Which Payment Method You Prefer
-//   bg-[#0075FF]/20",
 creditRadioBtn.addEventListener("change", (e) => {
   if (creditRadioBtn.checked) {
     payPalDivEl.classList.remove(
