@@ -27,7 +27,7 @@
           >
         </div>
         <!-- ! Form Starts Here -->
-        <form name="newform">
+        <form name="checkout">
           <div class="flex gap-x-2 mt-4">
             <!-- ! Radio Card 1 Starts Here -->
             <div
@@ -80,7 +80,7 @@
                 <input
                   required
                   id="card"
-                  name="card"
+                  name="creditCard"
                   value=""
                   type="number"
                   placeholder="Enter Credit Card Number"
@@ -90,6 +90,7 @@
               <div class="flex flex-col text-sm gap-y-1">
                 <label for="cvv" class="font-semibold">CVV Number</label>
                 <input
+                  name="cvvNumber"
                   required
                   id="cvv"
                   type="number"
@@ -112,6 +113,7 @@
               <div class="flex flex-col">
                 <label for="firstName" class="font-semibold">First Name</label>
                 <input
+                  name="firstName"
                   id="firstName"
                   type="text"
                   placeholder="Enter your name"
@@ -121,6 +123,7 @@
               <div class="flex flex-col">
                 <label for="lastName" class="font-semibold">Last Name</label>
                 <input
+                  name="lastName"
                   id="lastName"
                   type="text"
                   placeholder="Enter your name"
@@ -148,7 +151,7 @@
             <div class="flex flex-col text-sm">
               <label for="email" class="font-semibold">Email Address</label>
               <input
-                required
+                name="email"
                 id="email"
                 type="text"
                 placeholder="xyz@email.com"
@@ -161,16 +164,19 @@
               <div class="flex flex-col text-sm">
                 <label class="font-semibold">Primary Contact Number</label>
                 <input
-                  type="text"
-                  placeholder="Primary"
+                  required
+                  name="primary"
+                  type="number"
+                  placeholder="+94 123419533"
                   class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
                 />
               </div>
               <div class="flex flex-col text-sm">
                 <label class="font-semibold">Secondary Contact Number</label>
                 <input
-                  type="text"
-                  placeholder="Secondary"
+                  name="secondary"
+                  type="number"
+                  placeholder="+94 123419533"
                   class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
                 />
               </div>
@@ -189,8 +195,6 @@
               Submit Now
             </button>
           </div>
-
-          
           <!-- ! Submit Button End Here -->
         </form>
         <!-- ! Form Ends Here -->
@@ -224,10 +228,10 @@
         </div>
 
         <div class="flex flex-col text-sm text-black font-medium">
-          <span>Shajid Shafee</span>
-          <span>No 49/4, 1/1, Mosque Lane, Nawala Road, Rajagiriya</span>
-          <span>0757219533</span>
-          <span>shajid1biz@gmail.com</span>
+          <span data-firstName="">Shajid Shafee</span>
+          <span data-address>No 49/4, 1/1, Mosque Lane, Nawala Road, Rajagiriya</span>
+          <span data-contact>0757219533</span>
+          <span data-email>shajid1biz@gmail.com</span>
         </div>
 
         <div class="text-xs flex items-center gap-x-2">
