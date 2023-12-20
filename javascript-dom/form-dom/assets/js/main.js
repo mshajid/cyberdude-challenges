@@ -36,7 +36,8 @@ const fullAddress = allDivEl[30].children[1];
 const contactNumber = allDivEl[30].children[2];
 const verifiedEmail = allDivEl[30].children[3];
 
-checkOutForm.addEventListener("submit", (event) => {
+// Validations Starts Here.
+const handleCheckForm = (event) => {
   event.preventDefault();
 
   if (card.value.length < 16 || card.value.length > 16) {
@@ -81,14 +82,13 @@ checkOutForm.addEventListener("submit", (event) => {
   } else {
     verifiedEmail.textContent = email.value;
   }
-});
+}
 
-firstName.addEventListener("input", (event) => {
+const handleInputGreet = () => {
   greetNameEl.textContent = firstName.value;
-});
+}
 
-// To Indicate Which Payment Method You Prefer
-creditRadioBtn.addEventListener("change", (e) => {
+const handleCreditRadioBtn = (e) => {
   if (creditRadioBtn.checked) {
     payPalDivEl.classList.remove(
       "bg-[#0075FF]/20",
@@ -102,9 +102,9 @@ creditRadioBtn.addEventListener("change", (e) => {
     );
     console.dir(e.target);
   }
-});
+}
 
-payPalRadioBtn.addEventListener("change", (e) => {
+const handlePayPalRadioBtn = (e) => {
   if (payPalRadioBtn.checked) {
     // payPalRadioBtn.setAttribute("checked", "");
     creditCardDivEl.classList.remove(
@@ -119,17 +119,27 @@ payPalRadioBtn.addEventListener("change", (e) => {
     );
     console.log(e.target.checked);
   }
-});
+}
 
-verifyForm.addEventListener("submit", (event) => {
+const handleGreet = (event) => {
   event.preventDefault();
   alert("Thank you");
-});
+}
 
 const handlePaste = (event) => {
   event.preventDefault();
   alert("You cannot paste credit card numbers.")
 }
 
+
+
+// To Indicate Which Payment Method You Prefer
+creditRadioBtn.addEventListener("change", handleCreditRadioBtn);
+payPalRadioBtn.addEventListener("change", handlePayPalRadioBtn);
+
+// Lists of Event Listeners. 
+checkOutForm.addEventListener("submit", handleCheckForm);
+firstName.addEventListener("input", handleInputGreet);
 card.addEventListener("paste", handlePaste);
 cvvNumber.addEventListener("paste", handlePaste);
+verifyForm.addEventListener("submit", handleGreet);
