@@ -13,9 +13,10 @@ const creditCardDivEl = document.getElementById("creditCardDiv");
 const payPalRadioBtn = document.getElementById("payPalRadioBtn");
 const payPalDivEl = document.getElementById("payPalDiv");
 const greetNameEl = document.getElementById("greetName");
-console.log(greetNameEl);
+const verifyBtnEl = document.getElementById("verifyBtn");
 
 const checkOutForm = document.forms[0];
+const verifyForm = document.forms[1];
 
 const {
   card,
@@ -122,3 +123,8 @@ payPalRadioBtn.addEventListener("change", (e) => {
     console.log(e.target.checked);
   }
 });
+
+verifyForm.addEventListener("submit", (event) => {
+  event.preventDefault()
+  alert("Thank you")
+})
