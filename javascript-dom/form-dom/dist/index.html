@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Jabzee</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-shop-yrK3fxdP.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-pPqEGyn1.css">
+  </head>
+  <body class="font-jakarta bg-grey-200">
+    <!-- ! Main Div Started Here -->
+    <main class="flex justify-center gap-x-2">
+      <!-- ! Left Section Starts Here -->
+      <div class="p-2 my-2">
+        <div class="flex flex-col gap-y-0.5">
+          <span class="font-bold text-3xl">Choose your payment method</span>
+          <span class="font-light text-lg"
+            >Your payment information are secure and not sharing with third
+            parties.</span
+          >
+        </div>
+        <!-- ! Form Starts Here -->
+        <form name="checkout">
+          <div class="flex gap-x-2 mt-4">
+            <!-- ! Radio Card 1 Starts Here -->
+            <div
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md p-2 max-w-xs"
+              id="creditCardDiv"
+            >
+              <div>
+                <input type="radio" name="options" id="creditRadio" />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <img src="data:image/png;base64,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" class="w-8" />
+                <label for="creditcard" class="text-lg font-semibold"
+                  >Credit Card</label
+                >
+                <span class="text-xs font-light"
+                  >Safe money transfer using your bank account: visa,
+                  maestro</span
+                >
+              </div>
+            </div>
+            <!-- ! Radio Card 1 Ends Heres -->
+            <!-- ! Radio Card 2 Starts Here -->
+            <div
+              class="flex items-start justify-start gap-x-3 py-3 px-2 border-2 rounded-md p-2 max-w-xs"
+              id="payPalDiv"
+            >
+              <div>
+                <input type="radio" name="options" id="payPalRadioBtn" />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <img src="data:image/png;base64,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" class="w-8" />
+                <label for="paypal" class="text-lg font-semibold"
+                  >Paypal</label
+                >
+                <span class="text-xs font-light"
+                  >Safe money transfer using your bank account: visa,
+                  maestro</span
+                >
+              </div>
+            </div>
+            <!-- ! Radio Card 2 Ends Here -->
+          </div>
+          <!-- ! Card Details Div Start Here -->
+          <div class="mt-5">
+            <div class="flex gap-x-2">
+              <div class="flex flex-col text-sm gap-y-1">
+                <label for="card" class="font-semibold"
+                  >Enter Credit Card Number</label
+                >
+                <input
+                  required
+                  id="card"
+                  name="creditCard"
+                  value=""
+                  type="number"
+                  placeholder="Enter Credit Card Number"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
+                />
+              </div>
+              <div class="flex flex-col text-sm gap-y-1">
+                <label for="cvv" class="font-semibold">CVV Number</label>
+                <input
+                  name="cvvNumber"
+                  required
+                  id="cvv"
+                  type="number"
+                  placeholder="3 digits CVV"
+                  class="border border-gray-600 pl-2 pr-10 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] w-[120px] focus-visible:bg-[#0075FF]/20"
+                />
+              </div>
+            </div>
+            <small class="text-[10px]">* Enter 16-Digits Valid Credit Card Number (Visa / Master Accepted, & Kidneys also will be added as a method in the future.)</small>
+          </div>
+          <!-- ! Card Details Div Ends Here -->
+          <hr class="mt-3" />
+          <div class="my-2">
+            <h2 class="font-semibold text-lg">Delivery Information</h2>
+          </div>
+
+          <!-- Todo Input Elements Div Starts Here -->
+          <div class="flex flex-col gap-y-3">
+            <!-- ! FirstName LastName Div Starts Here -->
+            <div class="flex flex-row text-sm items-center gap-x-5">
+              <div class="flex flex-col relative">
+                <label for="firstName" class="font-semibold">First Name</label>
+                <input
+                  name="firstName"
+                  id="firstName"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff] focus-visible:bg-[#0075FF]/20"
+                />
+                <div id="validationDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+              </div>
+              <div class="flex flex-col relative">
+                <label for="lastName" class="font-semibold">Last Name</label>
+                <input
+                  name="lastName"
+                  id="lastName"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075Ff] focus-visible:bg-[#0075FF]/20"
+                />
+                <div id="lastNameIndicator" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+              </div>
+            </div>
+            <!-- ! FirstName LastName Div Ends Here -->
+            <!-- ! Delivery Address Div Starts Here -->
+            <div class="flex flex-col text-sm relative">
+              <label for="delivery" class="font-semibold"
+                >Delivery Address</label
+              >
+              <input
+                name="delivery"
+                required
+                type="text"
+                placeholder="Enter your delivery address"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
+              />
+              <div id="deliveryDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+            </div>
+            <!-- ! Delivery Address Div Ends Here -->
+
+            <!-- ! Email Address Div Starts Here -->
+            <div class="flex flex-col text-sm relative">
+              <label for="email" class="font-semibold">Email Address</label>
+              <input
+                name="email"
+                id="email"
+                type="text"
+                placeholder="xyz@email.com"
+                class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
+              />
+              <div id="emailDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+            </div>
+            <!-- ! Email Address Div Ends Here -->
+            <!-- ! Mobile Numbers Div Starts Here -->
+            <div class="flex flex-row gap-x-5">
+              <div class="flex flex-col text-sm relative">
+                <label class="font-semibold">Primary Contact Number</label>
+                <input
+                  required
+                  name="primary"
+                  type="number"
+                  placeholder="+94 123419533"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
+                />
+                <div id="primaryDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+              </div>
+              <div class="flex flex-col text-sm relative">
+                <label class="font-semibold">Secondary Contact Number</label>
+                <input
+                  name="secondary"
+                  type="number"
+                  placeholder="+94 123419533"
+                  class="border border-gray-600 pl-2 pr-9 py-1 outline-none rounded-md placeholder:text-[11px] focus:border-[#0075FF] focus-visible:bg-[#0075FF]/20"
+                />
+                <div id="secondaryDot" class="absolute top-[31px] right-2 bg-emerald-500 w-2 h-2 rounded-full hidden"></div>
+              </div>
+            </div>
+            <!-- ! Mobile Numbers Div Ends Here -->
+          </div>
+
+          <!-- Todo Input Elements Div Ends Herer -->
+
+          <!-- ! Submit Button Starts Here -->
+          <div class="mt-10">
+            <button
+              type="submit"
+              class="bg-[#0075FF] px-7 py-1 rounded-md text-white"
+            >
+              Submit Now
+            </button>
+          </div>
+          <!-- ! Submit Button End Here -->
+        </form>
+        <!-- ! Form Ends Here -->
+      </div>
+      <!-- ! Left Section Ends Here -->
+
+      <!-- ! Right Section Starts Here -->
+      <div class="flex flex-col gap-y-5 px-5 py-2 my-2 bg-[#FFA732]/40 border-2 border-[#FFA732] rounded-lg shadow-lg shadow-[#FFA732]/60">
+        <div class="flex gap-x-2 mt-5 text-black">
+          <h2 class="font-bold text-2xl">👋🏽 Hello</h2>
+          <span id="greetName" class="font-normal text-2xl"></span>
+        </div>
+  
+        <div>
+          <img src="/assets/PS5-Hero-Packshot-us-AV8nwXlL.webp" class="w-48" />
+        </div>
+  
+        <div class="flex flex-col text-sm text-black">
+          <span class="font-bold text-[15px]">Sony PlayStation 5 Slim PRO CFI-2000</span>
+          <span>Price: $500.00 (Inclusive VAT%)</span>
+          <span>Delivery: $25.00</span>
+        </div>
+  
+        <div>
+          <button class="bg-[#711DB0] px-5 py-2 text-white font-bold rounded-lg">$525.00</button>
+        </div>
+  
+        <div class="flex flex-col text-sm text-black">
+          <span>Estimate Delivery: 3 - 5 Working Days.</span>
+          <span>Delivery Partner: FedEx Express</span>
+        </div>
+
+        <div class="flex flex-col text-sm text-black font-medium">
+          <span data-firstName="">Your Name Here</span>
+          <span data-address>Your Address Here</span>
+          <span data-contact>Primary Contact Number Here</span>
+          <span data-email>Your Verified Email Here</span>
+        </div>
+
+        <form class="flex flex-col justify-center items-center gap-y-5">
+          <div class="text-xs flex items-center gap-x-2">
+            <input id="checkbox" type="checkbox" required>
+            <label for="checkbox" class="text-black">I agree to the terms and condition</label>
+          </div>
+  
+          <div class="flex justify-center">
+            <button id="verifyBtn" type="submit" class="bg-[#711DB0] px-5 py-2 text-white font-bold rounded-lg">VERIFY & PAY NOW</button>
+          </div>
+        </form>
+      </div>
+      <!-- ! Right Section Ends Herer-->
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
