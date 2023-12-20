@@ -234,14 +234,16 @@
           <span data-email>Your Verified Email Here</span>
         </div>
 
-        <div class="text-xs flex items-center gap-x-2">
-          <input id="checkbox" type="checkbox" required>
-          <label for="checkbox" class="text-black">I agree to the terms and condition</label>
-        </div>
-
-        <div class="flex justify-center">
-          <button type="submit" class="bg-[#711DB0] px-5 py-2 text-white font-bold rounded-lg">VERIFY & PAY NOW</button>
-        </div>
+        <form class="flex flex-col justify-center items-center gap-y-5">
+          <div class="text-xs flex items-center gap-x-2">
+            <input id="checkbox" type="checkbox" required>
+            <label for="checkbox" class="text-black">I agree to the terms and condition</label>
+          </div>
+  
+          <div class="flex justify-center">
+            <button id="verifyBtn" type="submit" class="bg-[#711DB0] px-5 py-2 text-white font-bold rounded-lg">VERIFY & PAY NOW</button>
+          </div>
+        </form>
       </div>
       <!-- ! Right Section Ends Herer-->
     </main>
