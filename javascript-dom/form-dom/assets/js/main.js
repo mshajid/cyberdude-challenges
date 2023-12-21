@@ -42,8 +42,6 @@ const fullAddress = allDivEl[36].children[1];
 const contactNumber = allDivEl[36].children[2];
 const verifiedEmail = allDivEl[36].children[3];
 
-console.log(allDivEl)
-
 // ! Validations Starts Here.
 const handleCheckForm = (event) => {
   event.preventDefault();
@@ -205,8 +203,3 @@ verifyForm.addEventListener("submit", handleGreet);
 card.addEventListener("paste", handlePaste);
 cvvNumber.addEventListener("paste", handlePaste);
 
-// npm install vite -g
-// vite build --base=./
-// cd .. 
-// git add . push
-//  
