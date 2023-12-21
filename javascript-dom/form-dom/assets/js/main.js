@@ -95,42 +95,42 @@ checkOutForm.addEventListener("submit", handleCheckForm);
 // ! Validation Ends Here
 
 const firstNameIndicator = (e) => {
-  if(e.type = "change"){
+  if(true){
     validationDot.classList.remove("hidden")
     firstName.classList.add("border-green-500","shadow-md")
   }
 }
 
 const secondNameIndicator = (e) => {
-  if(e.type = "change") {
+  if(true) {
     lastNameDot.classList.remove("hidden");
     lastName.classList.add("border-green-500", "shadow-md");
   }
 }
 
 const deliveryIndicator = (e) => {
-  if(e.type = "change"){
+  if(true){
     deliveryDot.classList.remove("hidden");
     delivery.classList.add("border-green-500", "shadow-md");
   }
 }
 
 const emailIndicator = (e) => {
-  if(e.type = "change"){
+  if(true){
     emailDot.classList.remove("hidden");
     email.classList.add("border-green-500", "shadow-md");
   }
 }
 
 const primaryIndicator = (e) => {
-  if(e.type = "change") {
+  if(true) {
     primaryDot.classList.remove("hidden");
     primary.classList.add("border-green-500", "shadow-md");
   }
 }
 
 const secondaryIndicator = (e) => {
-  if(e.type = "change") {
+  if(true) {
     secondaryDot.classList.remove("hidden");
     secondary.classList.add("border-green-500", "shadow-md");
   }
