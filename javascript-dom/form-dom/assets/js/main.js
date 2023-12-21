@@ -180,8 +180,6 @@ const handlePaste = (event) => {
   alert("You cannot paste credit card numbers.")
 }
 
-
-
 // To Indicate Which Payment Method You Prefer
 creditRadioBtn.addEventListener("change", handleCreditRadioBtn);
 payPalRadioBtn.addEventListener("change", handlePayPalRadioBtn);
