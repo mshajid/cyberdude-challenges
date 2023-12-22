@@ -20,6 +20,11 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
 | ✨ Vite | 
 | ✨ Vanilla JavaScript |
 
+## Installation Guide
+
+## Contribution
+
+
 ## Acknowledgements 
   - **Muthukumari**. - [GitHub](https://github.com/muthukumarimoorthi)
   - **Vijay**. - [GitHub](https://github.com/vedhatech002)
