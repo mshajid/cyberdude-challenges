@@ -87,9 +87,17 @@ const handleCheckForm = (event) => {
   } else {
     verifiedEmail.textContent = email.value;
   }
+
+  const formData = new FormData(checkOutForm); 
+  const formObj = formData.entries();
+  const formFinalObj = Object.fromEntries(formObj);
+  const convertJSON = JSON.stringify(formFinalObj);
+  console.log(convertJSON); // Convereted to JSON String Format.
 }
 
 checkOutForm.addEventListener("submit", handleCheckForm);
+checkOutForm.addEventListener("formdata", () => {
+})
 // ! Validation Ends Here
 
 const firstNameIndicator = (e) => {
@@ -150,7 +158,6 @@ const handleCreditRadioBtn = (e) => {
       "border-[#0075FF]",
       "shadow-lg"
     );
-    console.dir(e.target);
   }
 }
 
