@@ -92,7 +92,7 @@ const handleCheckForm = (event) => {
   const formObj = formData.entries();
   const formFinalObj = Object.fromEntries(formObj);
   const convertJSON = JSON.stringify(formFinalObj);
-  console.log(convertJSON); // Convereted to JSON String Format.
+  console.log(convertJSON); // Convereted to JSON String Format..
 }
 
 checkOutForm.addEventListener("submit", handleCheckForm);
