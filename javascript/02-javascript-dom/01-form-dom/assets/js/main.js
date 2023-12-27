@@ -1,14 +1,3 @@
-// If I Click "Submit Now", It should display on the right div.
-
-// Todo Logic. (These Are My Fiction Logics Only)
-// * Credit Card Number Should be in 16 digits.
-// * CVV Number should be 3 digits.
-// * First Name & Last Name Required.
-// * Primary & Secondary Contact Number Allowed Digits only.
-// * Submit FORM Now button add listen.
-// * Hello Name Should Implied With Input Event Type.
-// * Cannot Paste Value to Credit Card Number
-
 const creditRadioBtn = document.querySelector("#creditRadio");
 const creditCardDivEl = document.getElementById("creditCardDiv");
 const payPalRadioBtn = document.getElementById("payPalRadioBtn");
