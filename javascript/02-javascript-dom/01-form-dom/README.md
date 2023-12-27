@@ -9,7 +9,7 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
 > We've to create a form with a basic functionality, This is **our first JavaScript DOM manipulation project**, and I chose my own theme which is a checkout page. I've given necessary details below for your convenience. Well, I need to thank everybody those who helped me in the hardest times and also acknowledged them below.  
 
 
-## Project Live Walkthrough
+## Project Live Walkthroughs
 
 - 🚀 Live Project URL: https://mshajid.github.io/cyberdude-challenges/javascript-dom/form-dom/dist/ (**press ctrl + click to open in a new tab**) 
 
