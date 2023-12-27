@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/cyberdude-challenges/",
+    base: "/01-form-dom/",
 })
 
