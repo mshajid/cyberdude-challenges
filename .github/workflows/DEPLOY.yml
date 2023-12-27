@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload dist repository
-          path: javascript/02-javascript-dom/01-form-dom/
+          path: javascript/02-javascript-dom/01-form-dom/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
