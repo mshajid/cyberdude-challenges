@@ -35,10 +35,10 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: 02-javascript-dom/01-form-dom/package-lock.json
+          cache-dependency-path: javascript/02-javascript-dom/01-form-dom/package-lock.json
       - name: Install dependencies
         run: npm install
-        working-directory: 02-javascript-dom/01-form-dom/ 
+        working-directory: javascript/02-javascript-dom/01-form-dom/ 
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload dist repository
-          path: 02-javascript-dom/01-form-dom/
+          path: javascript/02-javascript-dom/01-form-dom/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
