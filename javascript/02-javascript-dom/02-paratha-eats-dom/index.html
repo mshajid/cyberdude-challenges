@@ -44,7 +44,7 @@
       </div>
 
       <form>
-        <div class="flex gap-x-2 justify-center mb-20 mt-8">
+        <div class="flex gap-x-2 justify-center mb-8 mt-8">
           <!-- ! first Card -->
           <div class="flex flex-col">
             <div
@@ -181,51 +181,55 @@
             <div
               class="bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
             >
-            Your taste is rich and suavity.
+              Your taste is rich and suavity.
             </div>
           </div>
           <!-- ! 4th card -->
           <div class="flex flex-col">
             <div
-            class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
-          >
-            <div class="flex justify-center items-center">
-              <img
-                class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
-                src="./assets/images/naan-icon.svg"
-              />
-            </div>
-            <label
-              class="has-[:checked]:text-red-900 has-[:checked]:bg-red-500"
+              class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
             >
-              <div>
-                <input name="parathas" type="radio" class="accent-[#393053]" />
+              <div class="flex justify-center items-center">
+                <img
+                  class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
+                  src="./assets/images/naan-icon.svg"
+                />
               </div>
-              <div
-                class="flex flex-col justify-center items-center gap-y-1 py-5"
+              <label
+                class="has-[:checked]:text-red-900 has-[:checked]:bg-red-500"
               >
-                <div class="text-start">
-                  <span class="text-white font-semibold text-xl"
-                    >Malabar Paratha</span
-                  >
+                <div>
+                  <input
+                    name="parathas"
+                    type="radio"
+                    class="accent-[#393053]"
+                  />
                 </div>
-                <div class="flex items-end gap-x-1">
-                  <span class="font-bold text-5xl text-white">$1.44</span>
-                  <span class="text-sm text-gray-200">/ paratha</span>
+                <div
+                  class="flex flex-col justify-center items-center gap-y-1 py-5"
+                >
+                  <div class="text-start">
+                    <span class="text-white font-semibold text-xl"
+                      >Malabar Paratha</span
+                    >
+                  </div>
+                  <div class="flex items-end gap-x-1">
+                    <span class="font-bold text-5xl text-white">$1.44</span>
+                    <span class="text-sm text-gray-200">/ paratha</span>
+                  </div>
+                  <div class="max-w-xs px-5">
+                    <span class="text-xs text-wrap text-gray-400"
+                      >Kerala's very owned prized possession
+                    </span>
+                  </div>
                 </div>
-                <div class="max-w-xs px-5">
-                  <span class="text-xs text-wrap text-gray-400"
-                    >Kerala's very owned prized possession
-                  </span>
-                </div>
-              </div>
-            </label>
-          </div>
-          <div
-            class="bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
-          >
-            Kerala's Special Paratha!
-          </div>
+              </label>
+            </div>
+            <div
+              class="bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
+            >
+              Kerala's Special Paratha!
+            </div>
           </div>
         </div>
 
@@ -246,7 +250,7 @@
                 <!-- ! Full name -->
                 <div class="flex flex-col gap-y-1 flex-1">
                   <div>
-                    <label>
+                    <label for="fullName">
                       <span class="font-bold text-red-600">*</span>
                       <span class="text-white text-pretty font-medium"
                         >Full Name</span
@@ -255,6 +259,8 @@
                   </div>
                   <div>
                     <input
+                      id="fullName"
+                      name="fullName"
                       type="text"
                       placeholder="Enter your full name"
                       class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
@@ -264,7 +270,7 @@
                 <!-- ! Contact number -->
                 <div class="flex flex-col gap-y-1 flex-1">
                   <div>
-                    <label>
+                    <label for="contactNum">
                       <span class="font-bold text-red-600">*</span>
                       <span class="text-white text-pretty font-medium"
                         >Contact Number</span
@@ -273,6 +279,8 @@
                   </div>
                   <div>
                     <input
+                      id="contactNum"
+                      name="contactNum"
                       type="number"
                       placeholder="Enter your valid contact number"
                       class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
@@ -282,7 +290,7 @@
               </div>
               <!-- ! verified full address -->
               <div class="flex flex-col gap-y-1">
-                <label>
+                <label for="deliveryAddress">
                   <span class="font-bold text-red-600">*</span>
                   <span class="text-white text-pretty font-medium"
                     >Verified Full Address</span
@@ -290,6 +298,8 @@
                 </label>
                 <div>
                   <input
+                    id="deliveryAddress"
+                    name="deliveryAddress"
                     type="text"
                     placeholder="Start with the P.O Box"
                     class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
@@ -301,7 +311,7 @@
                 <!-- ! Land mark -->
                 <div class="flex flex-col gap-y-1 flex-1">
                   <div>
-                    <label>
+                    <label for="landmark">
                       <span class="text-white text-pretty font-medium"
                         >Land Mark</span
                       >
@@ -309,6 +319,8 @@
                   </div>
                   <div>
                     <input
+                      id="landmark"
+                      name="landmark"
                       type="text"
                       placeholder="Across the statue, 3rd house."
                       class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
@@ -318,7 +330,7 @@
                 <!-- ! How many parathas -->
                 <div class="flex flex-col gap-y-1 flex-1">
                   <div>
-                    <label>
+                    <label for="parathaQty">
                       <span class="font-bold text-red-600">*</span>
                       <span class="text-white text-pretty font-medium"
                         >How many parathas?</span
@@ -327,6 +339,8 @@
                   </div>
                   <div>
                     <input
+                      id="parathaQty"
+                      name="parathaQty"
                       type="number"
                       placeholder="Eat well, don't stop with 2."
                       class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
