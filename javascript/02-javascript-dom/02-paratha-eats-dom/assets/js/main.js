@@ -1,6 +1,7 @@
 import JustValidate from "just-validate";
 
 const validate = new JustValidate("#parathaForm");
+const parathaFormEl = document.getElementById("parathaForm");
 
 validate.addField("#fullName", [
   {
@@ -20,10 +21,10 @@ validate.addField("#contactNum", [
   {
     rule: "required",
   },
-  {
-    rule: "minLength",
-    value: 10,
-  },
+//   {
+//     rule: "minLength",
+//     value: 10,
+//   },
 ]);
 
 validate.addField("#deliveryAddress", [
@@ -45,3 +46,21 @@ validate.addField("#parathaQty", [
     value: 3,
   },
 ]);
+
+validate.onSuccess((e) => {
+    const myFormData = new FormData(parathaFormEl).entries();
+    const formDataObj = Object.fromEntries(myFormData);
+
+    const orderDb = [];
+
+    const getFromLocal = localStorage.getItem("order-details");
+    const convertedArray = JSON.parse(getFromLocal); 
+
+    if(convertedArray) {
+        convertedArray.push(formDataObj);
+        localStorage.setItem("order-details", JSON.stringify(convertedArray))
+    } else {
+        orderDb.push(formDataObj)
+        localStorage.setItem("order-details", JSON.stringify(orderDb))
+    }
+})
