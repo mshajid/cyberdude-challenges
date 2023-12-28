@@ -2,6 +2,10 @@ import JustValidate from "just-validate";
 
 const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
+const storageKey = "order-details"
+
+const radioBtns = document.querySelectorAll("#parathas");
+console.log(radioBtns);
 
 validate.addField("#fullName", [
   {
@@ -53,14 +57,15 @@ validate.onSuccess((e) => {
 
     const orderDb = [];
 
-    const getFromLocal = localStorage.getItem("order-details");
+    const getFromLocal = localStorage.getItem(storageKey);
     const convertedArray = JSON.parse(getFromLocal); 
 
     if(convertedArray) {
         convertedArray.push(formDataObj);
-        localStorage.setItem("order-details", JSON.stringify(convertedArray))
+        localStorage.setItem(storageKey, JSON.stringify(convertedArray))
     } else {
         orderDb.push(formDataObj)
-        localStorage.setItem("order-details", JSON.stringify(orderDb))
+        localStorage.setItem(storageKey, JSON.stringify(orderDb))
     }
 })
+
