@@ -17,7 +17,10 @@
     <header class="flex items-center justify-between px-10 py-5">
       <div>
         <h1 class="text-white text-4xl font-bold">Paratha Eats</h1>
-        <span class="text-[#635985]">All you can pick <span class="font-bold">one exclusive paratha.</span></span>
+        <span class="text-[#635985]"
+          >All you can pick
+          <span class="font-bold">one exclusive paratha.</span></span
+        >
       </div>
       <div
         class="*:bg-[#635985] *:px-5 *:py-1.5 *:rounded-md *:cursor-pointer *:text-white space-x-2"
@@ -29,8 +32,43 @@
       </div>
     </header>
 
-    <main class="max-w-5xl mx-auto bg-red-500">
-      asdasd
+    <main class="max-w-5xl mx-auto bg-[#443C68] rounded-md px-5 py-5">
+      <div>
+        <h2 class="text-2xl font-bold text-white">
+          Select Your Exclusive Paratha?
+        </h2>
+        <span class="text-xs font-light text-gray-400"
+          >Kindly check our various parathas on the menu but you can pick only
+          one.</span
+        >
+      </div>
+
+      <form>
+        <div class="bg-[#393053] px-3 py-5 rounded-md my-10 relative">
+          <div class="flex justify-center items-center">
+            <img class="absolute top-[-30px]" src="./assets/images/naan-icon.svg" />
+          </div>
+          <label class="has-[:checked]:text-indigo-900 has-[:checked]:bg-indigo-500">
+            <div>
+              <input type="radio" class="accent-indigo-500"/>
+            </div>
+            <div class="flex flex-col ml-5 gap-y-1">
+              <div class="text-start">
+                <span class="text-white">Pyaz Paratha</span>
+              </div>
+              <div class="flex items-end gap-x-1">
+                <span class="font-bold text-5xl text-white">$1.44</span>
+                <span class="text-sm text-white">/paratha</span>
+              </div>
+              <div class="max-w-xs">
+                <span class="text-xs text-wrap text-gray-400"
+                  >This paratha stuffed with fried and raw
+                </span>
+              </div>
+            </div>
+          </label>
+        </div>
+      </form>
     </main>
 
     <script type="module" src="./assets/js/main.js"></script>
