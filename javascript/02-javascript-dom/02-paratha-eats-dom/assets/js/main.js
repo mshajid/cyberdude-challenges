@@ -57,13 +57,13 @@ validate.onSuccess((e) => {
   const contactNumEl = document.getElementById("reachNum");
   const parathaTypeEl = document.getElementById("parathaType");
   const paymentTypeEl = document.getElementById("paymentType");
-  const closeBtnEl = document.getElementById("closeBtn")
-
-  modal.classList.remove("hidden");
+  const closeBtnEl = document.getElementById("closeBtn");
   
+  modal.classList.remove("hidden");
+
   closeBtnEl.addEventListener("click", (e) => {
-    modal.classList.add("hidden")
-  })
+    modal.classList.add("hidden");
+  });
 
   const storedData = localStorage.getItem(storageKey);
   const allStoredData = JSON.parse(storedData);
