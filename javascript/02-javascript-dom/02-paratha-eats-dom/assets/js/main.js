@@ -34,24 +34,9 @@ validate.addField("#deliveryAddress", [
   },
 ]);
 
-// validate.addField("#parathaQty", [
-//   {
-//     rule: "required",
-//   },
-//   {
-//     rule: "minLength",
-//     value: 1,
-//   },
-//   {
-//     rule: "maxLength",
-//     value: 3,
-//   },
-// ]);
-
 validate.onSuccess((e) => {
   const myFormData = new FormData(parathaFormEl).entries();
   const formDataObj = Object.fromEntries(myFormData);
-  console.log(formDataObj)
 
   const orderDb = [];
 
@@ -65,4 +50,21 @@ validate.onSuccess((e) => {
     orderDb.push(formDataObj);
     localStorage.setItem(storageKey, JSON.stringify(orderDb));
   }
+
+  const customerNameEl = document.getElementById("customerName");
+  const addressEl = document.getElementById("address");
+  const contactNumEl = document.getElementById("reachNum");
+  const parathaTypeEl = document.getElementById("parathaType");
+  const paymentTypeEl = document.getElementById("paymentType");
+
+  const storedData = localStorage.getItem(storageKey);
+  const allStoredData = JSON.parse(storedData)
+  console.log(allStoredData);
+  allStoredData.map(function(value){
+    customerNameEl.textContent = value.fullName
+    addressEl.textContent = value.deliveryAddress
+    contactNumEl.textContent = value.contactNum
+    parathaTypeEl.textContent = value.parathas
+    paymentTypeEl.textContent = value.paymentType
+  })
 });
