@@ -1,4 +1,5 @@
 import JustValidate from "just-validate";
+import { v4 as uuidv4 } from 'uuid';
 
 const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
@@ -69,6 +70,8 @@ function getAllDatas() {
     mainSectionEl.classList.remove("hidden");
     const tableEl = document.getElementById("orderDataTable");
 
+    tableEl.innerHTML = ""
+
     const finalHoldValues = [];
   
     getStoredDataArray.map(function (value) {
@@ -126,7 +129,9 @@ function getAllDatas() {
     mainTableSection.classList.add("hidden");
     console.log("no orders yet");
   }
+}
 
+function deleteOrders(){
 
 }
 
