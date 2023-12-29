@@ -51,20 +51,27 @@ validate.onSuccess((e) => {
     localStorage.setItem(storageKey, JSON.stringify(orderDb));
   }
 
+  const modal = document.getElementById("modal");
   const customerNameEl = document.getElementById("customerName");
   const addressEl = document.getElementById("address");
   const contactNumEl = document.getElementById("reachNum");
   const parathaTypeEl = document.getElementById("parathaType");
   const paymentTypeEl = document.getElementById("paymentType");
+  const closeBtnEl = document.getElementById("closeBtn")
+
+  modal.classList.remove("hidden");
+  
+  closeBtnEl.addEventListener("click", (e) => {
+    modal.classList.add("hidden")
+  })
 
   const storedData = localStorage.getItem(storageKey);
-  const allStoredData = JSON.parse(storedData)
-  console.log(allStoredData);
-  allStoredData.map(function(value){
-    customerNameEl.textContent = value.fullName
-    addressEl.textContent = value.deliveryAddress
-    contactNumEl.textContent = value.contactNum
-    parathaTypeEl.textContent = value.parathas
-    paymentTypeEl.textContent = value.paymentType
-  })
+  const allStoredData = JSON.parse(storedData);
+  allStoredData.map(function (value) {
+    customerNameEl.textContent = value.fullName;
+    addressEl.textContent = value.deliveryAddress;
+    contactNumEl.textContent = value.contactNum;
+    parathaTypeEl.textContent = value.parathas;
+    paymentTypeEl.textContent = value.paymentType;
+  });
 });
