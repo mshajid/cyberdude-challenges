@@ -38,12 +38,14 @@ validate.addField("#deliveryAddress", [
   },
 ]);
 
+
 validate.onSuccess((e) => {
-  const myFormData = new FormData(parathaFormEl).entries();
-  const formDataObj = Object.fromEntries(myFormData);
-
+  const myFormData = new FormData(parathaFormEl);
+  myFormData.append("id", uuidv4());
+  const formDataObj = Object.fromEntries(myFormData.entries());
+  
   const orderDb = [];
-
+  
   const getFromLocal = localStorage.getItem(storageKey);
   const convertedArray = JSON.parse(getFromLocal);
 
@@ -103,6 +105,10 @@ function getAllDatas() {
       updateEl.classList.add("px-2", "py-3", "border", "text-[12px]");
       updateEl.append(delBtnEl);
       delBtnEl.textContent = "Cancel Order";
+
+      delBtnEl.addEventListener("click",(e)=> {
+        deleteOrders(getStoredDataArray)
+      })
   
       delBtnEl.className =
         "px-2 py-1 rounded bg-red-500 hover:bg-emerald-800 text-white text-xs";
@@ -131,8 +137,18 @@ function getAllDatas() {
   }
 }
 
-function deleteOrders(){
+function deleteOrders(orderRequest){
+    const confirmDelete = confirm(`Do you want to delete record`);
+    console.log(confirmDelete);
 
+    if(confirmDelete){
+        const localData = localStorage.getItem(storageKey);
+        const localFinalData = JSON.parse(localData);
+
+        localFinalData.filter(function(deleteReq){
+            console.log(deleteReq);
+        })
+    }
 }
 
 getAllDatas();
