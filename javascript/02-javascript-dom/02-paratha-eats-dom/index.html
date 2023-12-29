@@ -432,20 +432,54 @@
       <div class="max-w-7xl bg-white px-5 py-3 mx-auto my-5">
         <div class="flex justify-between gap-x-5">
           <div>
-            <lottie-player src="https://lottie.host/39a654b5-b792-4a71-b975-c4821b8afebf/2GMpsNllvg.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+            <div class="flex items-center gap-x-2">
+              <span id="orderCount" class="bg-[#0A1F38] text-center px-2 py-1 rouned-full text-white text-lg"></span>
+              <span class="font-semibold text-xl">Orders to Dispatch!</span>
+            </div>
+            <lottie-player
+              src="https://lottie.host/39a654b5-b792-4a71-b975-c4821b8afebf/2GMpsNllvg.json"
+              background="transparent"
+              speed="1"
+              style="width: 400px; height: 400px"
+              loop
+              autoplay
+            ></lottie-player>
           </div>
-          <div">
+          <div>
             <table class="table table-auto border w-full text-center">
               <tr>
-                <th class="px-5 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Full Name</th>
-                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Delivery Address</th>
-                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Contact Number</th>
-                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Paratha Type</th>
-                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Payment Type</th>
-                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Update Status</th>
+                <th
+                  class="px-5 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Full Name
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Delivery Address
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Contact Number
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Paratha Type
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Payment Type
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Update Status
+                </th>
               </tr>
-              <tbody id="orderDataTable">
-              </tbody>
+              <tbody id="orderDataTable"></tbody>
             </table>
           </div>
         </div>
