@@ -83,22 +83,22 @@ function getAllDatas() {
 
       const delBtnEl = document.createElement("button");
 
-      fullNameEl.classList.add("px-5", "py-3", "border", "text-[12px]");
+      fullNameEl.classList.add("px-5", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
       fullNameEl.textContent = value.fullName;
 
-      deliveryEl.classList.add("px-5", "py-3", "border", "text-[12px]");
+      deliveryEl.classList.add("px-5", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
       deliveryEl.textContent = value.deliveryAddress;
 
-      contactNumber.classList.add("px-2", "py-3", "border", "text-[12px]");
+      contactNumber.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
       contactNumber.textContent = value.contactNum;
 
-      parathaEl.classList.add("px-2", "py-3", "border", "text-[12px]");
+      parathaEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
       parathaEl.textContent = value.parathas;
 
-      paymentEl.classList.add("px-2", "py-3", "border", "text-[12px]");
+      paymentEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
       paymentEl.textContent = value.paymentType;
 
-      updateEl.classList.add("px-2", "py-3", "border", "text-[12px]");
+      updateEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#0A1F38]");
       updateEl.append(delBtnEl);
       delBtnEl.textContent = "Cancel Order";
 
@@ -107,7 +107,7 @@ function getAllDatas() {
       });
 
       delBtnEl.className =
-        "px-2 py-1 rounded bg-red-500 hover:bg-emerald-800 text-white text-xs";
+        "px-2 py-1 rounded bg-red-500 hover:bg-red-700 text-white text-xs";
 
       trEl.append(
         fullNameEl,
