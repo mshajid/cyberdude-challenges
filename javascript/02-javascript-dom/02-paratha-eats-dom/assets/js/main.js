@@ -4,6 +4,9 @@ const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
 const storageKey = "order-details";
 
+const confirmBtnEl = document.getElementById("confirmBtn");
+const cancelBtnEl = document.getElementById("cancelBtn");
+
 validate.addField("#fullName", [
   {
     rule: "required",
@@ -58,7 +61,7 @@ validate.onSuccess((e) => {
   const parathaTypeEl = document.getElementById("parathaType");
   const paymentTypeEl = document.getElementById("paymentType");
   const closeBtnEl = document.getElementById("closeBtn");
-  
+
   modal.classList.remove("hidden");
 
   closeBtnEl.addEventListener("click", (e) => {
@@ -74,4 +77,15 @@ validate.onSuccess((e) => {
     parathaTypeEl.textContent = value.parathas;
     paymentTypeEl.textContent = value.paymentType;
   });
+
+  confirmBtnEl.addEventListener("click", function(){
+    alert("We will prepare your parathas.")
+    modal.classList.add("hidden");
+  })
+
+  cancelBtnEl.addEventListener("click", function(){
+    alert("Order is cancelled."); 
+    stopPropagate() // Otherwise It will bubble x3 times.
+    modal.classList.add("hidden");
+  })
 });
