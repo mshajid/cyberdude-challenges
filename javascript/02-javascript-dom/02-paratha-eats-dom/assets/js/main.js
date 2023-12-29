@@ -54,38 +54,72 @@ validate.onSuccess((e) => {
     localStorage.setItem(storageKey, JSON.stringify(orderDb));
   }
 
-  const modal = document.getElementById("modal");
-  const customerNameEl = document.getElementById("customerName");
-  const addressEl = document.getElementById("address");
-  const contactNumEl = document.getElementById("reachNum");
-  const parathaTypeEl = document.getElementById("parathaType");
-  const paymentTypeEl = document.getElementById("paymentType");
-  const closeBtnEl = document.getElementById("closeBtn");
-
-  modal.classList.remove("hidden");
-
-  closeBtnEl.addEventListener("click", (e) => {
-    modal.classList.add("hidden");
-  });
-
-  const storedData = localStorage.getItem(storageKey);
-  const allStoredData = JSON.parse(storedData);
-  allStoredData.map(function (value) {
-    customerNameEl.textContent = value.fullName;
-    addressEl.textContent = value.deliveryAddress;
-    contactNumEl.textContent = value.contactNum;
-    parathaTypeEl.textContent = value.parathas;
-    paymentTypeEl.textContent = value.paymentType;
-  });
-
-  confirmBtnEl.addEventListener("click", function(){
-    alert("We will prepare your parathas.")
-    modal.classList.add("hidden");
-  })
-
-  cancelBtnEl.addEventListener("click", function(){
-    alert("Order is cancelled."); 
-    stopPropagate() // Otherwise It will bubble x3 times.
-    modal.classList.add("hidden");
-  })
+  alert("Placed the order successfully.");
+  parathaFormEl.reset();
 });
+
+function getAllDatas() {
+  const getStoredData = localStorage.getItem(storageKey);
+  const getStoredDataArray = JSON.parse(getStoredData);
+
+  const mainSectionEl = document.getElementById("mainTableSection");
+
+  if (getStoredDataArray && getStoredDataArray.length > 0) {
+    mainSectionEl.classList.remove("hidden");
+  }
+
+  const tableEl = document.getElementById("orderDataTable");
+
+  const finalHoldValues = [];
+
+  getStoredDataArray.map(function (value) {
+    const trEl = document.createElement("tr");
+    const fullNameEl = document.createElement("td");
+    const deliveryEl = document.createElement("td");
+    const contactNumber = document.createElement("td");
+    const parathaEl = document.createElement("td");
+    const paymentEl = document.createElement("td");
+    const updateEl = document.createElement("td");
+
+    const delBtnEl = document.createElement("button");
+
+    fullNameEl.classList.add("px-5", "py-1", "border", "text-[12px]");
+    fullNameEl.textContent = value.fullName;
+
+    deliveryEl.classList.add("px-5", "py-1", "border", "text-[12px]");
+    deliveryEl.textContent = value.deliveryAddress;
+
+    contactNumber.classList.add("px-2", "py-1", "border", "text-[12px]");
+    contactNumber.textContent = value.contactNum;
+
+    parathaEl.classList.add("px-2", "py-1", "border", "text-[12px]");
+    parathaEl.textContent = value.parathas;
+
+    paymentEl.classList.add("px-2", "py-1", "border", "text-[12px]");
+    paymentEl.textContent = value.paymentType;
+
+    updateEl.classList.add("px-2", "py-1", "border", "text-[12px]");
+    updateEl.append(delBtnEl);
+    delBtnEl.textContent = "Cancel Order";
+
+    delBtnEl.className =
+      "px-2 py-1 rounded bg-red-500 hover:bg-emerald-800 text-white text-xs";
+
+    trEl.append(
+      fullNameEl,
+      deliveryEl,
+      contactNumber,
+      parathaEl,
+      paymentEl,
+      updateEl
+    );
+
+    finalHoldValues.push(trEl);
+  });
+
+  finalHoldValues.forEach(function (elements) {
+    tableEl.append(elements);
+  });
+}
+
+getAllDatas();

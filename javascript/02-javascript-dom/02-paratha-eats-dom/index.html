@@ -428,47 +428,27 @@
     </main>
 
     <!-- ! Modal -->
-    <section
-      id="modal"
-      class="bg-[#D5D0E4] py-2 px-5 max-w-md mx-auto my-3 rounded-md hidden"
-    >
-      <div
-        class="text-white bg-[#18122B] text-center py-2 my-2 flex gap-x-2 items-center justify-between px-5"
-      >
-        <h2>Confirm Your Order</h2>
-        <span id="closeBtn" class="cursor-pointer">x</span>
-      </div>
-      <div
-        class="flex flex-col gap-y-2 bg-[#635985] rounded-md p-2 text-white text-sm"
-      >
-        <div class="flex flex-col gap-y-0.5">
-          <span class="font-semibold text-[15px]">Customer Name</span>
-          <span id="customerName"></span>
+    <section id="mainTableSection" class="hidden">
+      <div class="max-w-7xl bg-white px-5 py-3 mx-auto my-5">
+        <div class="flex justify-between gap-x-5">
+          <div>
+            <lottie-player src="https://lottie.host/39a654b5-b792-4a71-b975-c4821b8afebf/2GMpsNllvg.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+          </div>
+          <div">
+            <table class="table table-auto border w-full text-center">
+              <tr>
+                <th class="px-5 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Full Name</th>
+                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Delivery Address</th>
+                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Contact Number</th>
+                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Paratha Type</th>
+                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Payment Type</th>
+                <th class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium">Update Status</th>
+              </tr>
+              <tbody id="orderDataTable">
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="flex flex-col gap-y-0.5">
-          <span class="font-semibold text-[15px]">Verified Address</span>
-          <span id="address"></span>
-        </div>
-        <div class="flex flex-col gap-y-0.5">
-          <span class="font-semibold text-[15px]">Contact Number</span>
-          <span id="reachNum"></span>
-        </div>
-        <div class="flex flex-col gap-y-0.5">
-          <span class="font-semibold text-[15px]">Selected Paratha</span>
-          <span id="parathaType"></span>
-        </div>
-        <div class="flex flex-col gap-y-0.5">
-          <span class="font-semibold text-[15px]">Payment type</span>
-          <span id="paymentType"></span>
-        </div>
-      </div>
-      <div class="my-2">
-        <button id="confirmBtn" class="bg-emerald-500 px-2 py-1 text-white rounded-md">
-          Confirm Order
-        </button>
-        <button id="cancelBtn" class="bg-red-500 px-2 py-1 text-white rounded-md">
-          Cancel Order
-        </button>
       </div>
     </section>
 
