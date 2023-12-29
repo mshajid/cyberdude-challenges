@@ -2,10 +2,7 @@ import JustValidate from "just-validate";
 
 const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
-const storageKey = "order-details"
-
-const radioBtns = document.querySelectorAll("#parathas");
-console.log(radioBtns);
+const storageKey = "order-details";
 
 validate.addField("#fullName", [
   {
@@ -25,10 +22,10 @@ validate.addField("#contactNum", [
   {
     rule: "required",
   },
-//   {
-//     rule: "minLength",
-//     value: 10,
-//   },
+  //   {
+  //     rule: "minLength",
+  //     value: 10,
+  //   },
 ]);
 
 validate.addField("#deliveryAddress", [
@@ -37,35 +34,35 @@ validate.addField("#deliveryAddress", [
   },
 ]);
 
-validate.addField("#parathaQty", [
-  {
-    rule: "required",
-  },
-  {
-    rule: "minLength",
-    value: 1,
-  },
-  {
-    rule: "maxLength",
-    value: 3,
-  },
-]);
+// validate.addField("#parathaQty", [
+//   {
+//     rule: "required",
+//   },
+//   {
+//     rule: "minLength",
+//     value: 1,
+//   },
+//   {
+//     rule: "maxLength",
+//     value: 3,
+//   },
+// ]);
 
 validate.onSuccess((e) => {
-    const myFormData = new FormData(parathaFormEl).entries();
-    const formDataObj = Object.fromEntries(myFormData);
+  const myFormData = new FormData(parathaFormEl).entries();
+  const formDataObj = Object.fromEntries(myFormData);
+  console.log(formDataObj)
 
-    const orderDb = [];
+  const orderDb = [];
 
-    const getFromLocal = localStorage.getItem(storageKey);
-    const convertedArray = JSON.parse(getFromLocal); 
+  const getFromLocal = localStorage.getItem(storageKey);
+  const convertedArray = JSON.parse(getFromLocal);
 
-    if(convertedArray) {
-        convertedArray.push(formDataObj);
-        localStorage.setItem(storageKey, JSON.stringify(convertedArray))
-    } else {
-        orderDb.push(formDataObj)
-        localStorage.setItem(storageKey, JSON.stringify(orderDb))
-    }
-})
-
+  if (convertedArray) {
+    convertedArray.push(formDataObj);
+    localStorage.setItem(storageKey, JSON.stringify(convertedArray));
+  } else {
+    orderDb.push(formDataObj);
+    localStorage.setItem(storageKey, JSON.stringify(orderDb));
+  }
+});
