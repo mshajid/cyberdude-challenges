@@ -5,6 +5,11 @@ const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
 const storageKey = "order-details";
 
+const closeBtnEl = document.getElementById("closeBtn");
+const modalWrapperEl = document.getElementById("modalWrapper");
+const navEl = document.getElementById("aboutUs");
+const modalEl = document.getElementById("modalEl")
+
 validate.addField("#fullName", [
   {
     rule: "required",
@@ -153,6 +158,19 @@ function deleteOrders(orderRequest) {
 }
 
 
+navEl.addEventListener("click", (e) => {
+  modalWrapperEl.classList.remove("hidden");
+})
 
+
+closeBtnEl.addEventListener("click", () => {
+  modalWrapperEl.classList.add("hidden");
+})
+
+modalWrapperEl.addEventListener("click", (e) => {
+  if(e.target === modalEl) {
+    modalWrapperEl.classList.add("hidden");
+  }
+})
 
 getAllDatas();

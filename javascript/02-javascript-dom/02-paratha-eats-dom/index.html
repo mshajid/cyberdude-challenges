@@ -27,10 +27,10 @@
       <div
         class="*:bg-[#635985] *:px-5 *:py-1.5 *:rounded-md *:cursor-pointer *:text-white space-x-2"
       >
-        <a href="#">About us</a>
-        <a href="#">Exclusives</a>
-        <a href="#">Parathas</a>
-        <a href="#">Free Meals</a>
+        <a id="aboutUs">About us</a>
+        <a>Exclusives</a>
+        <a>Parathas</a>
+        <a>Free Meals</a>
       </div>
     </header>
 
@@ -470,13 +470,14 @@
     </section>
 
     <!-- ! About Us Modal -->
-    <section
+    <div id="modalWrapper" class="hidden">
+      <section id="modalEl"
       class="w-full h-[100vh] bg-[#18122B]/10 absolute top-0 backdrop-blur-sm flex justify-center items-center"
     >
       <div class="bg-white w-[60%] h-[60%] rounded-md">
         <div class="px-6 py-5 flex justify-between">
           <span class="font-semibold text-3xl">About Paratha Eats</span>
-          <span class="font-bold bg-[#18122B] hover:bg-[#393053] text-white rounded-md px-2 size-8 text-lg flex items-center justify-center cursor-pointer hover:transition-all hover:translate-y-1">x</span>
+          <span id="closeBtn" class="font-bold bg-[#18122B] hover:bg-[#393053] text-white rounded-md px-2 size-8 text-lg flex items-center justify-center cursor-pointer hover:transition-all hover:translate-y-1">x</span>
         </div>
         <div class="flex justify-center items-start px-5 gap-x-10">
           <div>
@@ -516,6 +517,7 @@
         </div>
       </div>
     </section>
+    </div>
 
     <script type="module" src="./assets/js/main.js"></script>
   </body>
