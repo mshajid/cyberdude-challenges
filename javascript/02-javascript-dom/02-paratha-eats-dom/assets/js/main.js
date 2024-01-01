@@ -199,39 +199,10 @@ exclusiveSectionEl.addEventListener("click", (e)=> {
 
 couponElement.addEventListener("copy", () => {
   couponAlert.classList.remove("hidden");
+  couponAlert.classList.add("animate-bounce")
   setTimeout(()=> {
     couponAlert.classList.add("hidden");
-    couponAlert.classList.add("transition-all")
-  },2000)
+  },3000)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 getAllDatas();
