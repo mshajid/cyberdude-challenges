@@ -5,6 +5,11 @@ const validate = new JustValidate("#parathaForm");
 const parathaFormEl = document.getElementById("parathaForm");
 const storageKey = "order-details";
 
+const closeBtnEl = document.getElementById("closeBtn");
+const modalWrapperEl = document.getElementById("modalWrapper");
+const navEl = document.getElementById("aboutUs");
+const modalEl = document.getElementById("modalEl")
+
 validate.addField("#fullName", [
   {
     rule: "required",
@@ -23,10 +28,10 @@ validate.addField("#contactNum", [
   {
     rule: "required",
   },
-  //   {
-  //     rule: "minLength",
-  //     value: 10,
-  //   },
+    {
+      rule: "minLength",
+      value: 10,
+    },
 ]);
 
 validate.addField("#deliveryAddress", [
@@ -151,5 +156,82 @@ function deleteOrders(orderRequest) {
     getAllDatas()
   }
 }
+
+navEl.addEventListener("click", (e) => {
+  modalWrapperEl.classList.remove("hidden");
+})
+
+closeBtnEl.addEventListener("click", () => {
+  modalWrapperEl.classList.add("hidden");
+})
+
+modalWrapperEl.addEventListener("click", (e) => {
+  if(e.target === modalEl) {
+    modalWrapperEl.classList.add("hidden");
+  }
+})
+
+// If I click Exclusives It Should Open the exclusive modal. 
+// exclusive modal close and also it should close when click the outer.
+// if the coupon code is copied then alert coupon is copied. 
+// Exclusive Menu | Exclusive Menu Modal | Close Button | CouponElemet | couponAlert 
+
+const exclusiveModalEl = document.getElementById("exclusiveModal");
+const exclusiveCloseBtn = document.getElementById("exclusiveCloseBtn");
+const couponElement = document.getElementById("couponElement");
+const couponAlert = document.getElementById("couponAlert");
+const exclusivesMenu = document.getElementById("exclusives");
+const exclusiveSectionEl = document.getElementById("exclusiveSection");
+
+exclusivesMenu.addEventListener("click", () => {
+  exclusiveModalEl.classList.remove("hidden");
+})
+
+exclusiveCloseBtn.addEventListener("click", () => {
+  exclusiveModalEl.classList.add("hidden");
+})
+
+exclusiveSectionEl.addEventListener("click", (e)=> {
+  if(exclusiveSectionEl === e.target){
+    exclusiveModalEl.classList.add("hidden");
+  }
+})
+
+couponElement.addEventListener("copy", () => {
+  couponAlert.classList.remove("hidden");
+  setTimeout(()=> {
+    couponAlert.classList.add("hidden");
+    couponAlert.classList.add("transition-all")
+  },2000)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 getAllDatas();
