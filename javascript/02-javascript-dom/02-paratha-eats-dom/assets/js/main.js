@@ -8,7 +8,7 @@ const storageKey = "order-details";
 const closeBtnEl = document.getElementById("closeBtn");
 const modalWrapperEl = document.getElementById("modalWrapper");
 const navEl = document.getElementById("aboutUs");
-const modalEl = document.getElementById("modalEl")
+const modalEl = document.getElementById("modalEl");
 
 validate.addField("#fullName", [
   {
@@ -28,10 +28,10 @@ validate.addField("#contactNum", [
   {
     rule: "required",
   },
-    {
-      rule: "minLength",
-      value: 10,
-    },
+  {
+    rule: "minLength",
+    value: 10,
+  },
 ]);
 
 validate.addField("#deliveryAddress", [
@@ -88,27 +88,68 @@ function getAllDatas() {
 
       const delBtnEl = document.createElement("button");
 
-      fullNameEl.classList.add("px-5", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
+      fullNameEl.classList.add(
+        "px-5",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#393053]",
+        "text-white"
+      );
       fullNameEl.textContent = value.fullName;
 
-      deliveryEl.classList.add("px-5", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
+      deliveryEl.classList.add(
+        "px-5",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#393053]",
+        "text-white"
+      );
       deliveryEl.textContent = value.deliveryAddress;
 
-      contactNumber.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
+      contactNumber.classList.add(
+        "px-2",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#393053]",
+        "text-white"
+      );
       contactNumber.textContent = value.contactNum;
 
-      parathaEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
+      parathaEl.classList.add(
+        "px-2",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#393053]",
+        "text-white"
+      );
       parathaEl.textContent = value.parathas;
 
-      paymentEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#393053]", "text-white");
+      paymentEl.classList.add(
+        "px-2",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#393053]",
+        "text-white"
+      );
       paymentEl.textContent = value.paymentType;
 
-      updateEl.classList.add("px-2", "py-3", "border", "text-[12px]", "bg-[#0A1F38]");
+      updateEl.classList.add(
+        "px-2",
+        "py-3",
+        "border",
+        "text-[12px]",
+        "bg-[#0A1F38]"
+      );
       updateEl.append(delBtnEl);
       delBtnEl.textContent = "Cancel Order";
 
       delBtnEl.addEventListener("click", (e) => {
-        deleteOrders(value)
+        deleteOrders(value);
       });
 
       delBtnEl.className =
@@ -147,34 +188,36 @@ function deleteOrders(orderRequest) {
     const localData = localStorage.getItem(storageKey);
     const localDataObj = JSON.parse(localData);
 
-    const deleteRecords = localDataObj.filter(value => value.id != orderRequest.id)
+    const deleteRecords = localDataObj.filter(
+      (value) => value.id != orderRequest.id
+    );
     console.log(deleteRecords);
 
     // Let's push the value to the local storage.
-    localStorage.setItem(storageKey, JSON.stringify(deleteRecords))
-    alert(`Cancelled the order of ${orderRequest.fullName}`)
-    getAllDatas()
+    localStorage.setItem(storageKey, JSON.stringify(deleteRecords));
+    alert(`Cancelled the order of ${orderRequest.fullName}`);
+    getAllDatas();
   }
 }
 
 navEl.addEventListener("click", (e) => {
   modalWrapperEl.classList.remove("hidden");
-})
+});
 
 closeBtnEl.addEventListener("click", () => {
   modalWrapperEl.classList.add("hidden");
-})
+});
 
 modalWrapperEl.addEventListener("click", (e) => {
-  if(e.target === modalEl) {
+  if (e.target === modalEl) {
     modalWrapperEl.classList.add("hidden");
   }
-})
+});
 
-// If I click Exclusives It Should Open the exclusive modal. 
+// If I click Exclusives It Should Open the exclusive modal.
 // exclusive modal close and also it should close when click the outer.
-// if the coupon code is copied then alert coupon is copied. 
-// Exclusive Menu | Exclusive Menu Modal | Close Button | CouponElemet | couponAlert 
+// if the coupon code is copied then alert coupon is copied.
+// Exclusive Menu | Exclusive Menu Modal | Close Button | CouponElemet | couponAlert
 
 const exclusiveModalEl = document.getElementById("exclusiveModal");
 const exclusiveCloseBtn = document.getElementById("exclusiveCloseBtn");
@@ -185,25 +228,25 @@ const exclusiveSectionEl = document.getElementById("exclusiveSection");
 
 exclusivesMenu.addEventListener("click", () => {
   exclusiveModalEl.classList.remove("hidden");
-})
+});
 
 exclusiveCloseBtn.addEventListener("click", () => {
   exclusiveModalEl.classList.add("hidden");
-})
+});
 
-exclusiveSectionEl.addEventListener("click", (e)=> {
-  if(exclusiveSectionEl === e.target){
+exclusiveSectionEl.addEventListener("click", (e) => {
+  if (exclusiveSectionEl === e.target) {
     exclusiveModalEl.classList.add("hidden");
   }
-})
+});
 
 couponElement.addEventListener("copy", () => {
   couponAlert.classList.remove("hidden");
-  couponAlert.classList.add("animate-bounce")
-  setTimeout(()=> {
+  couponAlert.classList.add("animate-bounce");
+  setTimeout(() => {
     couponAlert.classList.add("hidden");
-  },3000)
-})
+  }, 3000);
+});
 
 const pyazEl = document.getElementById("pyaz");
 const pyazAlertEl = document.getElementById("pyazAlert");
@@ -211,38 +254,38 @@ const pyazAlertEl = document.getElementById("pyazAlert");
 const alooEl = document.getElementById("aloo");
 const alooAlertEl = document.getElementById("alooAlert");
 
-const mooliEl = document.getElementById("mooli"); 
-const mooliAlertEl = document.getElementById('mooliAlert');
+const mooliEl = document.getElementById("mooli");
+const mooliAlertEl = document.getElementById("mooliAlert");
 
 const malabarEl = document.getElementById("malabar");
 const malabarAlertEl = document.getElementById("malabarAlert");
 
 pyazEl.addEventListener("change", () => {
-  showSelectedAlert("pyaz")
-})
+  showSelectedAlert("pyaz");
+});
 
 alooEl.addEventListener("change", () => {
-  showSelectedAlert("aloo")
-})
+  showSelectedAlert("aloo");
+});
 
 mooliEl.addEventListener("change", () => {
-  showSelectedAlert("mooli")
-})
+  showSelectedAlert("mooli");
+});
 
 malabarEl.addEventListener("change", () => {
-  showSelectedAlert("malabar")
-})
+  showSelectedAlert("malabar");
+});
 
 function showSelectedAlert(selectedId) {
-  pyazAlertEl.classList.add("hidden")
-  alooAlertEl.classList.add("hidden")
-  mooliAlertEl.classList.add("hidden")
-  malabarAlertEl.classList.add("hidden")
+  pyazAlertEl.classList.add("hidden");
+  alooAlertEl.classList.add("hidden");
+  mooliAlertEl.classList.add("hidden");
+  malabarAlertEl.classList.add("hidden");
 
-  if(selectedId === "pyaz") {
-    pyazAlertEl.classList.remove("hidden")
-  } else if(selectedId === "aloo") {
-    alooAlertEl.classList.remove("hidden")
+  if (selectedId === "pyaz") {
+    pyazAlertEl.classList.remove("hidden");
+  } else if (selectedId === "aloo") {
+    alooAlertEl.classList.remove("hidden");
   } else if (selectedId === "mooli") {
     mooliAlertEl.classList.remove("hidden");
   } else if (selectedId === "malabar") {
