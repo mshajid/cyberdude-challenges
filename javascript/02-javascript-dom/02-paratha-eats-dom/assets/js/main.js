@@ -205,4 +205,49 @@ couponElement.addEventListener("copy", () => {
   },3000)
 })
 
+const pyazEl = document.getElementById("pyaz");
+const pyazAlertEl = document.getElementById("pyazAlert");
+
+const alooEl = document.getElementById("aloo");
+const alooAlertEl = document.getElementById("alooAlert");
+
+const mooliEl = document.getElementById("mooli"); 
+const mooliAlertEl = document.getElementById('mooliAlert');
+
+const malabarEl = document.getElementById("malabar");
+const malabarAlertEl = document.getElementById("malabarAlert");
+
+pyazEl.addEventListener("change", () => {
+  showSelectedAlert("pyaz")
+})
+
+alooEl.addEventListener("change", () => {
+  showSelectedAlert("aloo")
+})
+
+mooliEl.addEventListener("change", () => {
+  showSelectedAlert("mooli")
+})
+
+malabarEl.addEventListener("change", () => {
+  showSelectedAlert("malabar")
+})
+
+function showSelectedAlert(selectedId) {
+  pyazAlertEl.classList.add("hidden")
+  alooAlertEl.classList.add("hidden")
+  mooliAlertEl.classList.add("hidden")
+  malabarAlertEl.classList.add("hidden")
+
+  if(selectedId === "pyaz") {
+    pyazAlertEl.classList.remove("hidden")
+  } else if(selectedId === "aloo") {
+    alooAlertEl.classList.remove("hidden")
+  } else if (selectedId === "mooli") {
+    mooliAlertEl.classList.remove("hidden");
+  } else if (selectedId === "malabar") {
+    malabarAlertEl.classList.remove("hidden");
+  }
+}
+
 getAllDatas();
