@@ -28,7 +28,7 @@
         class="*:bg-[#635985] *:px-5 *:py-1.5 *:rounded-md *:cursor-pointer *:text-white space-x-2"
       >
         <a id="aboutUs">About us</a>
-        <a>Exclusives</a>
+        <a id="exclusives">Exclusives</a>
         <a>Parathas</a>
         <a>Free Meals</a>
       </div>
@@ -471,54 +471,121 @@
 
     <!-- ! About Us Modal -->
     <div id="modalWrapper" class="hidden">
-      <section id="modalEl"
-      class="w-full h-[100vh] bg-[#18122B]/10 absolute top-0 backdrop-blur-sm flex justify-center items-center"
-    >
-      <div class="bg-white w-[60%] h-[60%] rounded-md">
-        <div class="px-6 py-5 flex justify-between">
-          <span class="font-semibold text-3xl">About Paratha Eats</span>
-          <span id="closeBtn" class="font-bold bg-[#18122B] hover:bg-[#393053] text-white rounded-md px-2 size-8 text-lg flex items-center justify-center cursor-pointer hover:transition-all hover:translate-y-1">x</span>
-        </div>
-        <div class="flex justify-center items-start px-5 gap-x-10">
-          <div>
-            <lottie-player
-              src="https://lottie.host/8a0c5fa8-66e9-4c41-8c91-26cea7472618/4IZ2Ku9joo.json"
-              background="transparent"
-              speed="1"
-              style="width: 300px; height: 300px"
-              direction="1"
-              mode="normal"
-              loop
-              autoplay
-            ></lottie-player>
+      <section
+        id="modalEl"
+        class="w-full h-[100vh] bg-[#18122B]/10 absolute top-0 backdrop-blur-sm flex justify-center items-center"
+      >
+        <div class="bg-white w-[60%] h-[60%] rounded-md">
+          <div class="px-6 py-5 flex justify-between">
+            <span class="font-semibold text-3xl">About Paratha Eats</span>
+            <span
+              id="closeBtn"
+              class="font-bold bg-[#18122B] hover:bg-[#393053] text-white rounded-md px-2 size-8 text-lg flex items-center justify-center cursor-pointer hover:transition-all hover:translate-y-1"
+              >x</span
+            >
           </div>
-          <div class="flex flex-col gap-y-4">
-            <h2 class="text-3xl text-[#393053]">
-              Meet CEO of Paratha 👉🏽<span class="text-red-500 font-bold ml-1"
-                >Shajid</span
-              >
-            </h2>
-            <article class="text-pretty max-w-md">
-              I create this from scratch
-              <span class="text-[#393053] font-bold"
-                >only for Paratha lovers like me</span
-              >, Yes I do like explore more paratha varities with good
-              side-dishes to boost the umami. Keep explore our variety of
-              parathas.
-            </article>
-            <article class="text-pretty max-w-md">
-              However, We found this company in 2023, December. But we started
-              small in a truck, then we made an web app to make more accessible
-              to our restraurant. Now we receiving 100+ orders everyday! It's
-              all thanks to your contribution. We always love to hear your
-              feedback.
-            </article>
+          <div class="flex justify-center items-start px-5 gap-x-10">
+            <div>
+              <lottie-player
+                src="https://lottie.host/8a0c5fa8-66e9-4c41-8c91-26cea7472618/4IZ2Ku9joo.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                direction="1"
+                mode="normal"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="flex flex-col gap-y-4">
+              <h2 class="text-3xl text-[#393053]">
+                Meet CEO of Paratha 👉🏽<span class="text-red-500 font-bold ml-1"
+                  >Shajid</span
+                >
+              </h2>
+              <article class="text-pretty max-w-md">
+                I create this from scratch
+                <span class="text-[#393053] font-bold"
+                  >only for Paratha lovers like me</span
+                >, Yes I do like explore more paratha varities with good
+                side-dishes to boost the umami. Keep explore our variety of
+                parathas.
+              </article>
+              <article class="text-pretty max-w-md">
+                However, We found this company in 2023, December. But we started
+                small in a truck, then we made an web app to make more
+                accessible to our restraurant. Now we receiving 100+ orders
+                everyday! It's all thanks to your contribution. We always love
+                to hear your feedback.
+              </article>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
 
+    <!-- ! Exclusives Modal -->
+    <div id="exclusiveModal" class="hidden">
+      <section
+        id="exclusiveSection"
+        class="bg-[#18122B]/10 h-screen w-full absolute top-0 backdrop-blur-sm flex justify-center items-center"
+      >
+        <div class="bg-white w-[50%] h-[50%] rounded-md">
+          <div class="px-5 py-3 flex justify-between items-center">
+            <h2 class="bg-[#18122B]/10 w-fit px-5 py-0.5 font-semibold text-xl">
+              New Exclusive Parathas
+            </h2>
+            <span
+              id="exclusiveCloseBtn"
+              class="font-semibold text-lg bg-[#18122B] hover:bg-[#393053] px-2 size-8 rounded-md text-white flex justify-center items-center cursor-pointer hover:transition-all hover:translate-y-1"
+              >X</span
+            >
+          </div>
+          <div
+            class="px-5 flex flex-col justify-center items-center w-full h-[50%] gap-y-5"
+          >
+            <h2 class="text-xl font-medium">
+              Lists of Exclusive Parathas at ParathaEats
+            </h2>
+            <ul
+              class="*:bg-[#18122B] *:text-white *:rounded-md *:w-fit *:px-2 *:py-0.5 flex justify-center flex-row *:text-sm gap-x-1 flex-wrap gap-y-1.5"
+            >
+              <li>Pyaz Paratha</li>
+              <li>Aloo Paratha</li>
+              <li>Malabar Paratha</li>
+              <li>Methi Paratha</li>
+              <li>Mooli Paratha</li>
+              <li>Paneer Paratha</li>
+              <li>Matar Paratha</li>
+              <li>Lachcha Paratha</li>
+              <li>Dhakai Paratha</li>
+              <li>Mughlai Paratha</li>
+              <li>Petai Paratha</li>
+              <li>Kizhi Paratha</li>
+              <li>Veechu Paratha</li>
+              <li>Dal Paratha</li>
+            </ul>
+          </div>
+          <div class="max-w-xl mx-auto">
+            <div class="px-5 text-sm text-balance">
+              Order your favorite Paratha or maybe you can try it out one of the
+              exclusives with coupon code:<span
+                id="couponElement"
+                class="bg-emerald-200 text-emerald-700 px-2 py-1 mx-1 rounded-md text-xs selection:bg-fuchsia-300 selection:text-fuchsia-900"
+                >GoingToTryFirstTime</span
+              >, and you will receive 20% discount.
+            </div>
+          </div>
+          <div class="px-5 py-5 flex justify-center">
+            <small
+              id="couponAlert"
+              class="bg-emerald-300 text-emerald-800 px-1.5 py-1 rounded-md text-xs hidden"
+              >✅ copied the coupon code</small
+            >
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
