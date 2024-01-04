@@ -25,7 +25,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin);
 
 
-gsap.to("#box", { rotation: 180, x: 469, duration: 5 });
+gsap.to("#box", { rotation: -360, x: 460, y: -0,  duration: 1 });
 
 
 validate.addField("#fullName", [
