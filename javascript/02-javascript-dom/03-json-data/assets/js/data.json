@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Shajid Shafee",
+    "image": "assets/images/shajid.jpg",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
@@ -79,13 +80,55 @@
       "hourlyRate": 55,
       "hoursPerWeek": 35
     },
-    "location": "Colombo, Sri Lanka",
+    "location": "Chennai, India",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
-    "id": 2,
-    "name": "Abirami",
+    "id": 3,
+    "name": "Yogha Raj",
+    "organization": "CyberDude Networks Pvt. Ltd.",
+    "role": {
+      "position": "Dev Ops Engineer",
+      "totalHours": 4200,
+      "totalJobs": 61,
+      "techStacks": [
+        "Html",
+        "CSS",
+        "JavaScript",
+        "TailwindCSS",
+        "Vite",
+        "GSAP",
+        "Git",
+        "GitHub",
+        "React JS",
+        "Node JS",
+        "TypeScript",
+        "Express JS",
+        "Next JS",
+        "MongoDB",
+        "Three JS",
+        "Python"
+      ],
+      "otherSkills": [
+        "SEO",
+        "Digital Marketing",
+        "Content Writing",
+        "Blogger",
+        "Marketing Strategist",
+        "Google Analaytics",
+        "Google Search Console"
+      ],
+      "hourlyRate": 55,
+      "hoursPerWeek": 35
+    },
+    "location": "Rameshwaram, India",
+    "stackOverFlow": true,
+    "gitHub": true
+  },
+  {
+    "id": 4,
+    "name": "Muthu Akalya",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
@@ -121,13 +164,13 @@
       "hourlyRate": 55,
       "hoursPerWeek": 35
     },
-    "location": "Colombo, Sri Lanka",
+    "location": "Trichy, India",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
-    "id": 2,
-    "name": "Abirami",
+    "id": 5,
+    "name": "Sweety Bearcin",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
@@ -163,49 +206,7 @@
       "hourlyRate": 55,
       "hoursPerWeek": 35
     },
-    "location": "Colombo, Sri Lanka",
-    "stackOverFlow": true,
-    "gitHub": true
-  },
-  {
-    "id": 2,
-    "name": "Abirami",
-    "organization": "CyberDude Networks Pvt. Ltd.",
-    "role": {
-      "position": "Full Stack Engineer",
-      "totalHours": 7200,
-      "totalJobs": 41,
-      "techStacks": [
-        "Html",
-        "CSS",
-        "JavaScript",
-        "TailwindCSS",
-        "Vite",
-        "GSAP",
-        "Git",
-        "GitHub",
-        "React JS",
-        "Node JS",
-        "TypeScript",
-        "Express JS",
-        "Next JS",
-        "MongoDB",
-        "Three JS",
-        "Python"
-      ],
-      "otherSkills": [
-        "SEO",
-        "Digital Marketing",
-        "Content Writing",
-        "Blogger",
-        "Marketing Strategist",
-        "Google Analaytics",
-        "Google Search Console"
-      ],
-      "hourlyRate": 55,
-      "hoursPerWeek": 35
-    },
-    "location": "Colombo, Sri Lanka",
+    "location": "Kuala lampur, Malaysia",
     "stackOverFlow": true,
     "gitHub": true
   },
