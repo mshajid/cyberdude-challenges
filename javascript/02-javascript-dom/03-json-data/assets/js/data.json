@@ -45,11 +45,12 @@
   {
     "id": 2,
     "name": "Abirami",
-    "organization": "CyberDude Networks Pvt. Ltd.",
+    "image": "assets/images/abirami.webp",
+    "organization": "Zoho Corporation (India)",
     "role": {
       "position": "Full Stack Engineer",
-      "totalHours": 7200,
-      "totalJobs": 41,
+      "totalHours": 5734,
+      "totalJobs": 20,
       "techStacks": [
         "Html",
         "CSS",
@@ -78,7 +79,7 @@
         "Google Search Console"
       ],
       "hourlyRate": 55,
-      "hoursPerWeek": 35
+      "hoursPerWeek": 15
     },
     "location": "Chennai, India",
     "stackOverFlow": true,
@@ -86,136 +87,140 @@
   },
   {
     "id": 3,
-    "name": "Yogha Raj",
-    "organization": "CyberDude Networks Pvt. Ltd.",
+    "name": "Yogha Raj Dhayal",
+    "image": "assets/images/Yoga.png",
+    "organization": "Google Alphabets, INC",
     "role": {
-      "position": "Dev Ops Engineer",
+      "position": "Full Stack Engineer",
       "totalHours": 4200,
       "totalJobs": 61,
       "techStacks": [
-        "Html",
+        "HTML",
         "CSS",
         "JavaScript",
         "TailwindCSS",
         "Vite",
-        "GSAP",
-        "Git",
-        "GitHub",
+        "Bootstrap 5",
         "React JS",
         "Node JS",
-        "TypeScript",
-        "Express JS",
-        "Next JS",
-        "MongoDB",
-        "Three JS",
-        "Python"
+        "MongoDB"
       ],
       "otherSkills": [
-        "SEO",
-        "Digital Marketing",
-        "Content Writing",
-        "Blogger",
-        "Marketing Strategist",
+        "Problem solving",
         "Google Analaytics",
-        "Google Search Console"
+        "Canva",
+        "Figma",
+        "Obsidian",
+        "Video Editor",
+        "Video Marketing",
+        "GYM Enthusiast"
       ],
       "hourlyRate": 55,
       "hoursPerWeek": 35
     },
-    "location": "Rameshwaram, India",
+    "location": "Rameswaram, India",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
     "id": 4,
-    "name": "Muthu Akalya",
+    "name": "Abishek",
+    "image": "assets/images/abishake.jpg",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
-      "position": "Full Stack Engineer",
-      "totalHours": 7200,
-      "totalJobs": 41,
+      "position": "Data Scientist",
+      "totalHours": 2865,
+      "totalJobs": 10,
       "techStacks": [
-        "Html",
+        "HTML",
         "CSS",
         "JavaScript",
         "TailwindCSS",
         "Vite",
-        "GSAP",
         "Git",
         "GitHub",
         "React JS",
         "Node JS",
-        "TypeScript",
-        "Express JS",
-        "Next JS",
-        "MongoDB",
-        "Three JS",
-        "Python"
+        "MongoDB"
       ],
       "otherSkills": [
-        "SEO",
-        "Digital Marketing",
-        "Content Writing",
-        "Blogger",
-        "Marketing Strategist",
-        "Google Analaytics",
-        "Google Search Console"
+        "AWS",
+        "Google Cloud",
+        "Cybersecurity",
+        "Blender",
+        "Qbcore",
+        "Graphic Artist"
       ],
-      "hourlyRate": 55,
-      "hoursPerWeek": 35
+      "hourlyRate": 35,
+      "hoursPerWeek": 20
     },
-    "location": "Trichy, India",
+    "location": "Kanyakumari, India",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
     "id": 5,
-    "name": "Sweety Bearcin",
-    "organization": "CyberDude Networks Pvt. Ltd.",
+    "name": "Bearcin Sweety",
+    "image": "assets/images/sweety.png",
+    "organization": "Air Bus Corporate Jets",
     "role": {
       "position": "Full Stack Engineer",
-      "totalHours": 7200,
+      "totalHours": 3586,
       "totalJobs": 41,
-      "techStacks": [
-        "Html",
-        "CSS",
-        "JavaScript",
-        "TailwindCSS",
-        "Vite",
-        "GSAP",
-        "Git",
-        "GitHub",
-        "React JS",
-        "Node JS",
-        "TypeScript",
-        "Express JS",
-        "Next JS",
-        "MongoDB",
-        "Three JS",
-        "Python"
-      ],
+      "techStacks": ["HTML", "CSS", "JavaScript", "Bootstrap 5", "React JS", "MongoDB", "Node JS"],
       "otherSkills": [
-        "SEO",
-        "Digital Marketing",
-        "Content Writing",
-        "Blogger",
-        "Marketing Strategist",
-        "Google Analaytics",
-        "Google Search Console"
+        "Air Simulation",
+        "Writing Blogs",
+        "Short Stories",
+        "Scrolling Social Media"
       ],
       "hourlyRate": 55,
-      "hoursPerWeek": 35
+      "hoursPerWeek": 25
     },
-    "location": "Kuala lampur, Malaysia",
+    "location": "Penang, Malaysia",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
-    "id": 2,
-    "name": "Abirami",
-    "organization": "CyberDude Networks Pvt. Ltd.",
+    "id": 6,
+    "name": "Rosini S.",
+    "image": "assets/images/rosini.png",
+    "organization": "GitHub, INC",
     "role": {
       "position": "Full Stack Engineer",
+      "totalHours": 4087,
+      "totalJobs": 80,
+      "techStacks": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TailwindCSS",
+        "PHP",
+        "MySQL",
+        "React JS",
+        "Node JS"
+      ],
+      "otherSkills": [
+        "Editor",
+        "Home Designer",
+        "Mehendi Designer",
+        "Language Translator",
+        "Polygot"
+      ],
+      "hourlyRate": 55,
+      "hoursPerWeek": 18
+    },
+    "location": "Madurai, India",
+    "stackOverFlow": true,
+    "gitHub": true
+  },
+  {
+    "id": 7,
+    "name": "Ahmed Hasith",
+    "image": "assets/images/hasith.enc",
+    "organization": "Zoho Corporation (India)",
+    "role": {
+      "position": "ML Engineer",
       "totalHours": 7200,
       "totalJobs": 41,
       "techStacks": [
@@ -246,20 +251,21 @@
         "Google Search Console"
       ],
       "hourlyRate": 55,
-      "hoursPerWeek": 35
+      "hoursPerWeek": 18
     },
     "location": "Colombo, Sri Lanka",
     "stackOverFlow": true,
     "gitHub": true
   },
   {
-    "id": 2,
-    "name": "Abirami",
+    "id": 8,
+    "name": "Gayathri",
+    "image": "assets/images/gai3.enc",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
-      "totalHours": 7200,
-      "totalJobs": 41,
+      "totalHours": 789,
+      "totalJobs": 25,
       "techStacks": [
         "Html",
         "CSS",
@@ -268,29 +274,76 @@
         "Vite",
         "GSAP",
         "Git",
-        "GitHub",
-        "React JS",
-        "Node JS",
-        "TypeScript",
-        "Express JS",
-        "Next JS",
-        "MongoDB",
-        "Three JS",
-        "Python"
+        "React JS"
       ],
       "otherSkills": [
-        "SEO",
-        "Digital Marketing",
-        "Content Writing",
-        "Blogger",
-        "Marketing Strategist",
-        "Google Analaytics",
-        "Google Search Console"
+        "Graphic Artist"
       ],
       "hourlyRate": 55,
-      "hoursPerWeek": 35
+      "hoursPerWeek": 25
     },
-    "location": "Colombo, Sri Lanka",
+    "location": "Bangalore, India",
+    "stackOverFlow": true,
+    "gitHub": true
+  },
+  {
+    "id": 9,
+    "name": "Riyaz",
+    "image": "assets/images/riyaz.enc",
+    "organization": "Kajima Technologies",
+    "role": {
+      "position": "Full Stack Engineer",
+      "totalHours": 1463,
+      "totalJobs": 2,
+      "techStacks": [
+        "Html",
+        "CSS",
+        "JavaScript",
+        "TailwindCSS",
+        "Vite",
+        "React JS",
+        "MySQL"
+      ],
+      "otherSkills": [
+        "Free Style Football",
+        "Machine Learning",
+        "AI"
+      ],
+      "hourlyRate": 55,
+      "hoursPerWeek": 25
+    },
+    "location": "Karaikudi, India",
+    "stackOverFlow": true,
+    "gitHub": true
+  },
+  {
+    "id": 10,
+    "name": "Muthu Akalya",
+    "image": "assets/images/akalya.jpg",
+    "organization": "Zoho Corporation (India)",
+    "role": {
+      "position": "Full Stack Engineer",
+      "totalHours": 1528,
+      "totalJobs": 10,
+      "techStacks": [
+        "Html",
+        "CSS",
+        "JavaScript",
+        "Bootstrap 5",
+        "TailwindCSS",
+        "Vite",
+        "React JS",
+        "MongoDB",
+        "Node JS"
+      ],
+      "otherSkills": [
+        "Graphic Artist",
+        "Scrolling Social Media"
+      ],
+      "hourlyRate": 55,
+      "hoursPerWeek": 30
+    },
+    "location": "Thoothukudi, India",
     "stackOverFlow": true,
     "gitHub": true
   }

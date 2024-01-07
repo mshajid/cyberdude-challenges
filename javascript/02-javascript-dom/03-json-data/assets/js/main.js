@@ -13,7 +13,7 @@ data.forEach((person) => {
   } is online" class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse absolute right-2 top-2 shadow-sm shadow-emerald-400"></div>
   <div class="flex items-center justify-center gap-x-5 py-4">
     <div>
-        <img src=${person.image} class="size-20 rounded-full" />
+        <img src=${person.image} class="size-20 rounded-full object-cover" />
     </div>
     <div class="space-y-2">
       <div class="leading-3">
@@ -63,13 +63,13 @@ data.forEach((person) => {
   <div class="px-10 flex flex-col gap-y-3">
     <div class="flex flex-col flex-wrap">
         <span class="font-bold text-lg">Tech Stacks</span>
-        <span class="text-xs font-light">${person.role.techStacks.join(
+        <span class="text-xs font-regular">${person.role.techStacks.join(
           ", "
         )}</span>
     </div>
     <div class="flex flex-col">
     <span class="font-bold text-lg">Other Skills</span>
-    <span id="otherSkills" class="text-xs font-light">${person.role.otherSkills.join(
+    <span id="otherSkills" class="text-xs font-regular">${person.role.otherSkills.join(
       ", "
     )}</span>
     </div>
