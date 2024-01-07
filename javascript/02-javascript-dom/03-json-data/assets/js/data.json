@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Shajid Shafee",
-    "image": "assets/images/shajid.jpg",
+    "image": "./images/shajid.jpg",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
@@ -45,7 +45,7 @@
   {
     "id": 2,
     "name": "Abirami",
-    "image": "assets/images/abirami.webp",
+    "image": "./images/abirami.webp",
     "organization": "Zoho Corporation (India)",
     "role": {
       "position": "Full Stack Engineer",
@@ -88,7 +88,7 @@
   {
     "id": 3,
     "name": "Yogha Raj Dhayal",
-    "image": "assets/images/Yoga.png",
+    "image": "./images/Yoga.png",
     "organization": "Google Alphabets, INC",
     "role": {
       "position": "Full Stack Engineer",
@@ -125,7 +125,7 @@
   {
     "id": 4,
     "name": "Abishek",
-    "image": "assets/images/abishake.jpg",
+    "image": "./images/abishake.jpg",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Data Scientist",
@@ -161,7 +161,7 @@
   {
     "id": 5,
     "name": "Bearcin Sweety",
-    "image": "assets/images/sweety.png",
+    "image": "./images/sweety.png",
     "organization": "Air Bus Corporate Jets",
     "role": {
       "position": "Full Stack Engineer",
@@ -184,7 +184,7 @@
   {
     "id": 6,
     "name": "Rosini S.",
-    "image": "assets/images/rosini.png",
+    "image": "./images/rosini.png",
     "organization": "GitHub, INC",
     "role": {
       "position": "Full Stack Engineer",
@@ -217,7 +217,7 @@
   {
     "id": 7,
     "name": "Ahmed Hasith",
-    "image": "assets/images/hasith.enc",
+    "image": "./images/hasith.enc",
     "organization": "Zoho Corporation (India)",
     "role": {
       "position": "ML Engineer",
@@ -260,7 +260,7 @@
   {
     "id": 8,
     "name": "Gayathri",
-    "image": "assets/images/gai3.enc",
+    "image": "./images/gai3.enc",
     "organization": "CyberDude Networks Pvt. Ltd.",
     "role": {
       "position": "Full Stack Engineer",
@@ -289,7 +289,7 @@
   {
     "id": 9,
     "name": "Riyaz",
-    "image": "assets/images/riyaz.enc",
+    "image": "./images/riyaz.enc",
     "organization": "Kajima Technologies",
     "role": {
       "position": "Full Stack Engineer",
@@ -319,7 +319,7 @@
   {
     "id": 10,
     "name": "Muthu Akalya",
-    "image": "assets/images/akalya.jpg",
+    "image": "./images/akalya.jpg",
     "organization": "Zoho Corporation (India)",
     "role": {
       "position": "Full Stack Engineer",
