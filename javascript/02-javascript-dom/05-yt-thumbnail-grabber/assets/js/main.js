@@ -7,12 +7,14 @@ ytFormEl.addEventListener("submit", (event) => {
     const storedVideoUrl = videoHolderEl.value.split("v=");
     const videoId = storedVideoUrl[1];
     const forThumbs = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
-
     ytThumbnailEl.setAttribute("src", forThumbs);
 })
 
+// https://www.youtube.com/watch?v=8EmqySaDWbU&list=PLS9eqZB5zozzxwoyYfDm17LIuCWYfGlVj
+
 // YouTube Link: https://www.youtube.com/watch?v=Fh9YgIT1mPc
 // https://i.ytimg.com/vi/Fh9YgIT1mPc/maxresdefault.jpg
+// https://i.ytimg.com/vi/8EmqySaDWbU/maxresdefault.jpg
 
 // pasting the Youtube URL to the input placeholder: 
 // Basically like this. https://www.youtube.com/watch?v=Fh9YgIT1mPc
