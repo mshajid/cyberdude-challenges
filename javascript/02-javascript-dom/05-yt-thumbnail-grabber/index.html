@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Thumbnail Grabber</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
+  <body class="bg-[#282828] font-jakarta mx-10 my-12">
+    <header class="flex justify-start items-center gap-x-20">
+      <div class="flex-1">
+        <div class="text-white text-3xl font-bold">
+          Thumb<span class="text-red-600">Grabber</span>
+        </div>
+      </div>
+      <nav class="text-white font-medium text-xl flex gap-x-6">
+        <span class="cursor-pointer hover:text-red-600">Thumbnail Tips</span>
+        <span class="cursor-pointer hover:text-red-600">Thumbnail Sizes</span>
+        <span class="cursor-pointer hover:text-red-600">GitHub</span>
+      </nav>
+    </header>
+
+    <main class="my-10 h-[100%]">
+      <form id="ytForm">
+        <label>
+          <span class="text-lg text-white font-semibold">YouTube Video Link Here</span>
+          <div>
+            <input
+              id="videoHolder"
+              placeholder="Enter your youtube video url here"
+              class="px-2 w-[35%] py-1.5 outline-none rounded-sm my-2"
+            />
+          </div>
+        </label>
+        <button id="grabBtn" class="bg-red-600 px-5 py-1.5 text-white text-center font-semibold rounded-md my-0.5 hover:bg-red-800 hover:transition-all">Grab The Thumbnail</button>
+      </form>
+
+      <div>
+        <img id="ytThumbnail" />
+      </div>
+    </main>
+
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
