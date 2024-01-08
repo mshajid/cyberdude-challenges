@@ -7,9 +7,12 @@ ytFormEl.addEventListener("submit", (event) => {
     const storedVideoUrl = videoHolderEl.value.split("v=");
     const videoId = storedVideoUrl[1];
     const forThumbs = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
-    ytThumbnailEl.setAttribute("src", forThumbs);
+    ytThumbnailEl.setAttribute("src", forThumbs);      
 })
 
+
+
+//* My Logic Storyline
 // https://www.youtube.com/watch?v=8EmqySaDWbU&list=PLS9eqZB5zozzxwoyYfDm17LIuCWYfGlVj
 
 // YouTube Link: https://www.youtube.com/watch?v=Fh9YgIT1mPc
