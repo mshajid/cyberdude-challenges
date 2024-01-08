@@ -4,8 +4,9 @@ const ytThumbnailEl = document.getElementById("ytThumbnail");
 
 ytFormEl.addEventListener("submit", (event) => {
     event.preventDefault();
-    const storedVideoUrl = videoHolderEl.value.split("v=");
-    const videoId = storedVideoUrl[1];
+    const storedVideoUrl = videoHolderEl.value.split("&");
+    const slicedVideoUrl = storedVideoUrl[0].split("v=")
+    const videoId = slicedVideoUrl[1]
     const forThumbs = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
     ytThumbnailEl.setAttribute("src", forThumbs);      
 })
