@@ -34,7 +34,7 @@ names.forEach((userName) => {
           <div class="relative flex justify-center">
             <img src="${data.avatar_url}" class="size-32 rounded-full object-cover border-4 border-black" />
             <div class="bg-black w-fit text-white text-[10px] px-2 py-0.5 items-center rounded-xl flex gap-x-1 absolute bottom-[-2px]">
-              <img src="./assets/images/GitHub.png" />
+              <img src="./images/GitHub.png" />
               <span>${data.login}</span>
             </div>
           </div>
