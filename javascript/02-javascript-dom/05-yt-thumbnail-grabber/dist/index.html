@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Thumbnail Grabber</title>
 
-    <script type="module" crossorigin src="./assets/index-zrv-TieO.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-8l7PRx06.css">
+    <script type="module" crossorigin src="./assets/index-AmHbv-xA.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-cCQm0bDY.css">
   </head>
-  <body class="bg-[#282828] font-jakarta mx-10 my-12">
+  <body class="bg-[#282828] font-jakarta mx-10 my-10">
     <header class="flex justify-start items-center gap-x-20">
       <div class="flex-1">
         <div class="text-white text-3xl font-bold">
@@ -22,10 +22,12 @@
       </nav>
     </header>
 
-    <main class="my-10 h-[100%]">
+    <main class="my-10 h-full">
       <form id="ytForm">
         <label>
-          <span class="text-lg text-white font-semibold">YouTube Video Link Here</span>
+          <span class="text-lg text-white font-semibold"
+            >YouTube Video Link Here</span
+          >
           <div>
             <input
               id="videoHolder"
@@ -34,17 +36,35 @@
             />
           </div>
         </label>
-        <button id="grabBtn" class="bg-red-600 px-5 py-1.5 text-white text-center font-semibold rounded-md my-0.5 hover:bg-red-800 hover:transition-all">Grab The Thumbnail</button>
+        <button
+          id="grabBtn"
+          class="bg-red-600 px-5 py-1.5 text-white text-center font-semibold rounded-md my-0.5 hover:bg-red-800 hover:transition-all"
+        >
+          Grab The Thumbnail
+        </button>
       </form>
 
       <div class="w-[500px] rounded-sm my-10">
         <img id="ytThumbnail" />
       </div>
-    </main>
 
-    <!-- <footer class="fixed">
-      Hello World
-    </footer> -->
+      <footer
+        class="bg-red-600 py-2.5 px-2 text-white text-xs fixed bottom-0 left-0 right-0"
+      >
+        <div class="flex items-center">
+          <div class="flex flex-1 gap-x-4">
+            <span>Contributions</span>
+            <span>Guidelines</span>
+            <span>GitHub Repository</span>
+            <span>About Author</span>
+          </div>
+          <div class="bg-[#282828] px-5 py-1.5 rounded-md">
+             <span>Thumb</span><span class="text-red-600">Grabber</span>
+             <span>Developed By Shajid</span>
+          </div>
+        </div>
+      </footer>
+    </main>
 
   </body>
 </html>

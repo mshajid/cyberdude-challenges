@@ -32,14 +32,11 @@ ytFormEl.addEventListener("submit", (event) => {
 
 //* My Logic Storyline
 
-
 // Prototype URLs
 // https://www.youtube.com/watch?v=749DIRUHhNY&list=PL28dZNlHX63kjYvDr560F-0bW-dh9xQ62&index=17
 // https://www.youtube.com/watch?v=Fh9YgIT1mPc
 // https://www.youtube.com/watch?v=7wYKHZe9E1Q
 // https://www.youtube.com/watch?v=_d-8H-8LjcU&list=RD_d-8H-8LjcU&start_radio=1&rv=749DIRUHhNY
-
-
 
 // Two types URLS 
 // One Type = Single "v=" Second Type = "&"
