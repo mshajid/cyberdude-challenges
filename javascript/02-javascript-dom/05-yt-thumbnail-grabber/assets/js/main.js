@@ -24,10 +24,6 @@ ytFormEl.addEventListener("submit", (event) => {
         const forVThumbs = `https://i.ytimg.com/vi/${vYouTubeUrl}/maxresdefault.jpg`
         ytThumbnailEl.setAttribute("src", forVThumbs);
     }
-
-    // if(vUrl) {
-        
-    // }
 })
 
 
@@ -63,11 +59,11 @@ ytFormEl.addEventListener("submit", (event) => {
 // const videoUrl = "https://www.youtube.com/watch?v=Fh9YgIT1mPc".split("v=");
 // const videoId = videoUrl[1];
 // Successfully removed got the video ID separately
-// const thumbnails = "https://i.ytimg.com/vi/UrIfwk-AELfFXmPM/maxresdefault.jpg"
+// const thumbnails = "https://i.ytimg.com/vi/lje9-Ft71IA/maxresdefault.jpg"
 // const newReplace = thumbnails.replace("Fh9YgIT1mPc", videoUrl[1]);
 // console.log(newReplace);
 // Successfully concatenate with the Thumbnail
-// dbXumAJxXms
+// dbXumAJxXms // lje9-Ft71IA
 
 
 
