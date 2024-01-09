@@ -15,15 +15,18 @@ ytFormEl.addEventListener("submit", (event) => {
 
     if(amperSand){
         const amperSandUrl = storedVideoUrl.split("&");
+        // [youtbe[0].][&123213]
         const amperSandFinalUrl = amperSandUrl[0].split("v=")[1]
         const forThumbs = `https://i.ytimg.com/vi/${amperSandFinalUrl}/maxresdefault.jpg`
         ytThumbnailEl.setAttribute("src", forThumbs);
+    } else if (vUrl){
+        const vYouTubeUrl = storedVideoUrl.split("v=")[1];
+        const forVThumbs = `https://i.ytimg.com/vi/${vYouTubeUrl}/maxresdefault.jpg`
+        ytThumbnailEl.setAttribute("src", forVThumbs);
     }
 
     // if(vUrl) {
-    //     const vYouTubeUrl = storedVideoUrl.split("v=")[1];
-    //     const forVThumbs = `https://i.ytimg.com/vi/${vYouTubeUrl}/maxresdefault.jpg`
-    //     ytThumbnailEl.setAttribute("src", forVThumbs);
+        
     // }
 })
 
@@ -32,11 +35,14 @@ ytFormEl.addEventListener("submit", (event) => {
 
 //* My Logic Storyline
 
+// 10 = -1
+
 // Prototype URLs
 // https://www.youtube.com/watch?v=749DIRUHhNY&list=PL28dZNlHX63kjYvDr560F-0bW-dh9xQ62&index=17
 // https://www.youtube.com/watch?v=Fh9YgIT1mPc
 // https://www.youtube.com/watch?v=7wYKHZe9E1Q
 // https://www.youtube.com/watch?v=_d-8H-8LjcU&list=RD_d-8H-8LjcU&start_radio=1&rv=749DIRUHhNY
+// [https://www.youtube.com/watch?v=][_d-8H-8LjcU] [1]
 
 // Two types URLS 
 // One Type = Single "v=" Second Type = "&"
@@ -57,10 +63,11 @@ ytFormEl.addEventListener("submit", (event) => {
 // const videoUrl = "https://www.youtube.com/watch?v=Fh9YgIT1mPc".split("v=");
 // const videoId = videoUrl[1];
 // Successfully removed got the video ID separately
-// const thumbnails = "https://i.ytimg.com/vi/Fh9YgIT1mPc/maxresdefault.jpg"
+// const thumbnails = "https://i.ytimg.com/vi/UrIfwk-AELfFXmPM/maxresdefault.jpg"
 // const newReplace = thumbnails.replace("Fh9YgIT1mPc", videoUrl[1]);
 // console.log(newReplace);
 // Successfully concatenate with the Thumbnail
+// dbXumAJxXms
 
 
 
