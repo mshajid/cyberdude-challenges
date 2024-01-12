@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place Order - Paratha Eats</title>
+    <link rel="icon" type="image/x-icon" href="./assets/coffee-yC6lCy-v.png" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" crossorigin src="./assets/index-eD8Ghnm7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-fMiWFIqT.css">
+  </head>
+  <body class="bg-[#18122B] font-jakarta">
+    <header class="flex items-center justify-between px-10 py-5">
+      <div>
+        <h1 class="text-white text-4xl font-bold">Paratha Eats</h1>
+        <span class="text-[#635985]"
+          >All you can pick
+          <span class="font-bold">one exclusive paratha.</span></span
+        >
+      </div>
+      <div
+        class="*:bg-[#635985] *:px-5 *:py-1.5 *:rounded-md *:cursor-pointer *:text-white space-x-2"
+      >
+        <a id="aboutUs">About us</a>
+        <a id="exclusives">Exclusives</a>
+        <a>Parathas</a>
+        <a>Free Meals</a>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto bg-[#443C68] rounded-md px-5 py-10 my-8">
+      <div class="text-center">
+        <div class="relative">
+          <img src="./assets/naan-icon-5FCGjJ9N.svg" id="box" class="w-6 h-6  absolute top-3" />
+          <h2 class="text-4xl font-bold text-white tracking-wide">
+            Select Your Exclusive Paratha? 🍴
+          </h2>
+        </div>
+        <span class="text-xs font-light text-gray-400"
+          >Kindly check our various parathas on the menu but you can pick only
+          one.</span
+        >
+      </div>
+
+      <form id="parathaForm">
+        <div class="flex gap-x-2 justify-center mb-8 mt-8">
+          <!-- ! first Card -->
+          <div class="flex flex-col">
+            <div
+              class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
+            >
+              <div class="flex justify-center items-center">
+                <img
+                  class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
+                  src="./assets/naan-icon-5FCGjJ9N.svg"
+                />
+              </div>
+              <label>
+                <div>
+                  <input
+                    value="pyaz"
+                    id="pyaz"
+                    name="parathas"
+                    type="radio"
+                    class="accent-[#393053]"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-center gap-y-1 py-5"
+                >
+                  <div class="text-start">
+                    <span class="text-white font-semibold text-xl"
+                      >Pyaz Paratha</span
+                    >
+                  </div>
+                  <div class="flex items-end gap-x-1">
+                    <span class="font-bold text-5xl text-white">$1.44</span>
+                    <span class="text-sm text-white">/ paratha</span>
+                  </div>
+                  <div class="max-w-xs px-5">
+                    <span class="text-xs text-wrap text-gray-400"
+                      >This paratha stuffed with fried and raw
+                    </span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div
+              id="pyazAlert"
+              class="hidden bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
+            >
+              The Best Pick Ever
+            </div>
+          </div>
+          <!-- ! second card -->
+          <div class="flex flex-col">
+            <div
+              class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
+            >
+              <div class="flex justify-center items-center">
+                <img
+                  class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
+                  src="./assets/naan-icon-5FCGjJ9N.svg"
+                />
+              </div>
+              <label
+                class="has-[:checked]:text-red-900 has-[:checked]:bg-red-500"
+              >
+                <div>
+                  <input
+                    value="aloo"
+                    id="aloo"
+                    name="parathas"
+                    type="radio"
+                    class="accent-[#393053]"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-center gap-y-1 py-5"
+                >
+                  <div class="text-start">
+                    <span class="text-white font-semibold text-xl"
+                      >Aloo Paratha</span
+                    >
+                  </div>
+                  <div class="flex items-end gap-x-1">
+                    <span class="font-bold text-5xl text-white">$1.35</span>
+                    <span class="text-sm text-white">/ paratha</span>
+                  </div>
+                  <div class="max-w-xs px-5">
+                    <span class="text-xs text-wrap text-gray-400"
+                      >Mashed potato, and seasoned with salt
+                    </span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div
+              id="alooAlert"
+              class="hidden bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
+            >
+              Aloo!! One ain't enough
+            </div>
+          </div>
+          <!-- ! 3rd card -->
+          <div class="flex flex-col">
+            <div
+              class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
+            >
+              <div class="flex justify-center items-center">
+                <img
+                  class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
+                  src="./assets/naan-icon-5FCGjJ9N.svg"
+                />
+              </div>
+              <label
+                class="has-[:checked]:text-red-900 has-[:checked]:bg-red-500"
+              >
+                <div>
+                  <input
+                    value="mooli"
+                    id="mooli"
+                    name="parathas"
+                    type="radio"
+                    class="accent-[#393053]"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-center gap-y-1 py-5"
+                >
+                  <div class="text-start">
+                    <span class="text-white font-semibold text-xl"
+                      >Mooli Paratha</span
+                    >
+                  </div>
+                  <div class="flex items-end gap-x-1">
+                    <span class="font-bold text-5xl text-white">$1.85</span>
+                    <span class="text-sm text-white">/ paratha</span>
+                  </div>
+                  <div class="max-w-xs px-5">
+                    <span class="text-xs text-wrap text-gray-400"
+                      >Best served with pickle and curd. Try now
+                    </span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div
+              id="mooliAlert"
+              class="hidden bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
+            >
+              Your taste is rich and suavity.
+            </div>
+          </div>
+          <!-- ! 4th card -->
+          <div class="flex flex-col">
+            <div
+              class="bg-[#393053] px-3 py-5 rounded-md mt-10 mb-2 relative has-[:checked]:bg-[#393053]/50 has-[:checked]:ring-2 has-[:checked]:ring-[#18122B]"
+            >
+              <div class="flex justify-center items-center">
+                <img
+                  class="absolute top-[-30px] border-4 border-[#443C68] rounded-full"
+                  src="./assets/naan-icon-5FCGjJ9N.svg"
+                />
+              </div>
+              <label
+                class="has-[:checked]:text-red-900 has-[:checked]:bg-red-500"
+              >
+                <div>
+                  <input
+                    value="malabar"
+                    id="malabar"
+                    name="parathas"
+                    type="radio"
+                    class="accent-[#393053]"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-center gap-y-1 py-5"
+                >
+                  <div class="text-start">
+                    <span class="text-white font-semibold text-xl"
+                      >Malabar Paratha</span
+                    >
+                  </div>
+                  <div class="flex items-end gap-x-1">
+                    <span class="font-bold text-5xl text-white">$1.44</span>
+                    <span class="text-sm text-gray-200">/ paratha</span>
+                  </div>
+                  <div class="max-w-xs px-5">
+                    <span class="text-xs text-wrap text-gray-400"
+                      >Kerala's very owned prized possession
+                    </span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div
+              id="malabarAlert"
+              class="hidden bg-[#18122B] px-5 py-1.5 rounded-md text-white text-sm text-center"
+            >
+              Kerala's Special Paratha!
+            </div>
+          </div>
+        </div>
+
+        <section class="flex justify-center items-center gap-x-10 ml-10 my-12">
+          <!-- ! deliver details header -->
+          <div class="flex-1">
+            <h2 class="font-semibold text-2xl text-white">Delivery Details</h2>
+            <div class="flex gap-x-2 mb-5">
+              <span class="text-red-500">*</span>
+              <small class="text-[#635985]"
+                >fill all the mandatory fields or use fakeFiller</small
+              >
+            </div>
+            <!-- TODO Form Input Details Starts Here -->
+            <div class="flex flex-col gap-y-4">
+              <!-- ! full name and contact number -->
+              <div class="flex gap-x-2">
+                <!-- ! Full name -->
+                <div class="flex flex-col gap-y-1 flex-1">
+                  <div>
+                    <label for="fullName">
+                      <span class="font-bold text-red-600">*</span>
+                      <span class="text-white text-pretty font-medium"
+                        >Full Name</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      type="text"
+                      placeholder="Enter your full name"
+                      class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
+                    />
+                  </div>
+                </div>
+                <!-- ! Contact number -->
+                <div class="flex flex-col gap-y-1 flex-1">
+                  <div>
+                    <label for="contactNum">
+                      <span class="font-bold text-red-600">*</span>
+                      <span class="text-white text-pretty font-medium"
+                        >Contact Number</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="contactNum"
+                      name="contactNum"
+                      type="number"
+                      placeholder="Enter your valid contact number"
+                      class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- ! verified full address -->
+              <div class="flex flex-col gap-y-1">
+                <label for="deliveryAddress">
+                  <span class="font-bold text-red-600">*</span>
+                  <span class="text-white text-pretty font-medium"
+                    >Verified Full Address</span
+                  >
+                </label>
+                <div>
+                  <input
+                    id="deliveryAddress"
+                    name="deliveryAddress"
+                    type="text"
+                    placeholder="Start with the P.O Box"
+                    class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
+                  />
+                </div>
+              </div>
+              <!-- ! Land mark and How many parathas -->
+              <div class="flex gap-x-2">
+                <!-- ! Land mark -->
+                <div class="flex flex-col gap-y-1 flex-1">
+                  <div>
+                    <label for="landmark">
+                      <span class="text-white text-pretty font-medium"
+                        >Land Mark</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="landmark"
+                      name="landmark"
+                      type="text"
+                      placeholder="Across the statue, 3rd house."
+                      class="w-full px-5 py-1 outline-none rounded-sm placeholder:text-xs"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- ! Place order Button -->
+              <div class="my-3">
+                <button
+                  class="bg-[#18122B] px-5 py-2 text-white font-medium rounded-md"
+                >
+                  Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- * Payment details starts here -->
+          <div class="flex-1 justify-start flex flex-col items-start">
+            <div>
+              <h2 class="font-semibold text-xl text-white">Payment details</h2>
+            </div>
+
+            <div
+              class="max-w-xs bg-[#393053]/80 px-5 py-5 my-2 rounded-md space-y-3"
+            >
+              <label class="flex items-center gap-x-1.5">
+                <input
+                  value="cash on delivery"
+                  name="paymentType"
+                  type="radio"
+                  class="accent-[#393053]"
+                />
+                <img src="./assets/cash-WFnKtLCx.svg" class="size-6" />
+                <span class="text-white text-sm">Cash on delivery</span>
+              </label>
+
+              <label class="flex items-center gap-x-1.5">
+                <input
+                  value="visa card"
+                  name="paymentType"
+                  type="radio"
+                  class="accent-[#393053]"
+                />
+                <img src="data:image/svg+xml,%3csvg%20width='35'%20height='36'%20viewBox='0%200%2035%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20y='0.962158'%20width='35'%20height='35'%20fill='url(%23pattern0)'/%3e%3cdefs%3e%3cpattern%20id='pattern0'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_113_95'%20transform='scale(0.01)'/%3e%3c/pattern%3e%3cimage%20id='image0_113_95'%20width='100'%20height='100'%20xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAILUlEQVR4nO1deUwUVxinSRv/lx3vHp7VnrGnbbVpU1Pb1MY2TYyaHiqzq4JXBarFA08ab0VaLVYLam296q1UK/NAREBQlENAQbDiAeVQQZAVvuYbZV1m3szuApsZ6fdLvn92v3nz3vd777tmM+vjQyAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCO7DlvqERYzvYxHZoA5WaTCJpLIB2gZt5BMqPe61rdXej/WziGyTILJKwcqAhLljgwqLVYr2tUl9W5EKeMwiSrMEkdmJBNa8jSgyu0VkIWjLFtMhiNIqIoK1lkdY2SIyfG1sFJHBWtU9W6zSiGaR0WvSoXaCKBURIax146UoFaFtPSakgxg7jMhgXkleLKI01GNCLFYpgghh3iHEysI9JkQQpX1ECPMWIXs8J8TKJCKEeYUQtC0RYvWacYkQwXiDEiGC8UYkQgTjDUeECMYbiwgxgYGACDHeKECEGG8IMIlQHSIYTwIRIhhveCJE+D8R0jtgv0vpNv6I2xMbNPcUBG7OVcnkqByHzufL0rk6A+ekuBz/tZAk+HJNBkzYcF6+Rvw5C4YuPgM9Jh13e459p53g3h/lucBEYwkZELgFlkb4wfWYzgBx7TQleUd/GBgU7XJi+1JLgIf9aSUOnYScCq7OVxEZ3DEHhp6CjVIxlN2uAy00NABkX6mClQeLoNO4ON05LtlXqDlOwMbz5nBZXccfBf+w2ZB/oIcmKeVHBOg/dbvmpJ6eeBzu3K3nLnT4qnMOveuVd7k6b85MbjJeRxuDVYeKwF7fAO7iakWtruG6ToiDGzf590esP3bFHIQ0Spdxf0PQkmCwJ3TjkrI8YozmtdbILO4ii0prZOOiTs/JCVydu/Z66KzY2VsTroGnOJz+r+760NXpIeXiTXMR0iiRMZkAef4qQo798Y7mNeiWeAjbXeDQGRKWxtXJKa5qMtY3P2VCc7B47yXddaUV3NK9Hk+4cmOYghB0MTJKdwEktHcQUnZE4Oo/M/E41NSp3ZW9vgFeDH4YKP01dqhzjNGLM8XltRDy+wV4b14qvBCUCG/MTIax67LgQFop3KtvgJHhD12jUoaEnXaL1HfnnjIfIRgP7tof+O6qswBJ3R2kvDJ1m0rfFpnNXdyhM6VN9DDo8rD8QKFDp4ONPby3AnqZGH7Xe0qC5vc7km64RYhzRmgaQlCSLlQ+nGXNJYDkPjIhYxcuUOkePF3KXdxIxY7VcmsTfsl26HSfdJyrU3evAZ4KiG+OseD5wEQVyRi3cq9Wq+6zIbbYnIQs3a9ID6tzAE50hP27xjXRQwPy3NU/ZbWqFBRjBQ+DF6YpTgg/W5OyyuU6wlODLdl3STXW3tQSOZ1WIq3gpjkJ+WxZutoipX9CWeLgJnrj12e7FWA7jYvjGhprCIxBzrrx5/kxBHGr5p5cS7hbDGqlunh6p0TlqD6vrauHLuPjzEdI1wnx3J1fkzEaOtgkhx7GCSUwwL783ckm470eksw1MJ4k5b1HhWeAK5RX1ckB3lVWhO5QCayF8Lr356dyx8bPTUfI/Z1arp5tdTYMDd0pf4+7FHeUEjGcemCUhpHRDfHujUWhO0gvvKUi31nQBSkREXNZ/g5PAu/Ufhuda05CFu0u4BohYK327kNgv0k51pztF7m6kTrVcfCWPLhdc8+tCr3/dDUpWnWPc7Z2plBdm0SxYnMS8vEP/NwdgyR+j5Uxr1bg9ZM2xV/ljoVG15sD1jG/JVxz2UL566z6VO44eV2lh8Whs050nHpeSJIpCUE/y9uh6JKwDcI77pid8cZKzHNKo52AyYM7cxkwKxl2p/DTZgTy5ZyB8VJd3gYI2pyr0sF1YTJgOkJQjp4r47oIXtWNwZznOgQrgxKNph4azpP5TN+ap0nKh4vSdFNdPGWYYmMbv1FGr810mYqbipBQDd/PC5ZIHm+M3lP4TcXKarvH80EpuHGHO95Lwfc3A+5ura6yu8DnI6Yk5IMF/NSQh69/zOSO8ZFGLErNv6lyS8qaRCn9pp2QieR1lbGo1KuNPAHGPFMSgq3z8iq1AZS4VnE/t+eNMelXdQGGwBa7s96eUyVyzMJYga7pixVn5WYfEjVsaTrM2nZRNryrHY1EtxRni26bkxC9XpVWg1Apqw/za4p5O/Ob6GGG1hzg/BqfuaDvbw1g76ybf7w5CZmx9YLu5DHDefX7JM3rD3GqeeVjWyzumgNsWDo3HbdzUl1sz4xYfU4miydaLg7rGFMSgoWUHmIz+cFceCC8rioCXVGjjt86/hNHLVRU2+XWSWPcQMEfKfBScexc683vSf94bp3jqkYyjBBctN6z6DFrszSv7Sw3FdWLxc+cY87bs1PkmIKG1kNhSY3cQegzVd31xYYmD+60QvBHEkpgQWpKQlDwJzfzd+WrBOOAXne05+QECD98WSXK+OFM/luzU+SMbWp0DszdmS+3XdCt4BNCvTli0Ofdy53OMD5vV15n2hNCwogQ4dHaCHRCBONJIEIE4w1PhAjGG5sIEYw3MBEiGG9UIkQw3pBEiGC88YgQwXiDmZAQUdprgolDWxSLyHZ7TIhFZGuMnrjQVkWUVntMiK8f+9TwiVvbplhssZ94TAi9BJN5hwwrK2zWSzAR+EpTo3eT0MbEIrLhPi0BvvzX6EUIbUVEtsKndV41zkLoVeOsJUTYBZs0o1VeNd4IfKE8vlheEKVyw3ea9RERUSq3iFKU79hjz/p4DaHS44Kf1Iv+rkLS/KsOtA3ayKt/V0EgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEHzaHv4DCiGOcGwwBzAAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e" class="size-6" />
+                <span class="text-white text-sm">Visa card</span>
+              </label>
+
+              <label class="flex items-center gap-x-1.5">
+                <input
+                  value="bitcoin"
+                  name="paymentType"
+                  type="radio"
+                  class="accent-[#393053]"
+                />
+                <img src="data:image/svg+xml,%3csvg%20width='35'%20height='36'%20viewBox='0%200%2035%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20y='0.962158'%20width='35'%20height='35'%20fill='url(%23pattern0)'/%3e%3cdefs%3e%3cpattern%20id='pattern0'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_113_99'%20transform='scale(0.01)'/%3e%3c/pattern%3e%3cimage%20id='image0_113_99'%20width='100'%20height='100'%20xlink:href='data:image/png;base64,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'/%3e%3c/defs%3e%3c/svg%3e" class="size-6" />
+                <span class="text-white text-sm">Bitcoin</span>
+              </label>
+            </div>
+
+            <div class="max-w-xs mt-1 text-gray-300">
+              <small
+                >We deliver you as promised within 30 mins otherwise, we will
+                not charge from you. Enjoy the free parathas.</small
+              >
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <!-- ! Modal -->
+    <section id="mainTableSection" class="hidden">
+      <div class="max-w-7xl bg-white px-5 py-3 mx-auto my-5">
+        <div class="flex justify-between gap-x-5">
+          <div>
+            <div class="flex items-center gap-x-2">
+              <span
+                id="orderCount"
+                class="bg-[#0A1F38] text-center px-2 py-1 rouned-full text-white text-lg"
+              ></span>
+              <span class="font-semibold text-xl">Orders to Dispatch!</span>
+            </div>
+            <lottie-player
+              src="https://lottie.host/39a654b5-b792-4a71-b975-c4821b8afebf/2GMpsNllvg.json"
+              background="transparent"
+              speed="1"
+              style="width: 400px; height: 400px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div>
+            <table class="table table-auto border w-full text-center">
+              <tr>
+                <th
+                  class="px-5 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Full Name
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Delivery Address
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Contact Number
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Paratha Type
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Payment Type
+                </th>
+                <th
+                  class="px-3 py-1 border text-[16px] bg-[#0A1F38] text-white font-medium"
+                >
+                  Update Status
+                </th>
+              </tr>
+              <tbody id="orderDataTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! About Us Modal -->
+    <div id="modalWrapper" class="hidden">
+      <section
+        id="modalEl"
+        class="w-full h-[100vh] bg-[#18122B]/10 absolute top-0 backdrop-blur-sm flex justify-center items-center"
+      >
+        <div class="bg-white w-[60%] h-[60%] rounded-md">
+          <div class="px-6 py-5 flex justify-between">
+            <span class="font-semibold text-3xl">About Paratha Eats</span>
+            <span
+              id="closeBtn"
+              class="font-bold bg-[#18122B] hover:bg-[#393053] text-white rounded-md px-2 size-8 text-lg flex items-center justify-center cursor-pointer hover:transition-all hover:translate-y-1"
+              >x</span
+            >
+          </div>
+          <div class="flex justify-center items-start px-5 gap-x-10">
+            <div>
+              <lottie-player
+                src="https://lottie.host/8a0c5fa8-66e9-4c41-8c91-26cea7472618/4IZ2Ku9joo.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                direction="1"
+                mode="normal"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="flex flex-col gap-y-4">
+              <h2 class="text-3xl text-[#393053]">
+                Meet CEO of Paratha 👉🏽<span class="text-red-500 font-bold ml-1"
+                  >Shajid</span
+                >
+              </h2>
+              <article class="text-pretty max-w-md">
+                I create this from scratch
+                <span class="text-[#393053] font-bold"
+                  >only for Paratha lovers like me</span
+                >, Yes I do like explore more paratha varities with good
+                side-dishes to boost the umami. Keep explore our variety of
+                parathas.
+              </article>
+              <article class="text-pretty max-w-md">
+                However, We found this company in 2023, December. But we started
+                small in a truck, then we made an web app to make more
+                accessible to our restraurant. Now we receiving 100+ orders
+                everyday! It's all thanks to your contribution. We always love
+                to hear your feedback.
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ! Exclusives Modal -->
+    <div id="exclusiveModal" class="hidden">
+      <section
+        id="exclusiveSection"
+        class="bg-[#18122B]/10 h-screen w-full absolute top-0 backdrop-blur-sm flex justify-center items-center"
+      >
+        <div class="bg-white w-[50%] h-[50%] rounded-md">
+          <div class="px-5 py-3 flex justify-between items-center">
+            <h2 class="bg-[#18122B]/10 w-fit px-5 py-0.5 font-semibold text-xl">
+              New Exclusive Parathas
+            </h2>
+            <span
+              id="exclusiveCloseBtn"
+              class="font-semibold text-lg bg-[#18122B] hover:bg-[#393053] px-2 size-8 rounded-md text-white flex justify-center items-center cursor-pointer hover:transition-all hover:translate-y-1"
+              >X</span
+            >
+          </div>
+          <div
+            class="px-5 flex flex-col justify-center items-center w-full h-[50%] gap-y-5"
+          >
+            <h2 class="text-xl font-medium">
+              Lists of Exclusive Parathas at ParathaEats
+            </h2>
+            <ul
+              class="*:bg-[#18122B] *:text-white *:rounded-md *:w-fit *:px-2 *:py-0.5 flex justify-center flex-row *:text-sm gap-x-1 flex-wrap gap-y-1.5"
+            >
+              <li>Pyaz Paratha</li>
+              <li>Aloo Paratha</li>
+              <li>Malabar Paratha</li>
+              <li>Methi Paratha</li>
+              <li>Mooli Paratha</li>
+              <li>Paneer Paratha</li>
+              <li>Matar Paratha</li>
+              <li>Lachcha Paratha</li>
+              <li>Dhakai Paratha</li>
+              <li>Mughlai Paratha</li>
+              <li>Petai Paratha</li>
+              <li>Kizhi Paratha</li>
+              <li>Veechu Paratha</li>
+              <li>Dal Paratha</li>
+            </ul>
+          </div>
+          <div class="max-w-xl mx-auto">
+            <div class="px-5 text-sm text-balance">
+              Order your favorite Paratha or maybe you can try it out one of the
+              exclusives with coupon code:<span
+                id="couponElement"
+                class="bg-emerald-200 text-emerald-700 px-2 py-1 mx-1 rounded-md text-xs selection:bg-fuchsia-300 selection:text-fuchsia-900"
+                >GoingToTryFirstTime</span
+              >, and you will receive 20% discount.
+            </div>
+          </div>
+          <div class="px-5 py-5 flex justify-center">
+            <small
+              id="couponAlert"
+              class="bg-emerald-300 text-emerald-800 px-1.5 py-1 rounded-md text-xs hidden"
+              >✅ copied the coupon code</small
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
