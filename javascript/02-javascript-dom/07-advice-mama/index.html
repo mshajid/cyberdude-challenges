@@ -6,7 +6,7 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body class="font-jakarta bg-[#C17C74] h-screen">
+  <body id="modalSection" class="font-jakarta bg-[#C17C74] h-screen">
     <header class="bg-[#DDC9B4] flex justify-between px-5 py-2 items-center shadow-2xl shadow-black/10">
       <h2 class="text-xl font-bold">Advice Mama</h2>
    
@@ -99,6 +99,12 @@
       </button>
     </main>
 
+    <!-- <section class="max-w-[250px] bg-white px-5 py-2 rounded-md">
+      <div>
+        <span class="text-sm leading-tights text-pratty">My name is Shajid Shafee, Check my GitHub Here</span>
+      </div>
+    </section> -->
+
     <footer
       class="bg-[#2A3D45] fixed bottom-0 left-0 right-0 px-5 py-2 flex items-center justify-between text-sm text-white"
     >
@@ -106,10 +112,22 @@
         >Advice Mama Developed By
         <a class="font-semibold">Shajid Shafee</a></span
       >
-      <div class="space-x-4">
-        <span>Contribution Guide</span>
-        <span>About Author</span>
-        <span>About Project</span>
+      <div class="flex gap-x-4">
+        <div>
+          <span>Contribution Guide</span>
+        </div>
+        <div class="relative">
+          <span id="aboutAuthor" class="cursor-pointer">About Author</span>
+          <section id="about" class="w-[250px] bg-white text-black px-5 py-2 rounded-md absolute bottom-10 -right-20 hidden">
+            <div class="flex justify-center items-center text-center">
+              <img src="./assets/images/shajid.jpeg" class="size-16 rounded-full object-contain"/>
+              <span class="text-xs leading-tights">My name is <span class="font-semibold">Shajid Shafee</span>, Check my GitHub Here</span>
+            </div>
+          </section>
+        </div>
+        <div>
+          <span>About Project</span>
+        </div>
       </div>
     </footer>
 
