@@ -3,11 +3,26 @@ import JustValidate from "just-validate";
 //* These are for Getting Elements for Modal
 const submitVideosEl = document.getElementById("submitVideos");
 const modalWrapperEl = document.getElementById("modalWrapper");
-const sectionWrapperEl = document.getElementById("sectionWrapper");
 const secondWrapperEl = document.getElementById("secondWrapper");
 
-// * Validation Starts Here
+const yUniversityEl = document.getElementById("yuniversity");
 
+const uniData = "YUniversity Data"
+
+
+//* Opens the modal
+submitVideosEl.addEventListener("click", () => {
+    modalWrapperEl.classList.remove("hidden");
+  });
+  
+  //* Closes the modal when clicked outside the body!
+  secondWrapperEl.addEventListener("click", (e) => {
+    if (e.target === secondWrapperEl) {
+      modalWrapperEl.classList.add("hidden");
+    }
+  });
+
+// * Validation Starts Here
 const validate = new JustValidate("#yuniversity");
 
 validate.addField("#videoTitle", [
@@ -43,17 +58,25 @@ validate.addField("#instructor", [
 validate.addField("#videoDuration", [{
     rule: "required",
 }])
-
 // * Validation Ends Here
 
-//* Opens the modal
-submitVideosEl.addEventListener("click", () => {
-  modalWrapperEl.classList.remove("hidden");
-});
+validate.onSuccess((e) => {
+    const myFormData = new FormData(yUniversityEl)
+    const iterateData = Object.fromEntries(myFormData.entries());
 
-//* Closes the modal when clicked outside the body!
-secondWrapperEl.addEventListener("click", (e) => {
-  if (e.target === secondWrapperEl) {
-    modalWrapperEl.classList.add("hidden");
-  }
-});
+    const database = [];
+
+    const fetchDataFromLocalStorage = localStorage.getItem(uniData); 
+    const convertFetchedData = JSON.parse(fetchDataFromLocalStorage);
+    console.log(convertFetchedData);
+    
+    if(convertFetchedData) {
+        convertFetchedData.push(iterateData);
+        localStorage.setItem(uniData, JSON.stringify(convertFetchedData))
+    } else { 
+        database.push(iterateData)
+        localStorage.setItem(uniData, JSON.stringify(database));
+    }
+})
+
+
