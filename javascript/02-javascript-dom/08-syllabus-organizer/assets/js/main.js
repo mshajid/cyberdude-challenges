@@ -97,20 +97,28 @@ function toFecthAllData() {
   const parsingData = JSON.parse(getData);
 
   parsingData.map((value) => {
-    const storingElements = []
+    const storingElements = [];
 
     const imageURL = value.videoURL.split("v=")[1];
     const API = `https://i.ytimg.com/vi/${imageURL}/maxresdefault.jpg`;
+
+    const mainDivEl = document.createElement("div");
+    mainDivEl.classList.add(
+      "relative",
+      "max-w-sm",
+      "leading-5",
+      "flex",
+      "flex-col",
+      "gap-y-1"
+    );
 
     const imgEl = document.createElement("img");
     imgEl.setAttribute("src", API);
     imgEl.classList.add("w-[450px]", "h-auto");
     storingElements.push(imgEl);
 
-    const div1El = document.createElement("div");
-    const videoDurationText = document.createTextNode(value.videoDuration);
-    div1El.append(videoDurationText);
-    div1El.classList.add(
+    const videoDurationEl = document.createElement("div");
+    videoDurationEl.classList.add(
       "bg-black",
       "text-white",
       "w-fit",
@@ -127,10 +135,9 @@ function toFecthAllData() {
       "border",
       "border-white"
     );
-    storingElements.push(div1El)
+    videoDurationEl.textContent = value.videoDuration;
 
     const videoTitleEl = document.createElement("span");
-    videoTitleEl.textContent = value.videoTitle;
     videoTitleEl.classList.add(
       "text-wrap",
       "subpixel-antialiased",
@@ -138,20 +145,20 @@ function toFecthAllData() {
       "tracking-tight",
       "text-[17px]"
     );
-    storingElements.push(videoTitleEl)
+    videoTitleEl.textContent = value.videoTitle;
 
-    const channelDetailsWrapper = document.createElement("div");
-    channelDetailsWrapper.classList.add("flex", "gap-x-2");
-    
-    storingElements.forEach((value) => {
-      containerEl.append(value)
-    })
-    
-    mainEl.append(containerEl);
+    const channelNameWrapper = document.createElement("div");
+    channelNameWrapper.classList.add("flex", "gap-x-2");
+    const channelName = document.createElement("span");
+    channelName.classList.add("text-xs");
+    channelName.textContent = value.channelName;
+    const instructor = document.createElement("span");
+    instructor.classList.add("text-xs", "font-bold");
+    channelNameWrapper.append(channelName, instructor);
 
-
+    mainDivEl.append(imgEl, videoDurationEl, videoTitleEl, channelNameWrapper);
+    mainEl.append(mainDivEl);
   });
 }
 
 toFecthAllData();
-
