@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" /> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-tFRN_slk.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="./assets/favicon-tFRN_slk.ico"
+      type="image/x-icon"
+    />
+    <title>YUniversity | Full Stack Videos</title>
+
+    <script type="module" crossorigin src="./assets/index-WX4wRyJx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-TOhr0Zx3.css">
+  </head>
+  <body class="bg-[#F7ECE1] font-jakarta scroll-smooth">
+    <header class="bg-[#725AC1]">
+      <div class="flex items-center justify-evenly px-8 py-4 relative">
+        <nav>
+          <h2 class="text-xl font-semibold text-white">YUniversity?</h2>
+        </nav>
+        <div
+          class="flex gap-x-8 text-white font-medium subpixel-antialiased flex-1 justify-center items-center"
+        >
+          <span class="hover:text-[#242038] cursor-pointer transition-all"
+            >Home</span
+          >
+          <span class="hover:text-[#242038] cursor-pointer transition-all"
+            >About YUniversity?</span
+          >
+          <span
+            id="submitVideos"
+            class="hover:text-[#242038] cursor-pointer transition-all"
+            >Submit Videos Here</span
+          >
+          <span class="hover:text-[#242038] cursor-pointer transition-all"
+            >Contribution</span
+          >
+        </div>
+        <div
+          class="bg-[#8D86C9] w-[240px] h-full absolute right-0 flex justify-center items-center gap-x-5 border-l-4 rounded-es-3xl text-white font-semibold text-xl"
+        >
+          <span>Login</span>
+          <span>Register</span>
+        </div>
+      </div>
+      <section class="flex justify-center items-center relative gap-x-52">
+        <div class="">
+          <img
+            class="absolute left-0 top-10 ml-52 z-10"
+            src="./assets/Startup launch on social media-iHHsCE4i.png"
+          />
+          <img
+            class="absolute top-20 opacity-40"
+            src="./assets/dots-686PrpOw.png"
+          />
+        </div>
+        <div
+          class="flex flex-col items-start justify-center gap-y-4 my-[148px] ml-72"
+        >
+          <span
+            class="relative text-5xl font-semibold text-white drop-shadow-md shadow-blue-600/50"
+            >From Zero To
+            <div id="starsBubble" class="absolute -right-20 -top-20">
+              <img src="./assets/bubble with stars-q-dIlo_T.png" /></div
+          ></span>
+          <span
+            class="text-5xl font-semibold text-white drop-shadow-md shadow-blue-600/50"
+            >Full Stack Developer</span
+          >
+          <span
+            class="text-5xl font-semibold text-white drop-shadow-md shadow-blue-600/50"
+            >In 6 Months 💪🏽🚀</span
+          >
+        </div>
+      </section>
+    </header>
+    <section
+      class="bg-[#242038] px-5 py-8 flex justify-evenly items-center relative"
+    >
+      <div class="absolute top-10 left-36">
+        <img
+          src="./assets/texture-dots-CvW2-HM2.png"
+          class="size-32 opacity-50"
+        />
+      </div>
+      <div id="bigTexture" class="absolute -top-32 right-20">
+        <img
+          src="./assets/texture-dots-CvW2-HM2.png"
+          class="size-64 opacity-50"
+        />
+      </div>
+      <div class="flex flex-col items-start gap-y-6">
+        <div>
+          <span class="text-2xl text-white font-semibold"
+            >YUniversity Current Trend</span
+          >
+        </div>
+        <div class="flex items-start gap-x-36">
+          <div class="flex flex-col items-start">
+            <span id="videosUpload" class="text-5xl font-bold text-white"
+              >0</span
+            >
+            <span class="text-xl font-light text-white">Videos uploaded</span>
+          </div>
+          <div class="flex flex-col items-start">
+            <span id="contentHours" class="text-5xl font-bold text-white"
+              >100</span
+            >
+            <span class="text-xl font-light text-white"
+              >Hours worth of content</span
+            >
+          </div>
+          <div class="flex flex-col items-start">
+            <span id="creatorsCount" class="text-5xl font-bold text-white"
+              >0</span
+            >
+            <span class="text-xl font-light text-white"
+              >Exclusive creators</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-2xl font-semibold pb-5 text-center my-5">Recent Additions to YUniversity Playlist</div>
+    <main
+      id="main"
+      class="px-5 py-7 flex flex-wrap gap-5 justify-center h-full mb-10"
+    ></main>
+
+    <!--! FORM Modal Starts Here -->
+    <div id="modalWrapper" class="hidden">
+      <div
+        id="secondWrapper"
+        class="h-screen w-full bg-black/20 absolute top-0 left-0 right-0 z-10 backdrop-blur-sm"
+      >
+        <section
+          class="bg-[#725AC1] max-w-4xl mx-auto p-5 my-12 absolute top-0 left-0 right-0 z-10 rounded-md border-2 border-black shadow-lg shadow-black/20"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <span class="font-bold text-xl text-white"
+              >YUniversity Video Submitter</span
+            >
+            <span class="text-xs text-white max-w-sm text-center"
+              >Thanks for your contribution.</span
+            >
+          </div>
+          <div class="bg-[#242038] max-w-3xl mx-auto relative">
+            <img
+              id="formDots"
+              class="absolute -right-10 -top-10 size-32"
+              src="./assets/texture-dots-CvW2-HM2.png"
+            />
+            <form
+              id="yuniversity"
+              class="px-5 py-10 flex flex-col gap-y-8 my-2.5"
+            >
+              <div class="text-3xl font-bold text-white">
+                Submit The Video 👋🏽
+              </div>
+              <div class="flex">
+                <label class="text-white font-bold text-sm flex-1"
+                  >Video Title
+                  <input
+                    name="videoTitle"
+                    id="videoTitle"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+              </div>
+              <div class="flex items-start gap-x-2 justify-start">
+                <label class="text-white font-bold text-sm flex-1"
+                  >Video URL
+                  <input
+                    name="videoURL"
+                    id="videoUrl"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+                <label class="text-white font-bold text-sm flex-1"
+                  >Video Type
+                  <input
+                    name="videoType"
+                    id="videoType"
+                    value="video"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+              </div>
+              <div class="flex items-start gap-x-2 justify-start">
+                <label class="text-white font-bold text-sm flex-1"
+                  >Channel Name
+                  <input
+                    name="channelName"
+                    id="channelName"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+                <label class="text-white font-bold text-sm flex-1"
+                  >Instructor
+                  <input
+                    name="instructor"
+                    id="instructor"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+              </div>
+              <div class="flex items-center gap-x-12 justify-start">
+                <label class="text-white font-bold text-sm flex-1"
+                  >Video Duration
+                  <input
+                    type="text"
+                    name="videoDuration"
+                    id="videoDuration"
+                    placeholder="Enter your video title"
+                    class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
+                  />
+                </label>
+                <div class="flex flex-col items-start">
+                  <div class="text-white font-bold text-sm flex-1">
+                    Content Type
+                  </div>
+                  <select
+                    name="contentType"
+                    class="px-3 py-0.5 outline-none rounded text-sm"
+                    id="contentType"
+                  >
+                    <option value="Full Stack Development">
+                      Full Stack Development
+                    </option>
+                    <option value="Personal Development">
+                      Personal Development
+                    </option>
+                    <option value="Career Tips">Career Tips</option>
+                    <option value="Interview Preps">Interview Preps</option>
+                  </select>
+                </div>
+              </div>
+              <button
+                class="bg-[#F7ECE1] text-black font-semibold text-sm py-2 rounded-md w-fit px-5"
+              >
+                Submit Your Video Now
+              </button>
+              <small class="text-xs text-gray-600"
+                >Click outside to close this submitter</small
+              >
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="bg-[#8D86C9] fixed bottom-0 left-0 right-0 py-2 px-5 text-white">
+      <div class="flex">
+        <div class="flex-1 text-xs font-semibold space-x-4">
+          <span>Contribution</span>
+          <span>About Authors</span>
+          <span>GitHub Repository</span>
+        </div>
+        <div class="text-xs font-bold text-[#242038]">
+          <span>YUniversity - Developed By Shajid Shafee</span>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
