@@ -106,6 +106,7 @@ function toFecthAllData() {
     mainDivEl.classList.add(
       "relative",
       "max-w-sm",
+      "h-auto",
       "leading-5",
       "flex",
       "flex-col",
@@ -114,8 +115,7 @@ function toFecthAllData() {
 
     const imgEl = document.createElement("img");
     imgEl.setAttribute("src", API);
-    imgEl.classList.add("w-[450px]", "h-auto");
-    storingElements.push(imgEl);
+    imgEl.classList.add("w-[450px]", "h-auto", "rounded");
 
     const videoDurationEl = document.createElement("div");
     videoDurationEl.classList.add(
@@ -139,11 +139,11 @@ function toFecthAllData() {
 
     const videoTitleEl = document.createElement("span");
     videoTitleEl.classList.add(
-      "text-wrap",
+      "text-balance",
       "subpixel-antialiased",
       "font-bold",
       "tracking-tight",
-      "text-[17px]"
+      "text-[15px]"
     );
     videoTitleEl.textContent = value.videoTitle;
 
@@ -153,16 +153,45 @@ function toFecthAllData() {
     channelName.classList.add("text-xs");
     channelName.textContent = value.channelName;
     const instructor = document.createElement("span");
-    instructor.textContent = value.instructor
+    instructor.textContent = value.instructor;
     instructor.classList.add("text-xs", "font-bold");
     channelNameWrapper.append(channelName, instructor);
-    
-    
 
-    mainDivEl.append(imgEl, videoDurationEl, videoTitleEl, channelNameWrapper);
+    const contentTypeEl = document.createElement("div");
+    contentTypeEl.classList.add(
+      "bg-black",
+      "text-white",
+      "text-[9px]",
+      "px-2",
+      "py-0.5",
+      "rounded",
+      "w-fit"
+    );
+    contentTypeEl.textContent = value.contentType;
+
+    const watchAnchorEl = document.createElement("a");
+    watchAnchorEl.classList.add(
+      "bg-[#242038]",
+      "text-white",
+      "px-2",
+      "text-center",
+      "py-1.5",
+      "rounded-md",
+      "tracking-wide",
+      "font-semibold"
+    );
+    watchAnchorEl.setAttribute("href", value.videoURL);
+    watchAnchorEl.textContent = "Watch Here";
+
+    mainDivEl.append(
+      imgEl,
+      videoDurationEl,
+      videoTitleEl,
+      channelNameWrapper,
+      contentTypeEl,
+      watchAnchorEl
+    );
     mainEl.append(mainDivEl);
-
-    
   });
 }
 
