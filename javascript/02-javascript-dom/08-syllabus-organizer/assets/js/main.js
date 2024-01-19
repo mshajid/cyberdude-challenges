@@ -11,6 +11,7 @@ const containerEl = document.getElementById("container");
 
 const videoUploadEl = document.getElementById("videosUpload");
 const contentHoursEl = document.getElementById("contentHours");
+const creatorsCountEl = document.getElementById("creatorsCount");
 
 const fullStackTag = document.getElementById("fullstack");
 const personalTag = document.getElementById("personal");
@@ -100,9 +101,36 @@ function toFecthAllData() {
   const getData = localStorage.getItem(uniData);
   const parsingData = JSON.parse(getData);
 
-  mainEl.innerHTML = ""
+  mainEl.innerHTML = "";
 
   videoUploadEl.textContent = parsingData.length;
+  const channelNameInput = yUniversityEl.elements.channelName;
+  const newArr = [];
+
+
+  // If the channelName and inputChannel Name not equals then push it to the newArr array
+
+
+  const filteredChannels = parsingData.filter((channel) => {
+    if (channel.channelName.value !== channelNameInput.value) {
+      newArr.push(channel.channelName)
+    }
+  });
+  
+  function removeDuplicates(arr) {
+    const fnData =  newArr.filter((value, index) => arr.indexOf(value) === index);
+    creatorsCountEl.textContent = fnData.length;
+  }
+
+  removeDuplicates(newArr)
+  
+  // Reduce
+  // console.log(filteredChannels);
+  // console.log(filteredChannels)
+
+  // for (let i = 0; i < filteredChannels.length; i++) {
+  //   console.log(filteredChannels);
+  // }
 
   parsingData.map((value) => {
     const imageURL = value.videoURL.split("v=")[1];
@@ -205,5 +233,3 @@ function toFecthAllData() {
 }
 
 toFecthAllData();
-
-
