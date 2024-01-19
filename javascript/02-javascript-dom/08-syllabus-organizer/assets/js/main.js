@@ -9,6 +9,9 @@ const yUniversityEl = document.getElementById("yuniversity");
 const mainEl = document.getElementById("main");
 const containerEl = document.getElementById("container");
 
+const videoUploadEl = document.getElementById("videosUpload");
+const contentHoursEl = document.getElementById("contentHours");
+
 const fullStackTag = document.getElementById("fullstack");
 const personalTag = document.getElementById("personal");
 const javaScriptTag = document.getElementById("javascript");
@@ -90,19 +93,23 @@ validate.onSuccess((e) => {
   setTimeout(() => {
     modalWrapperEl.classList.add("hidden");
   }, 2000);
+  toFecthAllData();
 });
 
 function toFecthAllData() {
   const getData = localStorage.getItem(uniData);
   const parsingData = JSON.parse(getData);
 
-  parsingData.map((value) => {
-    const storingElements = [];
+  mainEl.innerHTML = ""
 
+  videoUploadEl.textContent = parsingData.length;
+
+  parsingData.map((value) => {
     const imageURL = value.videoURL.split("v=")[1];
     const API = `https://i.ytimg.com/vi/${imageURL}/maxresdefault.jpg`;
 
     const mainDivEl = document.createElement("div");
+
     mainDivEl.classList.add(
       "relative",
       "max-w-sm",
@@ -163,7 +170,7 @@ function toFecthAllData() {
       "border-red-500",
       "text-white",
       "text-[9px]",
-      "px-2", 
+      "px-2",
       "rounded",
       "w-fit"
     );
@@ -182,7 +189,7 @@ function toFecthAllData() {
       "font-semibold"
     );
     watchAnchorEl.setAttribute("href", value.videoURL);
-    watchAnchorEl.setAttribute("target", "_blank")
+    watchAnchorEl.setAttribute("target", "_blank");
     watchAnchorEl.textContent = "Watch Here";
 
     mainDivEl.append(
@@ -198,3 +205,5 @@ function toFecthAllData() {
 }
 
 toFecthAllData();
+
+
