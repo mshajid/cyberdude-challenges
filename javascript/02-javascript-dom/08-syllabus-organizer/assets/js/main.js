@@ -153,11 +153,16 @@ function toFecthAllData() {
     channelName.classList.add("text-xs");
     channelName.textContent = value.channelName;
     const instructor = document.createElement("span");
+    instructor.textContent = value.instructor
     instructor.classList.add("text-xs", "font-bold");
     channelNameWrapper.append(channelName, instructor);
+    
+    
 
     mainDivEl.append(imgEl, videoDurationEl, videoTitleEl, channelNameWrapper);
     mainEl.append(mainDivEl);
+
+    
   });
 }
 

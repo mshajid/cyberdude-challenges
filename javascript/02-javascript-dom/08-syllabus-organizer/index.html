@@ -110,10 +110,13 @@
         </div>
       </div>
     </section>
-    
+
     <div class="text-2xl font-semibold pb-5">Recent Additions</div>
     <main id="main" class="px-5 py-7 flex flex-wrap gap-5">
-      <div id="container" class="relative max-w-sm leading-5 flex flex-col gap-y-1">
+      <div
+        id="container"
+        class="relative max-w-sm leading-5 flex flex-col gap-y-1"
+      >
         <img class="w-[450px] h-auto" src="./assets/images/thumbnail.png" />
         <div
           class="bg-black text-white w-fit px-3 py-1 rounded-md absolute top-2 left-2 font-bold text-xs shadow-2xl shadow-black border border-white"
@@ -128,55 +131,7 @@
           <span class="text-xs">CyberDude Networks (Pvt) Ltd.</span>
           <span class="text-xs font-bold">Anbuselvan</span>
         </div>
-        <div class="text-xs py-2 flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >JavaScript</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Full Stack Development</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Full Stack Development</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Personal Development</span
-          >
-        </div>
-        <button
-          class="bg-[#242038] text-white py-1.5 rounded-md tracking-wide font-semibold"
-        >
-          Watch Here
-        </button>
-      </div>
-      <div id="container" class="relative max-w-sm leading-5 flex flex-col gap-y-1">
-        <img class="w-[450px] h-auto" src="./assets/images/thumbnail.png" />
-        <div
-          class="bg-black text-white w-fit px-3 py-1 rounded-md absolute top-2 left-2 font-bold text-xs shadow-2xl shadow-black border border-white"
-        >
-          18:35
-        </div>
-        <span
-          class="text-wrap subpixel-antialiased font-bold tracking-tight text-[17px]"
-          >The Complete 2024 Web Development Bootcamp</span
-        >
-        <div class="flex gap-x-2">
-          <span class="text-xs">CyberDude Networks (Pvt) Ltd.</span>
-          <span class="text-xs font-bold">Anbuselvan</span>
-        </div>
-        <div class="text-xs py-2 flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >JavaScript</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Full Stack Development</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Full Stack Development</span
-          >
-          <span class="bg-[#725AC1] px-2 py-1 text-white rounded-md"
-            >Personal Development</span
-          >
-        </div>
+
         <button
           class="bg-[#242038] text-white py-1.5 rounded-md tracking-wide font-semibold"
         >
@@ -276,45 +231,14 @@
                     class="w-full outline-none rounded-sm px-2 placeholder:text-xs text-sm py-1 bg-[#725AC1] font-light"
                   />
                 </label>
-                <div class="flex flex-col">
-                  <div class="flex items-center gap-x-2">
-                    <input name="fullstack" id="fullstack" type="checkbox" />
-                    <label for="fullstack" class="text-white text-xs">
-                      Full Stack Development</label
-                    >
-                  </div>
-                  <div class="flex items-center gap-x-2">
-                    <input name="personalDev" id="personal" type="checkbox" />
-                    <label for="personal" class="text-white text-xs">
-                      Personal Development</label
-                    >
-                  </div>
-                  <div class="flex items-center gap-x-2">
-                    <input name="javascript" id="javascript" type="checkbox" />
-                    <label for="javascript" class="text-white text-xs">
-                      JavaScript</label
-                    >
-                  </div>
-                </div>
-                <div class="flex flex-col">
-                  <div class="flex items-center gap-x-2">
-                    <input name="tailwind" id="tailwind" type="checkbox" />
-                    <label for="tailwind" class="text-white text-xs">
-                      Tailwind CSS</label
-                    >
-                  </div>
-                  <div class="flex items-center gap-x-2">
-                    <input name="react" id="react" type="checkbox" />
-                    <label for="react" class="text-white text-xs"
-                      >React JS</label
-                    >
-                  </div>
-                  <div class="flex items-center gap-x-2">
-                    <input name="career" id="career" type="checkbox" />
-                    <label for="career" class="text-white text-xs">
-                      Career Development</label
-                    >
-                  </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-white font-bold text-sm flex-1">Content Type</div>
+                  <select class="px-3 py-0.5 outline-none rounded text-sm" id="contentType">
+                    <option value="full stack development">Full Stack Development</option>
+                    <option value="personal development">Personal Development</option>
+                    <option value="career tips">Career Tips</option>
+                    <option value="interview preps">Interview Preps</option>
+                  </select>
                 </div>
               </div>
               <button
