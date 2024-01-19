@@ -5,220 +5,6 @@ let tl = gsap.timeline();
 let bl = gsap.timeline();
 let fl = gsap.timeline();
 
-
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-tl.to("#starsBubble", {
-  duration: 4,
-  y: -20
-})
-
-tl.to("#starsBubble", {
-  duration: 2,
-  y: 0
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: -40
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: 0
-})
-bl.to("#bigTexture", {
-  duration:3,
-  y: -40
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: 0
-})
-bl.to("#bigTexture", {
-  duration:3,
-  y: -40
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: 0
-})
-bl.to("#bigTexture", {
-  duration:3,
-  y: -40
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: 0
-})
-bl.to("#bigTexture", {
-  duration:3,
-  y: -40
-})
-
-bl.to("#bigTexture", {
-  duration:3,
-  y: 0
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-fl.to("#formDots", {
-  duration: 2,
-  y: -10
-})
-
-fl.to("#formDots", {
-  duration: 2,
-  y: 0
-})
-
-
-
 //* These are for Getting Elements for Modal
 const submitVideosEl = document.getElementById("submitVideos");
 const modalWrapperEl = document.getElementById("modalWrapper");
@@ -439,3 +225,214 @@ function toFecthAllData() {
 }
 
 toFecthAllData();
+
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+tl.to("#starsBubble", {
+  duration: 4,
+  y: -20
+})
+
+tl.to("#starsBubble", {
+  duration: 2,
+  y: 0
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: -40
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: 0
+})
+bl.to("#bigTexture", {
+  duration:3,
+  y: -40
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: 0
+})
+bl.to("#bigTexture", {
+  duration:3,
+  y: -40
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: 0
+})
+bl.to("#bigTexture", {
+  duration:3,
+  y: -40
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: 0
+})
+bl.to("#bigTexture", {
+  duration:3,
+  y: -40
+})
+
+bl.to("#bigTexture", {
+  duration:3,
+  y: 0
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
+fl.to("#formDots", {
+  duration: 2,
+  y: -10
+})
+
+fl.to("#formDots", {
+  duration: 2,
+  y: 0
+})
