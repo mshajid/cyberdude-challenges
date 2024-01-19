@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syllabus Organizer</title>
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" /> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>YUniversity | Full Stack Videos</title>
 
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -92,17 +103,23 @@
         </div>
         <div class="flex items-start gap-x-36">
           <div class="flex flex-col items-start">
-            <span id="videosUpload" class="text-5xl font-bold text-white">0</span>
+            <span id="videosUpload" class="text-5xl font-bold text-white"
+              >0</span
+            >
             <span class="text-xl font-light text-white">Videos uploaded</span>
           </div>
           <div class="flex flex-col items-start">
-            <span id="contentHours" class="text-5xl font-bold text-white">100</span>
+            <span id="contentHours" class="text-5xl font-bold text-white"
+              >100</span
+            >
             <span class="text-xl font-light text-white"
               >Hours worth of content</span
             >
           </div>
           <div class="flex flex-col items-start">
-            <span id="creatorsCount" class="text-5xl font-bold text-white">0</span>
+            <span id="creatorsCount" class="text-5xl font-bold text-white"
+              >0</span
+            >
             <span class="text-xl font-light text-white"
               >Exclusive creators</span
             >
@@ -111,9 +128,11 @@
       </div>
     </section>
 
-    <div class="text-2xl font-semibold pb-5">Recent Additions</div>
-    <main id="main" class="px-5 py-7 flex flex-wrap gap-5 justify-center">
-    </main>
+    <div class="text-2xl font-semibold pb-5 text-center my-5">Recent Additions to YUniversity Playlist</div>
+    <main
+      id="main"
+      class="px-5 py-7 flex flex-wrap gap-5 justify-center h-full mb-10"
+    ></main>
 
     <!--! FORM Modal Starts Here -->
     <div id="modalWrapper" class="hidden">
@@ -240,6 +259,19 @@
         </section>
       </div>
     </div>
+
+    <footer class="bg-[#8D86C9] fixed bottom-0 left-0 right-0 py-2 px-5 text-white">
+      <div class="flex">
+        <div class="flex-1 font-sm font-semibold space-x-4">
+          <span>Contribution</span>
+          <span>About Authors</span>
+          <span>GitHub Repository</span>
+        </div>
+        <div class="font-sm font-bold text-[#242038]">
+          <span>YUniversity - Developed By Shajid Shafee</span>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="./assets/js/main.js"></script>
   </body>

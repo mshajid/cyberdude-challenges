@@ -118,6 +118,7 @@ function toFecthAllData() {
 
   removeDuplicates(newArr);
 
+  //[v=], []
   parsingData.map((value) => {
     const imageURL = value.videoURL.split("v=")[1];
     const API = `https://i.ytimg.com/vi/${imageURL}/maxresdefault.jpg`;
