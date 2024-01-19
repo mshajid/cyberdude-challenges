@@ -160,10 +160,10 @@ function toFecthAllData() {
     const contentTypeEl = document.createElement("div");
     contentTypeEl.classList.add(
       "bg-black",
+      "border-red-500",
       "text-white",
       "text-[9px]",
-      "px-2",
-      "py-0.5",
+      "px-2", 
       "rounded",
       "w-fit"
     );
@@ -172,6 +172,7 @@ function toFecthAllData() {
     const watchAnchorEl = document.createElement("a");
     watchAnchorEl.classList.add(
       "bg-[#242038]",
+      "my-3",
       "text-white",
       "px-2",
       "text-center",
@@ -181,6 +182,7 @@ function toFecthAllData() {
       "font-semibold"
     );
     watchAnchorEl.setAttribute("href", value.videoURL);
+    watchAnchorEl.setAttribute("target", "_blank")
     watchAnchorEl.textContent = "Watch Here";
 
     mainDivEl.append(
