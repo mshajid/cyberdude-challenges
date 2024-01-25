@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage.jsx";
 import CodingJourney from "./pages/CodingJourney.jsx";
 import LearningTips from "./pages/LearningTips.jsx";
 import VSCodeSettings from "./pages/VSCodeSettings.jsx";
+import HowTo from "./pages/HowTo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/coding-journey",
         element: <CodingJourney />,
+      },
+      {
+        path: "/coding-journey/how-to-be-a-dev",
+        element: <HowTo />,
       },
       {
         path: "/learning-tips",
