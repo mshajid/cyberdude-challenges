@@ -31,6 +31,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div className="bg-[#EEEEEE] max-w-full h-screen py-2 font-jakarta">
-    <RouterProvider router={router} />
+    <div className="max-w-6xl mx-auto">
+      <RouterProvider router={router} />
+    </div>
   </div>
 );
