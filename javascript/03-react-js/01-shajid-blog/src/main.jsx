@@ -6,6 +6,7 @@ import GeneralLayout from "./layouts/GeneralLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CodingJourney from "./pages/CodingJourney.jsx";
 import LearningTips from "./pages/LearningTips.jsx";
+import VSCodeSettings from "./pages/VSCodeSettings.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/learning-tips",
         element: <LearningTips />,
+      },
+      {
+        path: "/vscode-settings",
+        element: <VSCodeSettings />,
       },
     ],
   },
