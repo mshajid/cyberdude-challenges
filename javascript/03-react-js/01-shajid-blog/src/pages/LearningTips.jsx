@@ -1,7 +1,11 @@
-const LearningTips = () => {
-    return (
-        <div>Learning Tips</div>
-    )
-}
+import BlogCard from "../components/BlogCard";
 
-export default LearningTips
+const LearningTips = () => {
+  return (
+    <div>
+        <BlogCard />
+    </div>
+  );
+};
+
+export default LearningTips;

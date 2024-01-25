@@ -1,7 +1,11 @@
-const CodingJourney = () => {
-    return (
-        <div>Coding Jouney</div>
-    )
-}
+import BlogCard from "../components/BlogCard";
 
-export default CodingJourney
+const CodingJourney = () => {
+  return (
+    <div>
+        <BlogCard />
+    </div>
+  );
+};
+
+export default CodingJourney;

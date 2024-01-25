@@ -2,7 +2,7 @@ import BlogCard from "../components/BlogCard"
 
 const HomePage = () => {
     return (
-        <div className="">
+        <div className="max-w-4xl">
             <BlogCard />
         </div>
     )

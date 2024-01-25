@@ -1,7 +1,11 @@
-const VSCodeSettings = () => {
-    return (
-        <div>My VSCode Settings</div>
-    )
-}
+import BlogCard from "../components/BlogCard";
 
-export default VSCodeSettings
+const VSCodeSettings = () => {
+  return (
+    <div>
+      <BlogCard />
+    </div>
+  );
+};
+
+export default VSCodeSettings;
