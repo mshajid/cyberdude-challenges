@@ -34,7 +34,7 @@ const Navbar = () => {
         </ul>
       </header>
       <div className="h-[2px] mx-10 my-5 bg-white w-fullrounded-lg"></div>
-      <div className="px-10 text-white text-3xl font-bold tracking-[0.4em] mb-4">FEATURED</div>
+      <div className="px-10 text-white text-3xl font-bold tracking-[0.4em] mb-4">From HTML to REACT 🚀</div>
     </div>
   );
 };
