@@ -1,5 +1,8 @@
+// * Importing dependencies
 import JustValidate from "just-validate";
 import { gsap } from "gsap";
+
+// * GSAP Tween Motion Starts Here
 
 let tl = gsap.timeline();
 let bl = gsap.timeline();
@@ -223,12 +226,11 @@ const secondWrapperEl = document.getElementById("secondWrapper");
 
 const yUniversityEl = document.getElementById("yuniversity");
 const mainEl = document.getElementById("main");
-const containerEl = document.getElementById("container");
 
 const videoUploadEl = document.getElementById("videosUpload");
-const contentHoursEl = document.getElementById("contentHours");
 const creatorsCountEl = document.getElementById("creatorsCount");
 
+//* LocalStorage Key
 const uniData = "YUniversity Data";
 
 //* Opens the modal
@@ -299,12 +301,14 @@ validate.onSuccess((e) => {
     database.push(iterateData);
     localStorage.setItem(uniData, JSON.stringify(database));
   }
-
+  alert("Added the video")
   setTimeout(() => {
     modalWrapperEl.classList.add("hidden");
-  }, 2000);
+  }, 1000);
   toFecthAllData();
 });
+
+// * Fetching All the Datas
 
 function toFecthAllData() {
   const getData = localStorage.getItem(uniData);
@@ -317,7 +321,7 @@ function toFecthAllData() {
   const channelNameInput = yUniversityEl.elements.channelName;
   const newArr = [];
 
-  // If the channelName and inputChannel Name not equals then push it to the newArr array
+  // * If the channelName and inputChannel Name not equals then push it to the newArr array
 
   const filteredChannels = parsingData.filter((channel) => {
     if (channel.channelName.value !== channelNameInput.value) {
@@ -325,6 +329,7 @@ function toFecthAllData() {
     }
   });
 
+  // * Removes the duplicates
   function removeDuplicates(arr) {
     const fnData = newArr.filter(
       (value, index) => arr.indexOf(value) === index
@@ -334,7 +339,7 @@ function toFecthAllData() {
 
   removeDuplicates(newArr);
 
-  //[v=], []
+  // * Creating Elements.
   parsingData.map((value) => {
     const imageURL = value.videoURL.split("v=")[1];
     const API = `https://i.ytimg.com/vi/${imageURL}/maxresdefault.jpg`;

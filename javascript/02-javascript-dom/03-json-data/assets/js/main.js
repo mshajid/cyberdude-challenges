@@ -1,6 +1,6 @@
 import data from "../js/data.json";
 
-const nameEls = document.querySelectorAll("#name");
+// const nameEls = document.querySelectorAll("#name");
 const mainEl = document.getElementById("main");
 
 data.forEach((person) => {
