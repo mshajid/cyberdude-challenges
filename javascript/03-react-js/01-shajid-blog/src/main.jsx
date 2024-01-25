@@ -2,5 +2,35 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import GeneralLayout from "./layouts/GeneralLayout.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import CodingJourney from "./pages/CodingJourney.jsx";
+import LearningTips from "./pages/LearningTips.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <GeneralLayout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/coding-journey",
+        element: <CodingJourney />,
+      },
+      {
+        path: "/learning-tips",
+        element: <LearningTips />,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <div className="bg-[#EEEEEE] max-w-full h-screen py-2 font-jakarta">
+    <RouterProvider router={router} />
+  </div>
+);
