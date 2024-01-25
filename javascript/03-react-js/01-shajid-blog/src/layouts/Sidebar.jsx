@@ -1,3 +1,6 @@
+import BlogCard from "../components/BlogCard";
+import TrendingPosts from "../components/Trending";
+
 const Sidebar = () => {
   return (
     <div>
@@ -16,6 +19,9 @@ const Sidebar = () => {
               Links Are Here
             </div>
           </div>
+        </div>
+        <div className="my-5">
+            <TrendingPosts />
         </div>
       </div>
     </div>
