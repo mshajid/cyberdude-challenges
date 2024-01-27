@@ -4,7 +4,7 @@ import Shajid from "../assets/Shajid.png";
 const Sidebar = () => {
   return (
     <div>
-      <div className="max-w-sm p-4">
+      <div className="sm:max-w-sm sm:p-4">
         <div className="bg-[#FFD369] p-5 rounded-lg">
           <div className="flex flex-col justify-center items-center">
             <img src={Shajid} className="size-32" />

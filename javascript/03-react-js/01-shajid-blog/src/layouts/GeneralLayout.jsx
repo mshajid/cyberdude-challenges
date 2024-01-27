@@ -8,11 +8,11 @@ const GeneralLayout = () => {
     <div>
       <Navbar />
       <div className="max-w-6xl mx-auto">
-        <div className="flex">
+        <div className="sm:flex flex-row p-2 sm:p-0">
           <div className="max-w-4xl">
             <Outlet />
           </div>
-          <div className="max-w-2xl">
+          <div className="sm:max-w-2xl">
             <Sidebar />
           </div>
         </div>
