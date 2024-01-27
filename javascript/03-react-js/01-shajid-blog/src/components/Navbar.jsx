@@ -24,7 +24,7 @@ const Navbar = () => {
             className="hover:text-white cursor-pointer text-[15px]"
             title="go to Shajid's GitHub"
           >
-            <Link>GitHub</Link>
+            <a target="_blank" href="https://github.com/mshajid">GitHub</a>
           </li>
         </ul>
       </header>
