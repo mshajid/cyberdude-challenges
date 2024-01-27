@@ -1,7 +1,5 @@
-import BlogCard from "../components/BlogCard";
 import TrendingPosts from "../components/Trending";
 import Shajid from "../assets/Shajid.png";
-import MdiGithub from "../assets/MdiGithub";
 
 const Sidebar = () => {
   return (
