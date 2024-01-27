@@ -3,6 +3,7 @@ const BlogData = [
     postID: 1,
     category: "coding-journey",
     postLink: "how-to-be-a-dev",
+    featuredImg:"https://placehold.co/600x400",  
     postTitle: "How To Become A Web Developer",
     postDesc:
       "lorem ipsum akdad asd kasjdk jaskdj kasjdlj asjdk jasjd klajlsk djlkajsdkl jlaksj dkljaslk dlakjsd asd asdkjas jdkljas kldjas ",

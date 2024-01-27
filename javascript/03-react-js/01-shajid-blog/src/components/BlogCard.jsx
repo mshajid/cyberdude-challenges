@@ -11,6 +11,7 @@ const BlogCard = () => {
     return (
       <div className="max-w-4xl bg-white p-5 rounded-lg my-4">
         <h1 className="text-3xl font-semibold">{post.postTitle}</h1>
+        <img src={post.featuredImg}/>
         <p>{post.postDesc}</p>
         <button>
           <Link to={`/coding-journey/${post.postLink}`}>Click Here</Link>
