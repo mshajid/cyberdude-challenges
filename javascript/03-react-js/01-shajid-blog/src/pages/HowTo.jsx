@@ -3,7 +3,7 @@ import WebDev from "../assets/web-dev.png";
 const HowTo = () => {
   return (
     <div className="max-w-4xl bg-white p-5 rounded-lg my-6">
-      <div className="mb-10">
+      <div className="sm:mb-10 mb-5">
         <img src={WebDev} className="rounded-md mb-2" />
         <span className="text-xs">Published by: Muhammed Shajid Shafee</span>
       </div>
