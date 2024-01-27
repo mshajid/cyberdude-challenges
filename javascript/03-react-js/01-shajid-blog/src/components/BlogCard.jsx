@@ -12,7 +12,7 @@ const BlogCard = () => {
         <div className="flex gap-x-3 items-center my-2">
           <div className="flex-1 flex gap-x-3 items-center">
             <span className="text-sm font-medium">{post.author}</span>
-            <span className="text-sm font-bold bg-[#FFD369] px-3 text-black rounded-md">{post.readTime}</span>
+            <span className="text-sm font-bold bg-[#FFD369] px-3 text-black rounded-md" title="Approximately requires 2 mins of reading time">{post.readTime}</span>
           </div>
           <div className="flex gap-x-2">
             <span className="text-sm font-regular">Published:</span>
