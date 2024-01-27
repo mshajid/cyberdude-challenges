@@ -5,8 +5,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import GeneralLayout from "./layouts/GeneralLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CodingJourney from "./pages/CodingJourney.jsx";
-import LearningTips from "./pages/LearningTips.jsx";
-import VSCodeSettings from "./pages/VSCodeSettings.jsx";
 import HowTo from "./pages/HowTo.jsx";
 import HowToLearn from "./pages/HowToLearn.jsx";
 import CommonMistakes from "./pages/CommonMistakes.jsx";
