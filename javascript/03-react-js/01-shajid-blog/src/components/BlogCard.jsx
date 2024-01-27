@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogData from "../data/Posts";
+import Shajid from "../assets/Shajid.png"
 
 const BlogCard = () => {
   const postTemplate = BlogData.map((post) => {
@@ -10,6 +11,7 @@ const BlogCard = () => {
         </h1>
         <div className="flex gap-x-3 items-center my-2">
           <div className="flex-1 flex gap-x-3 items-center">
+            <img src={Shajid} className="size-6" />
             <span className="text-sm font-medium">{post.author}</span>
             <span className="text-sm font-bold bg-[#FFD369] px-3 text-black rounded-md">
               {post.readTime}
