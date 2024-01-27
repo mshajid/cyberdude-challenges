@@ -17,18 +17,6 @@ const Navbar = () => {
           </li>
           <li
             className="hover:text-white cursor-pointer text-[15px]"
-            title="go My VSCode Settings"
-          >
-            <Link to={"/vscode-settings"}>My VSCode Settings</Link>
-          </li>
-          <li
-            className="hover:text-white cursor-pointer text-[15px]"
-            title="go to Learning Tips"
-          >
-            <Link to={"/learning-tips"}>Learning Tips</Link>
-          </li>
-          <li
-            className="hover:text-white cursor-pointer text-[15px]"
             title="go to Shajid's GitHub"
           >
             <Link>GitHub</Link>

@@ -8,6 +8,8 @@ import CodingJourney from "./pages/CodingJourney.jsx";
 import LearningTips from "./pages/LearningTips.jsx";
 import VSCodeSettings from "./pages/VSCodeSettings.jsx";
 import HowTo from "./pages/HowTo.jsx";
+import HowToLearn from "./pages/HowToLearn.jsx";
+import CommonMistakes from "./pages/CommonMistakes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,12 +29,12 @@ const router = createBrowserRouter([
         element: <HowTo />,
       },
       {
-        path: "/learning-tips",
-        element: <LearningTips />,
+        path: "/coding-journey/learning-how-to-learn",
+        element: <HowToLearn />,
       },
       {
-        path: "/vscode-settings",
-        element: <VSCodeSettings />,
+        path: "/coding-journey/developer-mistakes-you-should-avoid",
+        element: <CommonMistakes />,
       },
     ],
   },

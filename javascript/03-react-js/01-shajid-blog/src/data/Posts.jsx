@@ -26,7 +26,7 @@ const BlogData = [
   {
     postID: 3,
     category: "coding-journey",
-    postLink: "developer-mistakes-that-you-should-avoid",
+    postLink: "developer-mistakes-you-should-avoid",
     featuredImg:"https://i.ibb.co/L1KV3zS/top-10-mistakes-developer.png",
     author: "Muhammed Shajid Shafee",
     readTime: "~4 mins",
