@@ -4,9 +4,14 @@ const Navbar = () => {
   return (
     <div className="max-w-6xl mx-auto bg-[#222831] py-2 rounded-lg shadow-lg shadow-black/10">
       <header className="flex items-center justify-between px-10 py-2">
-        <h2 className="text-white text-3xl">Shajid</h2>
+        <Link to={"/"}>
+          <h2 className="text-white text-3xl">Shajid</h2>
+        </Link>
         <ul className="flex gap-x-4 text-[#D9D9D9] text-lg">
-          <li className="hover:text-white cursor-pointer text-[15px]" title="go to home">
+          <li
+            className="hover:text-white cursor-pointer text-[15px]"
+            title="go to home"
+          >
             <Link to={"/"}>Home</Link>
           </li>
           <li
