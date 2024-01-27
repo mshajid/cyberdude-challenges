@@ -6,25 +6,25 @@ const BlogCard = () => {
   const postTemplate = BlogData.map((post) => {
     return (
       <div key={post.postID} className="max-w-4xl bg-white p-5 rounded-lg my-4">
-        <h1 className="text-3xl font-bold">
+        <h1 className="sm:text-3xl text-2xl sm:text-left text-center font-bold">
           <Link to={`coding-journey/${post.postLink}`}>{post.postTitle}</Link>
         </h1>
-        <div className="flex gap-x-3 items-center my-2">
-          <div className="flex-1 flex gap-x-3 items-center">
-            <img src={Shajid} className="size-6" />
-            <span className="text-sm font-medium">{post.author}</span>
-            <span className="text-sm font-bold bg-[#FFD369] px-3 text-black rounded-md">
+        <div className="sm:flex gap-x-3 sm:items-center my-2 flex justify-center">
+          <div className="sm:flex-1 flex sm:flex gap-x-2 items-center sm:items-center">
+            <img src={Shajid} className="sm:size-8 size-6" />
+            <span className="sm:text-sm text-xs font-medium">{post.author}</span>
+            <span className="hidden sm:block sm:text-sm sm:text-[10px] sm:font-bold sm:bg-[#FFD369] sm:px-3 sm:text-black sm:rounded-md">
               {post.readTime}
             </span>
           </div>
-          <div className="flex gap-x-2">
-            <span className="text-sm font-regular">Published:</span>
-            <span className="text-sm font-bold">{post.datePublished}</span>
+          <div className="sm:flex-row sm:flex-nowrap flex flex-wrap sm:gap-x-2 items-center">
+            <span className="sm:text-sm text-xs font-regular">Published:</span>
+            <span className="sm:text-sm text-xs font-bold">{post.datePublished}</span>
           </div>
         </div>
         <img src={post.featuredImg} className="rounded my-4 w-full" />
         <p className="my-4">{post.postDesc}</p>
-        <button className="my-3">
+        <button className="my-3 flex items-center justify-center w-full sm:justify-start">
           <Link
             className="bg-[#FFD369] text-black hover:bg-[#222831] hover:text-white px-5 py-1.5 rounded-md transition-all"
             to={`/coding-journey/${post.postLink}`}
