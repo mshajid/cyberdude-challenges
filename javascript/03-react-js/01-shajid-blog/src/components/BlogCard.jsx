@@ -21,7 +21,7 @@ const BlogCard = () => {
             <span className="text-sm font-bold">{post.datePublished}</span>
           </div>
         </div>
-        <img src={post.featuredImg} className="rounded my-4" />
+        <img src={post.featuredImg} className="rounded my-4 w-full" />
         <p className="my-4">{post.postDesc}</p>
         <button className="my-3">
           <Link className="bg-[#FFD369] text-black hover:bg-[#222831] hover:text-white px-5 py-1.5 rounded-md transition-all" to={`/coding-journey/${post.postLink}`}>Read more here</Link>
