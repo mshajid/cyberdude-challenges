@@ -3,7 +3,10 @@ import WebDev from "../assets/web-dev.png";
 const HowTo = () => {
   return (
     <div className="max-w-4xl bg-white p-5 rounded-lg my-6">
-      <img src={WebDev} className="rounded-md mb-10" />
+      <div className="mb-10">
+        <img src={WebDev} className="rounded-md mb-2" />
+        <span className="text-xs">Published by: Muhammed Shajid Shafee</span>
+      </div>
       <h2 className="text-3xl font-semibold mb-4">
         How To Become A Web Developer In 6 Months
       </h2>
