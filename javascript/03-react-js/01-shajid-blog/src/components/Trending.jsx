@@ -9,10 +9,10 @@ const TrendingPosts = () => {
           <div className="bg-[#393E46] px-5 py-2 my-2 text-white rounded-lg hover:bg-gradient-to-r from-blue-800 to-indigo-900 transition-all">
             <div className="sm:flex-row flex items-center gap-x-3">
               <div>
-                <img src={post.smallFeaturedImg} className="rounded-md" />
+                <img src={post.smallFeaturedImg} className="rounded-md lg:rounded-full" />
               </div>
-              <div className="flex sm:flex-col gap-y-5">
-                <span className="text-pretty sm:text-sm font-bold">
+              <div className="flex lg:flex-col justify-between w-full gap-y-5">
+                <span className="text-pretty text-xs sm:text-sm font-semibold xl:text-sm sm:font-bold">
                   {post.postTitle}
                 </span>
                 <div className="sm:flex flex justify-center items-center sm:items-center gap-x-2">

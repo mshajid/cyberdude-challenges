@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="mx-2 max-w-6xl sm:mx-auto bg-[#222831] py-2 rounded-lg shadow-lg shadow-black/10">
+    <div className="mx-2 max-w-6xl lg:mx-auto bg-[#222831] py-2 rounded-lg shadow-lg shadow-black/10">
       <header className="text-center justify-center sm:flex sm:items-center sm:justify-between px-10 py-2">
         <Link to={"/"}>
           <h2 className="text-white text-3xl">Shajid</h2>

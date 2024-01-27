@@ -5,7 +5,7 @@ import Shajid from "../assets/Shajid.png"
 const BlogCard = () => {
   const postTemplate = BlogData.map((post) => {
     return (
-      <div key={post.postID} className="max-w-4xl bg-white p-5 rounded-lg my-4">
+      <div key={post.postID} className="max-w-4xl bg-white p-5 rounded-lg my-4 lg:mx-2">
         <h1 className="sm:text-3xl text-2xl sm:text-left text-center font-bold">
           <Link to={`coding-journey/${post.postLink}`}>{post.postTitle}</Link>
         </h1>
@@ -23,7 +23,7 @@ const BlogCard = () => {
           </div>
         </div>
         <img src={post.featuredImg} className="rounded my-4 w-full" />
-        <p className="my-4">{post.postDesc}</p>
+        <p className="my-4 text-pretty">{post.postDesc}</p>
         <button className="my-3 flex items-center justify-center w-full sm:justify-start">
           <Link
             className="bg-[#FFD369] text-black hover:bg-[#222831] hover:text-white px-5 py-1.5 rounded-md transition-all"
