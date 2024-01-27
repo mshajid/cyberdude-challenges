@@ -15,7 +15,7 @@ const HowTo = () => {
         definitely achievable with dedication and the right approach. Here's a
         roadmap to help you get started
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             1. Set Clear Goals
           </h3>
           <p>
@@ -25,7 +25,7 @@ const HowTo = () => {
           </p>
         </div>
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             2. Choose Your Path
           </h3>
           <p>
@@ -36,7 +36,7 @@ const HowTo = () => {
           </p>
         </div>
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             3. Learn The Basics
           </h3>
           <p>
@@ -46,7 +46,7 @@ const HowTo = () => {
           </p>
         </div>
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             4. Select Learning Resources
           </h3>
           <p>
@@ -56,7 +56,7 @@ const HowTo = () => {
           </p>
         </div>
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             5. Network & Join Communities
           </h3>
           <p>
@@ -66,7 +66,7 @@ const HowTo = () => {
           </p>
         </div>
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-xl font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
+          <h3 className="sm:text-xl text-lg font-semibold bg-[#222831] text-white w-fit px-3 py-0.5 rounded-md">
             6. Seek Feedback
           </h3>
           <p>
