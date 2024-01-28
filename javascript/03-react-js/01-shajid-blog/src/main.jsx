@@ -8,6 +8,7 @@ import CodingJourney from "./pages/CodingJourney.jsx";
 import HowTo from "./pages/HowTo.jsx";
 import HowToLearn from "./pages/HowToLearn.jsx";
 import CommonMistakes from "./pages/CommonMistakes.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
         element: <CommonMistakes />,
       },
     ],
+    errorElement: <ErrorPage />
   },
 ]);
 
