@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="mx-2 max-w-6xl lg:mx-auto bg-[#222831] py-2 rounded-lg shadow-lg shadow-black/10">
       <header className="text-center justify-center sm:flex sm:items-center sm:justify-between px-10 py-2">
         <Link to={"/"}>
-          <h2 className="text-white text-3xl">Shajid</h2>
+          <h2 className="text-white text-3xl tracking-wider font-semibold">😎 Shajid Shafee</h2>
         </Link>
         <ul className="flex justify-center mt-2 sm:flex gap-x-4 text-[#D9D9D9] text-lg">
           <li
