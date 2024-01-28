@@ -2,11 +2,14 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Sidebar from "./Sidebar";
 import Footer from "../components/Footer";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const GeneralLayout = () => {
   return (
     <div>
       <Navbar />
+      <Breadcrumbs />
+      
       <div className="max-w-6xl mx-auto">
         <div className="lg:flex flex-row p-2 lg:p-0">
           <div className="max-w-4xl">
