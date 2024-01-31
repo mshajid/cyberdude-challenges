@@ -23,11 +23,11 @@ const Skills = () => {
       <div className="max-w-lg">
         <div>{currentSkills}</div>
       </div>
-      <div className="mt-5">
+      {/* <div className="mt-5">
         <small className="text-gray-300 tracking-wide">
           I possessed these skills and some of them will learn in the future.
         </small>
-      </div>
+      </div> */}
     </div>
   );
 };
