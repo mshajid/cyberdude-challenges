@@ -1,5 +1,6 @@
 import Education from "./Components/Education";
 import Header from "./Components/Header";
+import Skills from "./Components/Skills";
 import WorkingExp from "./Components/WorkingExp";
 
 const App = () => {
@@ -8,7 +9,10 @@ const App = () => {
       <div className="p-10">
         <Header />
         <div className="flex gap-x-16">
-          <WorkingExp />
+          <div>
+            <WorkingExp />
+            <Skills />
+          </div>
           <Education />
         </div>
       </div>

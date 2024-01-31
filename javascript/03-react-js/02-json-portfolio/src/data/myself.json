@@ -60,48 +60,44 @@
     },
     "currentSkills": [
       {
-        "stack": "HTML",
-        "logo": "htmlLogo"
+        "stacks": "HTML",
+        "logo": "https://api.iconify.design/devicon:html5.svg?color=%23888888"
       },
       {
         "stacks": "CSS",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/devicon:css3.svg?color=%23888888"
       },
       {
         "stacks": "JavaScript",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/devicon:javascript.svg?color=%23888888"
       },
       {
         "stacks": "Bootstrap 5",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/devicon:bootstrap.svg?color=%23888888"
       },
       {
         "stacks": "Tailwind CSS",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/logos:tailwindcss-icon.svg?color=%23888888"
       },
       {
         "stacks": "React JS",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/devicon:react.svg?color=%23888888"
       },
       {
         "stacks": "Node JS",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/devicon:nodejs.svg?color=%23888888"
       },
       {
         "stacks": "Mongo DB",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/skill-icons:mongodb.svg?color=%23888888"
       },
       {
         "stacks": "Express JS",
-        "logo": "stacksLogo"
+        "logo": "https://api.iconify.design/simple-icons:express.svg?color=%23888888"
       },
       {
         "stacks": "Next JS",
-        "logo": "stacksLogo"
-      },
-      {
-        "stacks": "stacks",
-        "logo": "htmlLogo"
+        "logo": "https://api.iconify.design/devicon:nextjs.svg?color=%23888888"
       }
     ],
     "projects": {
