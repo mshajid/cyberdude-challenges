@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Shajid Shafee",
+    "title": "Full Stack Engineer",
+    "description": "I'm a Full Stack Engineer with 6 months of experience in real time tech environment, Completed full fledged applications that being dependable 1000+ users monthly",
+    "contactNo": "+94762009533",
+    "livesIn": "Colombo, Sri Lanka",
+    "linkedinURL": "/in/shajidshafee/",
+    "githubURL": "mshajid",
+    "workExperience": {
+      "cyberDude": {
+        "company": "CyberDude Networks Pvt. Ltd",
+        "jobTitle": "Full Stack Engineer Intern",
+        "startDuration": "August - 2023",
+        "endDuration": "Present",
+        "description": {
+          "firstPoint": "I was able to give my full effort and unconditional support towards the community to gain profit to the company by 300%",
+          "secondPoint": "Created more than 10+ real world projects that could help users to check their daily needs. Almost100+ users are dependable on my projects on monthly basis."
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap 5",
+          "JavaScript",
+          "Vite",
+          "Tailwind CSS",
+          "React JS"
+        ]
+      }
+    },
+    "education": {
+      "courses": {
+        "course1": {
+          "courseTitle": "FreeCodeCamp.org",
+          "courseDescription": "Successfully completed Responsive Design curriculum at the platform with HTML, CSS & JavaScript",
+          "courseYear": 2020
+        },
+        "course2": {
+          "courseTitle": "Google Analytics Individual Qualification",
+          "courseDescription": "Successfully completed advanced Google Analaytics individual qualification, which helps me to grow my SEO & Analytical skills",
+          "courseYear": 2020
+        },
+        "course3": {
+          "courseTitle": "The Odin Project",
+          "courseDescription": "Followed free research & text-based Full stack javascript curriculum",
+          "courseYear": 2022
+        },
+        "course4": {
+          "courseTitle": "Zero To Mastery",
+          "courseDescription": "Successfully completed Full Stack Development curriculum, and an active alumni to learn new tech stacks and supporting the ZTM community",
+          "courseYear": 2023
+        },
+        "course5": {
+          "courseTitle": "Harvard University CS50X",
+          "courseDescription": "Following introduction to Computer Science curriculum at EDX",
+          "courseYear": 2024
+        }
+      }
+    },
+    "currentSkills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "BootStrap 5",
+      "Tailwind CSS",
+      "Vite JS",
+      "React JS",
+      "Git",
+      "GitHub",
+      "Canva",
+      "Content Writing",
+      "Figma"
+    ],
+    "projects": {
+      "project1": {
+        "projectTitle": "My Resume",
+        "techStacks": ["HTML", "CSS"]
+      },
+      "project2": {
+        "projectTitle": "Personal Portfolio",
+        "techStacks": ["HTML", "CSS"]
+      },
+      "project3": {
+        "projectTitle": "Movie Listing",
+        "techStacks": ["HTML", "Bootstrap 5"]
+      },
+      "project4": {
+        "projectTitle": "WhatsApp UI",
+        "techStacks": ["HTML", "Tailwind CSS"]
+      },
+      "project5": {
+        "projectTitle": "Instagram UI",
+        "techStacks": ["HTML", "Tailwind CSS"]
+      }
+    }
+  }
+]
