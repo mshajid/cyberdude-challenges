@@ -1,7 +1,11 @@
+import HomePage from "./Components/HomePage"
+import Navbar from "./Components/Navbar"
+
 const App = () => {
   return (
-    <div className="bg-red-500 px-5">
-      Hello
+    <div className="font-robotoCondensed">
+      <Navbar />
+      <HomePage />
     </div>
   )
 }
