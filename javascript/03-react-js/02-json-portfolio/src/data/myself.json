@@ -59,40 +59,72 @@
       }
     },
     "currentSkills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "BootStrap 5",
-      "Tailwind CSS",
-      "Vite JS",
-      "React JS",
-      "Git",
-      "GitHub",
-      "Canva",
-      "Content Writing",
-      "Figma"
+      {
+        "stack": "HTML",
+        "logo": "htmlLogo"
+      },
+      {
+        "stacks": "CSS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "JavaScript",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Bootstrap 5",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Tailwind CSS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "React JS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Node JS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Mongo DB",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Express JS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "Next JS",
+        "logo": "stacksLogo"
+      },
+      {
+        "stacks": "stacks",
+        "logo": "htmlLogo"
+      }
     ],
     "projects": {
-        "project1": {
-            "projectTitle": "My Resume",
-            "techStacks": ["HTML", "CSS"]
-        },
-        "project2": {
-            "projectTitle": "Personal Portfolio",
-            "techStacks": ["HTML", "CSS"]
-        },
-        "project3": {
-            "projectTitle": "Movie Listing",
-            "techStacks": ["HTML", "Bootstrap 5"]
-        },
-        "project4": {
-            "projectTitle": "WhatsApp UI",
-            "techStacks": ["HTML", "Tailwind CSS"]
-        },
-        "project5": {
-            "projectTitle": "Instagram UI",
-            "techStacks": ["HTML", "Tailwind CSS"]
-        }
+      "project1": {
+        "projectTitle": "My Resume",
+        "techStacks": ["HTML", "CSS"]
+      },
+      "project2": {
+        "projectTitle": "Personal Portfolio",
+        "techStacks": ["HTML", "CSS"]
+      },
+      "project3": {
+        "projectTitle": "Movie Listing",
+        "techStacks": ["HTML", "Bootstrap 5"]
+      },
+      "project4": {
+        "projectTitle": "WhatsApp UI",
+        "techStacks": ["HTML", "Tailwind CSS"]
+      },
+      "project5": {
+        "projectTitle": "Instagram UI",
+        "techStacks": ["HTML", "Tailwind CSS"]
+      }
     }
   }
 ]
