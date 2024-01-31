@@ -20,7 +20,7 @@ const Blog = () => {
     <div>
       <div>
         {findIdPost.map((value) => {
-          <div key={value.id}>console.log(value.title)</div>
+          <div key={value.id}>console.log(value.title)</div>;
         })}
       </div>
     </div>
