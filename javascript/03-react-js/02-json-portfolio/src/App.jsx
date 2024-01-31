@@ -1,9 +1,13 @@
+import Header from "./Components/Header";
+
 const App = () => {
   return (
-    <div className="bg-[#01497C] max-w-5xl mx-auto h-screen">
-      
+    <div className="bg-[#012A4A] max-w-6xl mx-auto h-screen">
+      <div className="p-10">
+        <Header />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
