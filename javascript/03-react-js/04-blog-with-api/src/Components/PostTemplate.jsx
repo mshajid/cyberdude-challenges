@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const PostTemplate = () => {
   const [post, setPost] = useState([]);
@@ -21,13 +22,14 @@ const PostTemplate = () => {
           <div className="flex gap-x-2 items-end h-12">
             <div className="text-white flex gap-x-2 items-center">
               <span className="text-black">Related Tags</span>
-              {eachPost.tags.map((tag) => {
+              {eachPost.tags.map((tag, index) => {
                 return (
-                  <span className="px-2 bg-[#735751] rounded-md">{tag}</span>
+                  <span key={`tag-${index}`} className="px-2 bg-[#735751] rounded-md">{tag}</span>
                 );
               })}
             </div>
           </div>
+          <Link to={`/blog/${eachPost.id}`}>Read Here</Link>
         </div>
       </div>
     );
