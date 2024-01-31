@@ -86,7 +86,7 @@ const Header = () => {
     );
   });
   return (
-    <div className="bg-[#01497C] p-5 rounded-md">
+    <div className="bg-[#01497C] px-5 py-10 rounded-md">
       <div className="flex justify-evenly items-center">
         <img className="size-44 object-cover rounded-full" src={Shajid} />
         <div className="">{mySelfComponent}</div>
