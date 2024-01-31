@@ -5,6 +5,7 @@ import Skills from "./Components/Skills";
 import WorkingExp from "./Components/WorkingExp";
 
 import mySelf from "../src/data/myself.json"
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Education />
         </div>
         <Projects data={mySelf} />
+        <Footer author={"M. Shajid Shafee"}/>
       </div>
     </div>
   );
