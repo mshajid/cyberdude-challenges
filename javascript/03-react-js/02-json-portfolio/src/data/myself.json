@@ -100,27 +100,38 @@
         "logo": "https://api.iconify.design/devicon:nextjs.svg?color=%23888888"
       }
     ],
-    "projects": {
-      "project1": {
+    "projects": [
+      {
         "projectTitle": "My Resume",
-        "techStacks": ["HTML", "CSS"]
+        "featuredImg": "https://i.ibb.co/TkJQC5b/resume-project.png",
+        "techStacks": ["HTML", "CSS"],
+        "projectURL": "https://mshajid.github.io/My-Resume/"
+
       },
-      "project2": {
-        "projectTitle": "Personal Portfolio",
-        "techStacks": ["HTML", "CSS"]
+      {
+        "projectTitle": "GitHub API",
+        "featuredImg": "https://i.ibb.co/tbtFLcb/github-api-project.png",
+        "techStacks": ["HTML", "Tailwind CSS", "Vite", "JavaScript"],
+        "projectURL": "https://mshajid.github.io/cyberdude-challenges/javascript/02-javascript-dom/06-github-api/dist/"
       },
-      "project3": {
-        "projectTitle": "Movie Listing",
-        "techStacks": ["HTML", "Bootstrap 5"]
+      {
+        "projectTitle": "Shajid's React Blog",
+        "featuredImg": "https://i.ibb.co/CwpJyzP/react-blog-project.png",
+        "techStacks": ["React JS", "React Router", "Vite", "Tailwind CSS"],
+        "projectURL": "https://shajid-blog-react.netlify.app/"
       },
-      "project4": {
+      {
         "projectTitle": "WhatsApp UI",
-        "techStacks": ["HTML", "Tailwind CSS"]
+        "featuredImg": "https://i.ibb.co/3dXPS50/whatsapp-ui-challenge.png",
+        "techStacks": ["HTML", "Tailwind CSS", "Vite"],
+        "projectURL": "https://mshajid.github.io/chat-app-ui-challenge/"
       },
-      "project5": {
+      {
         "projectTitle": "Instagram UI",
-        "techStacks": ["HTML", "Tailwind CSS"]
+        "featuredImg": "https://i.ibb.co/fDtcc8t/instagram-project.png",
+        "techStacks": ["HTML", "Tailwind CSS", "Vite"],
+        "projectURL": "https://mshajid.github.io/instagram-ui-challenge/"
       }
-    }
+    ]
   }
 ]
