@@ -11,7 +11,7 @@
       "cyberDude": {
         "company": "CyberDude Networks Pvt. Ltd",
         "jobTitle": "Full Stack Engineer Intern",
-        "startDuration": "August - 2023",
+        "startDuration": "August, 2023",
         "endDuration": "Present",
         "description": {
           "firstPoint": "I was able to give my full effort and unconditional support towards the community to gain profit to the company by 300%",
@@ -73,26 +73,26 @@
       "Figma"
     ],
     "projects": {
-      "project1": {
-        "projectTitle": "My Resume",
-        "techStacks": ["HTML", "CSS"]
-      },
-      "project2": {
-        "projectTitle": "Personal Portfolio",
-        "techStacks": ["HTML", "CSS"]
-      },
-      "project3": {
-        "projectTitle": "Movie Listing",
-        "techStacks": ["HTML", "Bootstrap 5"]
-      },
-      "project4": {
-        "projectTitle": "WhatsApp UI",
-        "techStacks": ["HTML", "Tailwind CSS"]
-      },
-      "project5": {
-        "projectTitle": "Instagram UI",
-        "techStacks": ["HTML", "Tailwind CSS"]
-      }
+        "project1": {
+            "projectTitle": "My Resume",
+            "techStacks": ["HTML", "CSS"]
+        },
+        "project2": {
+            "projectTitle": "Personal Portfolio",
+            "techStacks": ["HTML", "CSS"]
+        },
+        "project3": {
+            "projectTitle": "Movie Listing",
+            "techStacks": ["HTML", "Bootstrap 5"]
+        },
+        "project4": {
+            "projectTitle": "WhatsApp UI",
+            "techStacks": ["HTML", "Tailwind CSS"]
+        },
+        "project5": {
+            "projectTitle": "Instagram UI",
+            "techStacks": ["HTML", "Tailwind CSS"]
+        }
     }
   }
 ]
