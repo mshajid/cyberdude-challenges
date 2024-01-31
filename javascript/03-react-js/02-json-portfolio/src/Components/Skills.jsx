@@ -6,7 +6,7 @@ const Skills = () => {
       <div className="flex flex-wrap gap-5 text-white text-sm mt-5">
         {Skill.currentSkills.map((stack) => {
           return (
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col gap-y-1 items-center justify-center">
               <img className="size-14" src={stack.logo} />
               <div>{stack.stacks}</div>
             </div>

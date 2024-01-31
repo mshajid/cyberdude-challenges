@@ -1,7 +1,10 @@
 import Education from "./Components/Education";
 import Header from "./Components/Header";
+import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import WorkingExp from "./Components/WorkingExp";
+
+import mySelf from "../src/data/myself.json"
 
 const App = () => {
   return (
@@ -15,6 +18,7 @@ const App = () => {
           </div>
           <Education />
         </div>
+        <Projects data={mySelf} />
       </div>
     </div>
   );
