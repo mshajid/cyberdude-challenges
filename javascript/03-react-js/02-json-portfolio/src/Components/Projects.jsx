@@ -2,7 +2,7 @@ const Projects = (data) => {
   const myData = data.data[0].projects;
   const finalData = myData.map((value) => {
     return (
-      <div className="my-10 flex flex-col gap-y-2 text-white">
+      <div className="my-5 flex flex-col gap-y-2 text-white">
         <img
           className="w-80 h-60 object-cover rounded-md border-2 border-[#89C2D9]"
           src={value.featuredImg}
@@ -26,8 +26,8 @@ const Projects = (data) => {
 
   return (
     <div className="mt-10">
-      <h2 className="tracking-wide text-2xl font-bold text-white">Projects That I Built During Internship</h2>
-      <div className="flex flex-wrap gap-5">{finalData}</div>
+      <h2 className="tracking-wide pb-5 text-2xl font-bold text-white">Projects That I Built During Internship</h2>
+      <div className="flex flex-wrap gap-x-4 gap-y-2">{finalData}</div>
     </div>
   );
 };
