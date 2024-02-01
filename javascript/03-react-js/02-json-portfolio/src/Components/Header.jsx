@@ -6,17 +6,17 @@ const Header = () => {
     return (
       <div className="flex flex-col gap-y-3">
         <div>
-          <div className="text-3xl text-center sm:text-left sm:text-5xl text-white font-bold tracking-wide">
+          <div className="text-3xl text-center lg:text-left lg:text-5xl text-white font-bold tracking-wide">
             {value.name}
           </div>
-          <div className="text-xl text-center sm:text-left sm:text-2xl font-light text-[#89C2D9]">
+          <div className="text-xl text-center lg:text-left sm:text-2xl font-light text-[#89C2D9]">
             {value.title}
           </div>
         </div>
-        <div className="text-xs sm:text-sm text-white text-center sm:text-left tracking-wide sm:tracking-wide max-w-lg">
+        <div className="text-xs sm:text-sm text-white text-center mx-auto lg:mx-0 lg:text-left tracking-wide sm:tracking-wide max-w-lg">
           {value.description}
         </div>
-        <div className="flex flex-row gap-y-1 gap-x-4 justify-center sm:justify-start items-center sm:flex-row flex-wrap sm:w-[800px] sm:flex sm:gap-x-5 text-xs text-[#89C2D9]">
+        <div className="flex flex-row gap-y-1 gap-x-4 justify-center lg:justify-start items-center lg:flex-row flex-wrap lg:w-[800px] lg:flex sm:gap-x-5 text-xs text-[#89C2D9]">
           <div className="flex items-center gap-x-2">
             <div>
               <svg
@@ -87,9 +87,9 @@ const Header = () => {
   });
   return (
     <div className="bg-[#01497C] px-5 py-10 rounded-md">
-      <div className="sm:flex sm:justify-evenly sm:items-center">
+      <div className="lg:flex lg:flex-row lg:gap-x-10 lg:justify-evenly lg:items-center flex flex-col justify-center items-center">
         <img
-          className="size-36 sm:size-44 block mx-auto sm:my-0 my-5 sm:mx-0 object-cover rounded-full"
+          className="size-28 lg:size-44 block mx-auto lg:my-0 my-5 md:mx-0 object-cover rounded-full"
           src={Shajid}
         />
         <div>{mySelfComponent}</div>

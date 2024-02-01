@@ -12,7 +12,7 @@ const App = () => {
     <div className="bg-[#012A4A] max-w-6xl mx-auto min-h-screen">
       <div className="p-10">
         <Header />
-        <div className="sm:flex-row flex-col sm:flex gap-x-16">
+        <div className="md:flex-row flex-col md:flex gap-x-16">
           <div>
             <WorkingExp />
             <Skills />

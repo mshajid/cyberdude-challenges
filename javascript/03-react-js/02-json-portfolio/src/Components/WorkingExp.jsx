@@ -9,7 +9,7 @@ const WorkingExp = () => {
             <div className="text-[17px] font-light text-white">
               {value.workExperience.cyberDude.jobTitle}
             </div>  
-            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9] sm:leading-5">
+            <div className="text-xl lg:text-2xl font-bold text-[#89C2D9] sm:leading-5">
               {value.workExperience.cyberDude.company}
             </div>
           </div>
