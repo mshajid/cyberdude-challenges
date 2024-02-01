@@ -229,10 +229,10 @@ const ChatApp = () => {
               </div>
             </div>
             <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-5">
-              <div className="relative text-xs text-wrap bg-white w-52 text-y-clip rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
+              <div className="relative text-xs text-wrap bg-white w-60 text-y-clip rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
                 <span className="flex justify-between items-end">
                   {message}
-                  <span className="ml-2 text-[8px]">
+                  <span className="ml-2 text-[8px] tracking-tighter text-nowrap">
                     {recTime === "" ? "00:00" : recTime}
                   </span>
                 </span>
@@ -258,10 +258,10 @@ const ChatApp = () => {
                   </svg>
                 </div>
               </div>
-              <div className="relative text-xs float-right bg-white w-52 text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1 mt-10">
+              <div className="relative text-xs float-right text-white bg-[#128c7e] w-52 text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1 mt-10">
                 <span className="flex justify-between items-end">
                   {myMessages}
-                  <span className="ml-2 text-[8px]">
+                  <span className="ml-2 text-[8px] tracking-tighter text-nowrap">
                     {myTime === "" ? "00:00" : myTime}
                   </span>
                 </span>
@@ -282,7 +282,7 @@ const ChatApp = () => {
                       d="M5.188,1H0v11.193l6.467-8.625 C7.526,2.156,6.958,1,5.188,1z"
                     ></path>
                     <path
-                      fill="white"
+                      fill="#128c7e"
                       d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"
                     ></path>
                   </svg>
