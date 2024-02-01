@@ -7,6 +7,7 @@ const ChatApp = () => {
   const [message, setMessage] = useState("Empty Text");
   const [myMessages, setMyMessages] = useState("Empty Text");
   const [recTime, setRecTime] = useState("");
+  const [myTime, setMyTime] = useState("");
 
   function changeName(e) {
     setName(e.target.value);
@@ -31,10 +32,18 @@ const ChatApp = () => {
       setRecTime(`${e.target.value} AM`);
     }
 
-    // Logic Storyline
+    // * Logic Storyline
     // 00:00 - 12:00 = AM
     // 12:00 - 23:00 = PM
     // setRecTime(e.target.value);
+  }
+
+  function selfTime(e) {
+    if (e.target.value > "12:00") {
+      setMyTime(`${e.target.value} PM`);
+    } else {
+      setMyTime(`${e.target.value} AM`);
+    }
   }
 
   return (
@@ -102,6 +111,19 @@ const ChatApp = () => {
               <input
                 onChange={selfMessage}
                 placeholder="Enter your texts here"
+                className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
+              />
+            </div>
+
+            {/* Self Time Add Here */}
+            <div className="flex flex-col gap-y-1">
+              <label className="text-sm font-semibold">
+                Add Your Message Time Here
+              </label>
+              <input
+                type="time"
+                onChange={selfTime}
+                placeholder="Enter your time here"
                 className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
               />
             </div>
@@ -233,7 +255,9 @@ const ChatApp = () => {
               <div className="relative text-xs float-right bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1">
                 <span>
                   {myMessages}
-                  <span className="ml-2 text-[8px]">2:14 PM</span>
+                  <span className="ml-2 text-[8px]">
+                    {myTime === "" ? "00:00" : myTime}
+                  </span>
                 </span>
                 <div className="absolute top-0 -right-2 z-1">
                   <svg
