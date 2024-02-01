@@ -6,7 +6,7 @@ const Education = () => {
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-1">
-            <div className="text-2xl font-bold text-[#89C2D9]">
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9]">
               {value.education.courses.course5.courseTitle}
             </div>
             <div className="text-xs text-gray-300 bg-black w-fit h-fit px-1 py-0.5 rounded-md font-semibold">
@@ -19,7 +19,7 @@ const Education = () => {
         </div>
         <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-1">
-            <div className="text-2xl font-bold text-[#89C2D9]">
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9]">
               {value.education.courses.course4.courseTitle}
             </div>
             <div className="text-xs text-gray-300 bg-black w-fit h-fit px-1 py-0.5 rounded-md font-semibold">
@@ -32,7 +32,7 @@ const Education = () => {
         </div>
         <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-1">
-            <div className="text-2xl font-bold text-[#89C2D9]">
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9]">
               {value.education.courses.course3.courseTitle}
             </div>
             <div className="text-xs text-gray-300 bg-black w-fit h-fit px-1 py-0.5 rounded-md font-semibold">
@@ -45,7 +45,7 @@ const Education = () => {
         </div>
         <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-1">
-            <div className="text-2xl font-bold text-[#89C2D9]">
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9]">
               {value.education.courses.course2.courseTitle}
             </div>
             <div className="text-xs text-gray-300 bg-black w-fit h-fit px-1 py-0.5 rounded-md font-semibold">
@@ -58,7 +58,7 @@ const Education = () => {
         </div>
         <div className="flex flex-col gap-y-2">
           <div className="flex gap-x-1">
-            <div className="text-2xl font-bold text-[#89C2D9]">
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9]">
               {value.education.courses.course1.courseTitle}
             </div>
             <div className="text-xs text-gray-300 bg-black w-fit h-fit px-1 py-0.5 rounded-md font-semibold">
