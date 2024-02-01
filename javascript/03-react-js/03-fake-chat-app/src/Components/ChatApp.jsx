@@ -10,7 +10,13 @@ const ChatApp = () => {
   const [myTime, setMyTime] = useState("");
 
   function changeName(e) {
-    setName(e.target.value);
+    const fullName = e.target.value
+    setName(fullName);
+    if(fullName.length > 15){
+       setName(`${name}.`)
+    } else {
+       setName(`${fullName}`)
+    }
   }
 
   function changePic(e) {
@@ -158,8 +164,8 @@ const ChatApp = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2">
-                <div className="flex items-center gap-x-2">
+              <div className="flex items-center justify-between py-2 overflow-hidden">
+                <div className="flex items-center gap-x-2 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="2em"
@@ -175,7 +181,7 @@ const ChatApp = () => {
                     className="w-12 h-12 rounded-full object-cover"
                     src={image}
                   />
-                  <span className="text-lg font-bold text-white tracking-wide">
+                  <span className="text-lg font-bold text-white tracking-wide text-nowrap overflow-x-hidden">
                     {name === "" ? "Enter Your Name" : name}
                   </span>
                 </div>
