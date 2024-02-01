@@ -6,9 +6,8 @@ import Blog from "./Components/Blog";
 const App = () => {
   return (
     <div className="font-robotoCondensed">
-      <Blog />
       <Navbar />
-      <HomePage />
+      <Outlet/>
     </div>
   );
 };
