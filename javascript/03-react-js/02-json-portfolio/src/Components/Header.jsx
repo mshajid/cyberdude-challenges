@@ -16,7 +16,7 @@ const Header = () => {
         <div className="text-xs sm:text-sm text-white text-center sm:text-left tracking-wide sm:tracking-wide max-w-lg">
           {value.description}
         </div>
-        <div className="flex gap-y-1 gap-x-2 justify-start sm:flex-row flex-wrap sm:w-[800px] w-[350px] sm:flex sm:gap-x-5 text-xs text-[#89C2D9]">
+        <div className="flex flex-row gap-y-1 gap-x-4 justify-center items-center sm:flex-row flex-wrap sm:w-[800px] sm:flex sm:gap-x-5 text-xs text-[#89C2D9]">
           <div className="flex items-center gap-x-2">
             <div>
               <svg
@@ -87,7 +87,7 @@ const Header = () => {
   });
   return (
     <div className="bg-[#01497C] px-5 py-10 rounded-md">
-      <div className="sm:flex justify-center sm:justify-evenly sm:items-center">
+      <div className="sm:flex sm:justify-evenly sm:items-center">
         <img
           className="size-36 sm:size-44 block mx-auto sm:my-0 my-5 sm:mx-0 object-cover rounded-full"
           src={Shajid}
