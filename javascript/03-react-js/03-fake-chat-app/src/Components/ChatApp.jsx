@@ -6,6 +6,7 @@ const ChatApp = () => {
   const [image, setImage] = useState("https://placehold.co/80x80");
   const [message, setMessage] = useState("Empty Text");
   const [myMessages, setMyMessages] = useState("Empty Text");
+  const [recTime, setRecTime] = useState("");
 
   function changeName(e) {
     setName(e.target.value);
@@ -23,13 +24,29 @@ const ChatApp = () => {
     setMyMessages(e.target.value);
   }
 
+  function recepTime(e) {
+    if (e.target.value > "12:00") {
+      setRecTime(`${e.target.value} PM`);
+    } else {
+      setRecTime(`${e.target.value} AM`);
+    }
+
+    // Logic Storyline
+    // 00:00 - 12:00 = AM
+    // 12:00 - 23:00 = PM
+    // setRecTime(e.target.value);
+  }
+
   return (
     <>
       <NavBar />
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center gap-x-10 py-10 px-5">
+        <div className="flex items-start gap-x-10 py-10 px-5">
           <div className="flex flex-col gap-y-5">
-            <h2 className="text-2xl font-semibold tracking-wide">Add Your Details Here</h2>
+            <h2 className="text-2xl font-semibold tracking-wide">
+              Add Your Details Here
+            </h2>
+
             {/* Recepient's Name Here */}
             <div className="flex flex-col gap-y-1">
               <label className="text-sm font-semibold">
@@ -41,6 +58,20 @@ const ChatApp = () => {
                 className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
               />
             </div>
+
+            {/* Recepient's Time Here */}
+            <div className="flex flex-col gap-y-1">
+              <label className="text-sm font-semibold">
+                Enter Recepient's Time
+              </label>
+              <input
+                type="time"
+                onChange={recepTime}
+                placeholder="Enter Recepient's Time"
+                className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
+              />
+            </div>
+
             {/* Recepient's Image Here */}
             <div className="flex flex-col gap-y-1">
               <label className="text-sm font-semibold">Enter Image URL</label>
@@ -50,6 +81,7 @@ const ChatApp = () => {
                 className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
               />
             </div>
+
             {/* Recepient's Texts Here */}
             <div className="flex flex-col gap-y-1">
               <label className="text-sm font-semibold">
@@ -61,6 +93,7 @@ const ChatApp = () => {
                 className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md placeholder:text-gray-200"
               />
             </div>
+
             {/* Self Message Texts Here */}
             <div className="flex flex-col gap-y-1">
               <label className="text-sm font-semibold">
@@ -121,7 +154,7 @@ const ChatApp = () => {
                     src={image}
                   />
                   <span className="text-lg font-bold text-white tracking-wide">
-                    {name}
+                    {name === "" ? "Enter Your Name" : name}
                   </span>
                 </div>
                 <div className="flex gap-x-6 text-sm">
@@ -171,7 +204,9 @@ const ChatApp = () => {
               <div className="relative text-xs  bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
                 <span>
                   {message}
-                  <span className="ml-2 text-[8px]">2:14 PM</span>
+                  <span className="ml-2 text-[8px]">
+                    {recTime === "" ? "00:00" : recTime}
+                  </span>
                 </span>
                 <div className="absolute top-0 -left-2 -z-2">
                   <svg
