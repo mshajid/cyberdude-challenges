@@ -2,19 +2,42 @@ import { useState } from "react";
 
 const ChatApp = () => {
   const [name, setName] = useState("Enter Your Name");
+  const [image, setImage] = useState("")
+  
 
   function changeName(e) {
-    setName(e.target.value)
+    setName(e.target.value);
+  }
+
+  function changePic(e) {
+    setImage(e.target.value)
   }
 
   return (
     <div className="flex justify-between p-10">
       <div>
+        {/* Recepient's Name Here */}
+        <div className="flex flex-col">
+          <label className="text-sm font-semibold">
+            Enter Your Recepient Name Here
+          </label>
+          <input
+            onChange={changeName}
+            placeholder="Change Contact Name"
+            className="px-2 text-sm py-0.5 bg-teal-500 w-80 outline-none rounded-md"
+          />
+        </div>
+        {/* Recepient's Image Here */}
+        <div className="flex flex-col">
+        <label className="text-sm font-semibold">
+            Enter Your Recepient Name Here
+        </label>
         <input
-          onChange={changeName}
-          placeholder="Change Contact Name"
-          className="px-2 text-sm py-0.5 bg-teal-500"
+          onChange={changePic}
+          placeholder="Image Link"
+          className="px-2 text-sm py-0.5 bg-teal-500 w-80 outline-none rounded-md"
         />
+      </div>
       </div>
 
       {/* // Chat App UI Starts Here */}
@@ -60,8 +83,8 @@ const ChatApp = () => {
                 ></path>
               </svg>
               <img
-                className="w-12 rounded-full object-cover"
-                src="https://shajid-blog-react.netlify.app/assets/Shajid-E393mccF.png"
+                className="w-12 h-12 rounded-full object-cover"
+                src={image}
               />
               <span className="text-lg font-bold text-white tracking-wide">
                 {name}
