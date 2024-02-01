@@ -2,42 +2,73 @@ import { useState } from "react";
 
 const ChatApp = () => {
   const [name, setName] = useState("Enter Your Name");
-  const [image, setImage] = useState("")
-  
+  const [image, setImage] = useState("");
+  const [message, setMessage] = useState("Empty Text");
+  const [myMessages, setMyMessages] = useState("Empty Text");
 
   function changeName(e) {
     setName(e.target.value);
   }
 
   function changePic(e) {
-    setImage(e.target.value)
+    setImage(e.target.value);
+  }
+
+  function fetchMessage(e) {
+    setMessage(e.target.value);
+  }
+
+  function selfMessage(e) {
+    setMyMessages(e.target.value);
   }
 
   return (
     <div className="flex justify-between p-10">
-      <div>
+      <div className="flex flex-col gap-y-5">
         {/* Recepient's Name Here */}
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-y-1">
           <label className="text-sm font-semibold">
             Enter Your Recepient Name Here
           </label>
           <input
             onChange={changeName}
             placeholder="Change Contact Name"
-            className="px-2 text-sm py-0.5 bg-teal-500 w-80 outline-none rounded-md"
+            className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md"
           />
         </div>
         {/* Recepient's Image Here */}
-        <div className="flex flex-col">
-        <label className="text-sm font-semibold">
+        <div className="flex flex-col gap-y-1">
+          <label className="text-sm font-semibold">
             Enter Your Recepient Name Here
-        </label>
-        <input
-          onChange={changePic}
-          placeholder="Image Link"
-          className="px-2 text-sm py-0.5 bg-teal-500 w-80 outline-none rounded-md"
-        />
-      </div>
+          </label>
+          <input
+            onChange={changePic}
+            placeholder="Image Link"
+            className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md"
+          />
+        </div>
+        {/* Recepient's Texts Here */}
+        <div className="flex flex-col gap-y-1">
+          <label className="text-sm font-semibold">
+            Enter Recepients Texts here
+          </label>
+          <input
+            onChange={fetchMessage}
+            placeholder="Enter your texts here"
+            className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md"
+          />
+        </div>
+        {/* Self Message Texts Here */}
+        <div className="flex flex-col gap-y-1">
+          <label className="text-sm font-semibold">
+            Enter Recepients Texts here
+          </label>
+          <input
+            onChange={selfMessage}
+            placeholder="Enter your texts here"
+            className="px-2 text-sm py-1 bg-teal-500 w-80 outline-none rounded-md"
+          />
+        </div>
       </div>
 
       {/* // Chat App UI Starts Here */}
@@ -136,7 +167,7 @@ const ChatApp = () => {
         <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-3">
           <div className="relative text-xs  bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
             <span>
-              Example of your texts
+              {message}
               <span className="ml-2 text-[8px]">2:14 PM</span>
             </span>
             <div className="absolute top-0 -left-2 -z-2">
@@ -163,7 +194,7 @@ const ChatApp = () => {
           </div>
           <div className="relative text-xs float-right bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1">
             <span>
-              Example of your texts
+              {myMessages}
               <span className="ml-2 text-[8px]">2:14 PM</span>
             </span>
             <div className="absolute top-0 -right-2 z-1">
