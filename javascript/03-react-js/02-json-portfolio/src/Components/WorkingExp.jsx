@@ -8,8 +8,8 @@ const WorkingExp = () => {
           <div className="flex flex-col gap-y-1">
             <div className="text-[17px] font-light text-white">
               {value.workExperience.cyberDude.jobTitle}
-            </div>
-            <div className="text-2xl font-bold text-[#89C2D9] leading-5">
+            </div>  
+            <div className="text-xl sm:text-2xl font-bold text-[#89C2D9] sm:leading-5">
               {value.workExperience.cyberDude.company}
             </div>
           </div>
