@@ -6,18 +6,18 @@ const Header = () => {
     return (
       <div className="flex flex-col gap-y-3">
         <div>
-          <div className="text-5xl text-white font-bold tracking-wide">
+          <div className="text-3xl text-center sm:text-left sm:text-5xl text-white font-bold tracking-wide">
             {value.name}
           </div>
-          <div className="text-2xl font-light text-[#89C2D9]">
+          <div className="text-xl text-center sm:text-left sm:text-2xl font-light text-[#89C2D9]">
             {value.title}
           </div>
         </div>
-        <div className="text-sm text-white tracking-wide max-w-lg">
+        <div className="text-xs sm:text-sm text-white text-center sm:text-left tracking-wide sm:tracking-wide max-w-lg">
           {value.description}
         </div>
-        <div className="flex gap-x-5 text-xs text-[#89C2D9]">
-          <div className="flex items-center gap-x-1">
+        <div className="flex gap-y-1 gap-x-2 justify-start sm:flex-row flex-wrap sm:w-[800px] w-[350px] sm:flex sm:gap-x-5 text-xs text-[#89C2D9]">
+          <div className="flex items-center gap-x-2">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,9 +87,12 @@ const Header = () => {
   });
   return (
     <div className="bg-[#01497C] px-5 py-10 rounded-md">
-      <div className="flex justify-evenly items-center">
-        <img className="size-44 object-cover rounded-full" src={Shajid} />
-        <div className="">{mySelfComponent}</div>
+      <div className="sm:flex justify-center sm:justify-evenly sm:items-center">
+        <img
+          className="size-36 sm:size-44 block mx-auto sm:my-0 my-5 sm:mx-0 object-cover rounded-full"
+          src={Shajid}
+        />
+        <div>{mySelfComponent}</div>
       </div>
     </div>
   );
