@@ -39,7 +39,7 @@ const ChatApp = () => {
         {/* Recepient's Image Here */}
         <div className="flex flex-col gap-y-1">
           <label className="text-sm font-semibold">
-            Enter Your Recepient Name Here
+            Enter Image URL
           </label>
           <input
             onChange={changePic}
@@ -61,7 +61,7 @@ const ChatApp = () => {
         {/* Self Message Texts Here */}
         <div className="flex flex-col gap-y-1">
           <label className="text-sm font-semibold">
-            Enter Recepients Texts here
+            Enter Your Texts here
           </label>
           <input
             onChange={selfMessage}
