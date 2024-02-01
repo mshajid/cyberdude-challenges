@@ -1,5 +1,6 @@
 const ChatApp = () => {
   return (
+    // Chat App UI Starts Here
     <div>
       <div className="max-w-md bg-teal-800 px-3 py-1.5">
         <div className="flex justify-between text-sm text-white">
@@ -93,10 +94,10 @@ const ChatApp = () => {
         </div>
       </div>
       <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-3">
-        <div className="relative text-xs  bg-white max-w-xs text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
+        <div className="relative text-xs  bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
           <span>
-            Example of your texts  asdasdasdasdasdasdasdasd asd asd sa das das das dsa d
-            asd as dsa das das d<span className="ml-2 text-[8px]">2:14 PM</span>
+            Example of your texts
+            <span className="ml-2 text-[8px]">2:14 PM</span>
           </span>
           <div className="absolute top-0 -left-2 -z-2">
             <svg
@@ -116,6 +117,34 @@ const ChatApp = () => {
               <path
                 fill="white"
                 d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div className="relative text-xs float-right bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1">
+          <span>
+            Example of your texts
+            <span className="ml-2 text-[8px]">2:14 PM</span>
+          </span>
+          <div className="absolute top-0 -right-2 z-1">
+            <svg
+              viewBox="0 0 8 13"
+              height="13"
+              width="8"
+              preserveAspectRatio="xMidYMid meet"
+              version="1.1"
+              x="0px"
+              y="0px"
+              enable-background="new 0 0 8 13"
+              xml:space="preserve"
+            >
+              <path
+                opacity="0.13"
+                d="M5.188,1H0v11.193l6.467-8.625 C7.526,2.156,6.958,1,5.188,1z"
+              ></path>
+              <path
+                fill="white"
+                d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"
               ></path>
             </svg>
           </div>
