@@ -29,7 +29,7 @@ const ChatApp = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-x-10 py-10 px-5">
           <div className="flex flex-col gap-y-5">
-            <h2 className="text-xl font-semibold">Add Your Details Here</h2>
+            <h2 className="text-2xl font-semibold tracking-wide">Add Your Details Here</h2>
             {/* Recepient's Name Here */}
             <div className="flex flex-col gap-y-1">
               <label className="text-sm font-semibold">
@@ -167,7 +167,7 @@ const ChatApp = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-3">
+            <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-5">
               <div className="relative text-xs  bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
                 <span>
                   {message}
