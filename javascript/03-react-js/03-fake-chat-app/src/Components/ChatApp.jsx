@@ -229,8 +229,8 @@ const ChatApp = () => {
               </div>
             </div>
             <div className="max-w-md bg-[#ddd4cd] h-[500px] py-5 px-5">
-              <div className="relative text-xs  bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
-                <span>
+              <div className="relative text-xs text-wrap bg-white w-52 text-y-clip rounded-bl-lg rounded-br-lg rounded-tr-lg px-3 py-1">
+                <span className="flex justify-between items-end">
                   {message}
                   <span className="ml-2 text-[8px]">
                     {recTime === "" ? "00:00" : recTime}
@@ -258,8 +258,8 @@ const ChatApp = () => {
                   </svg>
                 </div>
               </div>
-              <div className="relative text-xs float-right bg-white w-fit text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1">
-                <span>
+              <div className="relative text-xs float-right bg-white w-52 text-pretty rounded-bl-lg rounded-br-lg rounded-tl-lg px-3 py-1 mt-10">
+                <span className="flex justify-between items-end">
                   {myMessages}
                   <span className="ml-2 text-[8px]">
                     {myTime === "" ? "00:00" : myTime}
