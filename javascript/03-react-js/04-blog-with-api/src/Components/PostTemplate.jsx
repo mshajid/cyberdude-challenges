@@ -16,7 +16,7 @@ const PostTemplate = () => {
     return (
       <div key={eachPost.id} className="max-w-xs">
         <div className="flex flex-col gap-y-2 overflow-hidden">
-          <img className="rounded-md" src="https://placekitten.com/200/200" />
+          <img className="rounded-md" src="https://placehold.co/600x400" />
           <h2 className="text-xl font-semibold mb-2 h-12">{eachPost.title}</h2>
           <p className="max-w-xs text-pretty h-12 overflow-y-clip">{eachPost.body}</p>
           <div className="flex gap-x-2 items-end">

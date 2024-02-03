@@ -9,7 +9,6 @@ const Blog = () => {
       const getPosts = await fetch(`https://dummyjson.com/posts/${id}`);
       const convertJson = await getPosts.json();
       setPost(convertJson);
-      console.log(post);
     };
     findPosts();
   }, [id]);
