@@ -3,6 +3,7 @@ import { BiDollar, BiUpsideDown } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
 import { FaCheck } from "react-icons/fa";
 import Alert from "./Components/Alert";
+import Cards from "./Components/Cards";
 
 const App = () => {
   return (
@@ -113,6 +114,9 @@ const App = () => {
         </Alert>
       </div>
       <hr className="my-5" />
+      <div>
+        <Cards />
+      </div>
     </div>
   );
 };
