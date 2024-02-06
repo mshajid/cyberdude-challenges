@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ variant }) => {
+const Button = ({ variant, children, className }) => {  
   const variants = {
     Primary:
       "bg-indigo-500/40 text-indigo-900 px-2 py-1 rounded-md border border-indigo-500 hover:bg-indigo-500 hover:text-white transition-all text-sm",
@@ -19,7 +19,9 @@ const Button = ({ variant }) => {
   };
   return (
     <>
-      <button className={variants[variant]}>{variant} Button</button>
+      <button className={`${variants[variant]} ${className}`}>
+        {children} {variant} Button
+      </button>
     </>
   );
 };
