@@ -47,52 +47,72 @@ const App = () => {
       <hr className="my-5" />
       <div>
         <h2 className="font-bold text-4xl">Alerts</h2>
-        <span className="text-lg">Check all the Alerts variants here with all the live examples, Included, With Link & Icons also without Links & Icons</span>
+        <span className="text-lg">
+          Check all the Alerts variants here with all the live examples,
+          Included, With Link & Icons also without Links & Icons
+        </span>
       </div>
       <div className="space-y-2">
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Primary"}
           label={`This is Primary Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Secondary"}
           label={`This is Secondary Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Success"}
           label={`This is Success Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Warning"}
           label={`This is Warning Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Danger"}
           label={`This is Danger Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
           variant={"Info"}
           label={`This is Info Alert - `}
-          link = {"With Link"}
-          linkTo = {"https://google.com"}
+          link={"With Link"}
+          linkTo={"https://google.com"}
         />
+        <Alert
+          className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
+          variant={"Primary"}
+          label={`This is Info Alert - `}
+          link={"With Link"}
+          linkTo={"https://google.com"}
+        >
+          <FaCheck />
+        </Alert>
+        <Alert
+          className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
+          variant={"Primary"}
+          label={`This is Info Alert`}
+        >
+          <FaCheck />
+        </Alert>
       </div>
+      <hr className="my-5" />
     </div>
   );
 };

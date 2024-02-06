@@ -1,4 +1,4 @@
-const Alert = ({ variant, label, className, link, linkTo }) => {
+const Alert = ({ variant, label, className, link, linkTo, children }) => {
   const variants = {
     Primary:
       "bg-indigo-500/70 text-indigo-900 border-2 border-indigo-500 rounded text-indigo-950",
@@ -16,7 +16,7 @@ const Alert = ({ variant, label, className, link, linkTo }) => {
   return (
     <>
       <div className={`${variants[variant]} ${className}`}>
-        {label}
+        {children} {label}
         <a
           className="hover:text-white transition-all"
           target="_blank"
