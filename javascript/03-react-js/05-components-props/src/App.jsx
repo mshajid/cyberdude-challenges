@@ -99,9 +99,7 @@ const App = () => {
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
           variant={"Primary"}
-          label={`This is Primary Alert - `}
-          link={"With Link"}
-          linkTo={"https://google.com"}
+          label={`This is Primary Alert`}
         >
           <FaCheck />
         </Alert>
