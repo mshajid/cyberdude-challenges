@@ -1,5 +1,5 @@
 import Button from "./Components/Button";
-import { BiDollar } from "react-icons/bi";
+import { BiDollar, BiUpsideDown } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
 import { FaCheck } from "react-icons/fa";
 import Alert from "./Components/Alert";
@@ -98,7 +98,7 @@ const App = () => {
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
           variant={"Primary"}
-          label={`This is Info Alert - `}
+          label={`This is Primary Alert - `}
           link={"With Link"}
           linkTo={"https://google.com"}
         >
@@ -106,10 +106,10 @@ const App = () => {
         </Alert>
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
-          variant={"Primary"}
-          label={`This is Info Alert`}
+          variant={"Success"}
+          label={`This is Info Alert Without Link But Icon`}
         >
-          <FaCheck />
+          <BiUpsideDown />
         </Alert>
       </div>
       <hr className="my-5" />
