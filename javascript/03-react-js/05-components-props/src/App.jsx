@@ -112,8 +112,9 @@ const App = () => {
         </Alert>
       </div>
       <hr className="my-5" />
+      <h2 className="font-bold text-4xl">Card Components</h2>
       <div>
-        <Cards />
+        <Cards type={"normal"}/>
       </div>
     </div>
   );
