@@ -1,5 +1,9 @@
 import Button from "./Components/Button";
 import { BiDollar } from "react-icons/bi";
+import { BiDownload } from "react-icons/bi";
+import { FaCheck } from "react-icons/fa";
+
+
 
 const App = () => {
   return (
@@ -16,14 +20,21 @@ const App = () => {
         <Button variant="Danger" />
         <Button variant="Info" />
         <Button variant="Light" />
-        <Button variant="Dark" />
+        <Button variant="Dark" />             
       </div>
       <h2 className="font-semibold text-2xl">Buttons With Icons</h2>
-      <div>
-        <Button className={"flex shadow-lg items-center gap-x-2"} variant="Primary">
+      <div className="flex gap-x-5">
+        <Button className={"flex shadow-md items-center gap-x-2"} variant="Primary">
           <BiDollar />
         </Button>
+        <Button className={"flex shadow-md items-center gap-x-2"} variant="Light">
+          <BiDownload />
+        </Button>
+        <Button className={"flex shadow-md items-center gap-x-2"} variant="Success">
+          <FaCheck />
+        </Button>
       </div>
+      <hr className="my-10"/>
     </div>
   );
 };
