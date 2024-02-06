@@ -4,6 +4,7 @@ import { BiDownload } from "react-icons/bi";
 import { FaCheck } from "react-icons/fa";
 import Alert from "./Components/Alert";
 import Cards from "./Components/Cards";
+import CardImage from "./Components/CardsImage";
 
 const App = () => {
   return (
@@ -114,7 +115,9 @@ const App = () => {
       <hr className="my-5" />
       <h2 className="font-bold text-4xl">Card Components</h2>
       <div>
-        <Cards type={"normal"}/>
+        <Cards type={"normal"}>
+          <CardImage link={"https://placehold.co/600x400"} />
+        </Cards>
       </div>
     </div>
   );
