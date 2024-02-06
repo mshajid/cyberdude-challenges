@@ -5,6 +5,7 @@ import { FaCheck } from "react-icons/fa";
 import Alert from "./Components/Alert";
 import Cards from "./Components/Cards";
 import CardImage from "./Components/CardsImage";
+import CardBody from "./Components/CardsBody";
 
 const App = () => {
   return (
@@ -98,14 +99,18 @@ const App = () => {
           linkTo={"https://google.com"}
         />
         <Alert
-          className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
+          className={
+            "max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"
+          }
           variant={"Primary"}
           label={`This is Primary Alert`}
         >
           <FaCheck />
         </Alert>
         <Alert
-          className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"}
+          className={
+            "max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-3 items-center"
+          }
           variant={"Success"}
           label={`This is Info Alert Without Link But Icon`}
         >
@@ -117,6 +122,12 @@ const App = () => {
       <div>
         <Cards type={"normal"}>
           <CardImage link={"https://placehold.co/600x400"} />
+          <CardBody
+            title={"Card Title #1"}
+            desc={
+              "This is the first description of the card, You can edit here without any issue but I'll limit the characters for better UI"
+            }
+          />
         </Cards>
       </div>
     </div>
