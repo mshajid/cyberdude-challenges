@@ -7,6 +7,7 @@ import CardBody from "./Components/CardsBody";
 import CardsButton from "./Components/CardsButton";
 import ButtonHeader from "./Layouts/ButtonHeader";
 import ButtonsWrapper from "./Layouts/ButtonsWrapper";
+import AlertHeader from "./Layouts/AlertHeader";
 
 const App = () => {
   return (
@@ -14,13 +15,7 @@ const App = () => {
       <ButtonHeader />
       <ButtonsWrapper />
       <hr className="my-5" />
-      <div>
-        <h2 className="font-bold text-4xl">Alerts</h2>
-        <span className="text-lg">
-          Check all the Alerts variants here with all the live examples,
-          Included, With Link & Icons also without Links & Icons
-        </span>
-      </div>
+      <AlertHeader />
       <div className="space-y-2">
         <Alert
           className={"max-w-xl py-2 text-sm px-5 font-semibold flex gap-x-1"}
