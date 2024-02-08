@@ -13,6 +13,7 @@ const Form = () => {
   const handleInputs = (e) => {
     const { name, value } = e.target;
 
+    // Validation starts here
     if (name === "firstName") {
       if (value.length < 4) {
         setFormError({
@@ -47,8 +48,23 @@ const Form = () => {
     setForm({ firstName: "", lastName: "" });
   };
 
+  const mapFormValues = formValues.map((value) => {
+    return (
+      <div className="border border-slate-500 w-60 h-14 rounded-md flex flex-col items-start justify-center px-2 my-2 text-sm hover:bg-gradient-to-r from-slate-900 to-slate-700 hover:text-white transition-all">
+        <div className="flex gap-x-2 items-center">
+          <span className="font-semibold">First Name:</span>
+          <span className="font-regular">{value.firstName}</span>
+        </div>
+        <div className="flex gap-x-2 items-center">
+          <span className="font-semibold">Last Name:</span>
+          <span className="font-regular">{value.lastName}</span>
+        </div>
+      </div>
+    );
+  });
+
   return (
-    <>
+    <div className="flex flex-col">
       <form id="myForm" onSubmit={submitForm}>
         <div className="flex flex-col gap-y-2">
           <FormInputs
@@ -88,7 +104,11 @@ const Form = () => {
           <FormButton label={"Verify"} />
         </div>
       </form>
-    </>
+      <div className="my-10">
+        <h2 className="text-xl font-semibold">Users Who Verified Right Now</h2>
+        <div className="flex gap-x-2 w-[500px] flex-wrap">{mapFormValues}</div>
+      </div>
+    </div>
   );
 };
 
