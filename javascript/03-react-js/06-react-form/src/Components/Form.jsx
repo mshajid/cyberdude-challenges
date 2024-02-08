@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormInputs from "./FormInputs";
+import FormButton from "./FormButton";
 
 const Form = () => {
   const [form, setForm] = useState({ firstName: "", lastName: "" });
@@ -9,7 +10,7 @@ const Form = () => {
     console.log(form);
   };
   return (
-    <>
+    <div className="flex flex-col gap-y-2">
       <FormInputs
         name={"firstName"}
         id={"firstName"}
@@ -28,7 +29,8 @@ const Form = () => {
         label={"Last Name"}
         handleOnChange={handleInputs}
       />
-    </>
+      <FormButton label={"Verify"}/>
+    </div>
   );
 };
 
