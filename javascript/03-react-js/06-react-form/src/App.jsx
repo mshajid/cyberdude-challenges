@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="flex h-screen justify-center items-center">
+      <div className="flex h-[90vh] justify-center items-start overflow-hidden my-10">
         <Form />
       </div>
     </>

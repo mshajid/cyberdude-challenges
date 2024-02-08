@@ -67,8 +67,8 @@ const Form = () => {
   });
 
   return (
-    <div className="flex flex-col">
-      <form id="myForm" onSubmit={submitForm}>
+    <div className="flex gap-x-10">
+      <form onSubmit={submitForm}>
         <div className="flex flex-col gap-y-2">
           <FormInputs
             name={"firstName"}
@@ -107,7 +107,7 @@ const Form = () => {
           <FormButton label={"Verify"} />
         </div>
       </form>
-      <div className="my-10">
+      <div>
         <h2 className="text-xl font-semibold">Users Who Verified Right Now</h2>
         <div className="flex gap-x-2 w-[500px] flex-wrap">{mapFormValues}</div>
       </div>
