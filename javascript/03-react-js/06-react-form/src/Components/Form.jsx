@@ -3,7 +3,13 @@ import FormInputs from "./FormInputs";
 const Form = () => {
   return (
     <>
-      <FormInputs />
+      <FormInputs
+        id={"firstName"}
+        type={"text"}
+        placeholder={"Enter your first name here"}
+        value={""}
+        label={"First Name"}
+      />
     </>
   );
 };
