@@ -4,7 +4,7 @@ import FormButton from "./FormButton";
 
 const Form = () => {
   const [form, setForm] = useState({ firstName: "", lastName: "" });
-  const [formValues, setFormValues] = useState({ form });
+  const [formValues, setFormValues] = useState([]);
 
   const handleInputs = (e) => {
     const { name, value } = e.target;
@@ -15,11 +15,10 @@ const Form = () => {
   const submitForm = (e) => {
     e.preventDefault();
     alert("submitted");
-    setForm({
-        firstName: "",
-        lastName: ""
-    })
+    setFormValues([...formValues, form]);
+    setForm({ firstName: "", lastName: "" });
   };
+
   return (
     <form id="myForm" onSubmit={submitForm}>
       <div className="flex flex-col gap-y-2">
