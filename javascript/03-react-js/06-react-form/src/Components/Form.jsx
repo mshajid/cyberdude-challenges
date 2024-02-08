@@ -48,6 +48,9 @@ const Form = () => {
     setForm({ firstName: "", lastName: "" });
   };
 
+  console.log(form);
+  console.log(formValues);
+
   const mapFormValues = formValues.map((value) => {
     return (
       <div className="border border-slate-500 w-60 h-14 rounded-md flex flex-col items-start justify-center px-2 my-2 text-sm hover:bg-gradient-to-r from-slate-900 to-slate-700 hover:text-white transition-all">
