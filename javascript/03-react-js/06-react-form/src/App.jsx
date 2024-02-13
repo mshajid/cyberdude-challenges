@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="flex h-[90vh] justify-center items-start overflow-hidden my-10">
+      <div className="max-w-lg mx-auto my-24">
         <Form />
       </div>
     </>
