@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import FormInputs from "./FormInputs";
+import FormButton from "./FormButton";
 
 const Form = () => {
   const {
@@ -8,7 +9,7 @@ const Form = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    alert("Sending All the requested data to server " + JSON.stringify(data))
   };
   console.log(errors);
   return (
@@ -17,7 +18,7 @@ const Form = () => {
         <FormInputs
           name="fullName"
           label="Full Name"
-          placeholder="Enter Your Full Name Here"
+          placeholder="Enter your full name here"
           register={register("fullName", {
             required: "Olunga name ah kududa vengi",
             minLength: {
@@ -27,6 +28,35 @@ const Form = () => {
           })}
           error={errors.fullName}
         />
+        <FormInputs
+          name="address"
+          label="Full Address Here"
+          placeholder="Enter your full address here"
+          register={register("address", {
+            required: "Olunga address ah kududa vengi",
+            minLength: {
+              value: 3,
+              message: "Requires more than 5 characters",
+            },
+          })}
+          error={errors.address}
+        />
+        <FormInputs
+          name="cNumber"
+          type="Number"
+          label="Contact Number"
+          placeholder="Start with country code +94"
+          register={register("cNumber", {
+            required: "Olunga name ah kududa vengi",
+            minLength: {
+              value: 3,
+              message: "Requires more than 3 characters",
+            },
+          })}
+          error={errors.cNumber}
+        />
+
+        <FormButton label="Verify Your Details" />
 
         {/* <input
           className={`border px-2 text-sm py-1.5 rounded outline-none ${
