@@ -44,8 +44,6 @@ const MainForm = () => {
     );
   });
 
-  console.log(errors);
-
   return (
     <>
       <div className="max-w-2xl mx-auto">
@@ -75,13 +73,22 @@ const MainForm = () => {
           </div>
         )}
         <div>
-          <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">
-            My Bucket Lists
-          </h2>
+          {value.length > 0 ? (
+            <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">
+              My {value.length} Bucket Lists
+            </h2>
+          ) : (
+            <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">
+              My Bucket Lists
+            </h2>
+          )}
+
           {value.length > 0 ? (
             <ul>{finalOutput}</ul>
           ) : (
-            <p className="text-2xl bg-[#424549] h-56 flex items-center justify-center rounded-md font-medium text-white">No Bucket Lists Added Yet 😭</p>
+            <p className="text-2xl bg-[#424549] h-56 flex items-center justify-center rounded-md font-medium text-white">
+              No Bucket Lists Added Yet 😭
+            </p>
           )}
         </div>
       </div>
