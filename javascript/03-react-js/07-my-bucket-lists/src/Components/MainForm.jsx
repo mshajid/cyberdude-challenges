@@ -1,16 +1,28 @@
 import { useForm } from "react-hook-form";
 import Input from "./Input";
 import Button from "./Button";
+import { useState } from "react";
 
 const MainForm = () => {
   const { register, handleSubmit } = useForm();
+
+  const [value, setValue] = useState([]);
+
   const formSubmit = (data) => {
-    console.log("sending the data", data);  
-  }
+    setValue([data, ...value]);
+  };
+
+  const finalOutput = value.map((data, index) => {
+    return <li key={index}>{data.bucketList}</li>;
+  });
+
   return (
     <>
       <div className="max-w-2xl mx-auto">
-        <form className="flex justify-center items-center gap-x-2" onSubmit={handleSubmit(formSubmit)}>
+        <form
+          className="flex justify-center items-center gap-x-2"
+          onSubmit={handleSubmit(formSubmit)}
+        >
           <Input
             name="bucketList"
             placeholder={"Enter your bucket list?"}
@@ -18,6 +30,11 @@ const MainForm = () => {
           />
           <Button label={"Submit now"} />
         </form>
+
+        <div>
+          <h2>My Bucket Lists</h2>
+          <ul>{finalOutput}</ul>
+        </div>
       </div>
     </>
   );
