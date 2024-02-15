@@ -4,7 +4,11 @@ import Button from "./Button";
 import { useState, useRef } from "react";
 
 const MainForm = () => {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const [value, setValue] = useState([]);
 
@@ -40,6 +44,8 @@ const MainForm = () => {
     );
   });
 
+  console.log(errors);
+
   return (
     <>
       <div className="max-w-2xl mx-auto">
@@ -51,11 +57,21 @@ const MainForm = () => {
           <Input
             name="bucketList"
             placeholder={"Enter your bucket list?"}
-            register={register("bucketList")}
+            register={register("bucketList", {
+              required: "Bucket lists cannot be empty, Instead Add one! 😁",
+              minLength: {
+                value: 5,
+                message: "Enter a valid bucket list not trash, Atleast 5 characters or more!",
+              },
+            })}
           />
           <Button label={"Submit now"} />
         </form>
-
+        {errors.bucketList && (
+          <div className="text-white flex justify-center bg-rose-500 w-full items-center rounded my-5">
+            {errors.bucketList.message}
+          </div>
+        )}
         <div>
           <h2>My Bucket Lists</h2>
           <ul>{finalOutput}</ul>
