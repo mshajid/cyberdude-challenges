@@ -6,23 +6,25 @@ const Product = ({
   price,
 }) => {
   return (
-    <>
-      <div>
-        <div>
-          <img src={imageURL} />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold tracking-wide">
-            {productTitle}
-          </h3>
-          <span>{productDesc}</span>
-          <div className="flex items-center gap-x-2">
-            <span className="text-3xl tracking-normal font-medium">
-              ${price}
-            </span>
-            <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
-              {usage}
-            </span>
+    <div className="max-w-5xl">
+      <div className="flex items-center justify-between gap-x-5 border px-5">
+        <div className="flex items-center gap-x-5">
+          <div>
+            <img src={imageURL} />
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold tracking-wide">
+              {productTitle}
+            </h3>
+            <span>{productDesc}</span>
+            <div className="flex items-center gap-x-2">
+              <span className="text-3xl tracking-normal font-medium">
+                ${price}
+              </span>
+              <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
+                {usage}
+              </span>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-x-5">
@@ -31,7 +33,7 @@ const Product = ({
           <span className="px-2 bg-red-500 text-lg rounded-md">-</span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
