@@ -5,7 +5,7 @@ import Button from "./Button";
 const MainForm = () => {
   const { register, handleSubmit } = useForm();
   const formSubmit = (data) => {
-    console.log(data);  
+    console.log("sending the data", data);  
   }
   return (
     <>
