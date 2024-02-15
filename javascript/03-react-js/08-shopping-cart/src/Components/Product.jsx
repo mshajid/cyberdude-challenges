@@ -7,7 +7,7 @@ const Product = ({
   usage = "New",
   price,
 }) => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
 
   const handleIncrement = () => {
     setValue(value + 1);
@@ -21,7 +21,7 @@ const Product = ({
     <div className="max-w-5xl">
       <div className="flex items-center justify-between gap-x-5 border px-5">
         <div className="flex items-center gap-x-5">
-          <div>
+          <div className="size-36 flex items-center">
             <img src={imageURL} />
           </div>
           <div>
