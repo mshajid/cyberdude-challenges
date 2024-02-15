@@ -86,7 +86,7 @@ const MainForm = () => {
           {value.length > 0 ? (
             <ul>{finalOutput}</ul>
           ) : (
-            <p className="text-2xl bg-[#424549] h-56 flex items-center justify-center rounded-md font-medium text-white">
+            <p className="text-2xl bg-[#424549] py-10 flex items-center justify-center rounded-md font-medium text-white">
               No Bucket Lists Added Yet 😭
             </p>
           )}
