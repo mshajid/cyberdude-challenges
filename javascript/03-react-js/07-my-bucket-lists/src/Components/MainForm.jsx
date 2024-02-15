@@ -10,7 +10,7 @@ const MainForm = () => {
   return (
     <>
       <div className="max-w-2xl mx-auto">
-        <form onSubmit={handleSubmit(formSubmit)}>
+        <form className="flex justify-center items-center gap-x-2" onSubmit={handleSubmit(formSubmit)}>
           <Input
             name="bucketList"
             placeholder={"Enter your bucket list?"}
