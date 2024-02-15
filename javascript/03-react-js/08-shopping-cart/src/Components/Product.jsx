@@ -25,6 +25,11 @@ const Product = ({
             </span>
           </div>
         </div>
+        <div className="flex items-center gap-x-5">
+          <span className="px-2 bg-red-500 text-lg rounded-md">+</span>
+          <span className="text-xl font-medium">0</span>
+          <span className="px-2 bg-red-500 text-lg rounded-md">-</span>
+        </div>
       </div>
     </>
   );
