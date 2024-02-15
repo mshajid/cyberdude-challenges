@@ -3,7 +3,7 @@ import Product from "./Components/Product";
 const App = () => {
   return (
     <>
-      <div>
+      <div className="px-5 py-4">
         <Product
           imageURL={
             "https://m.media-amazon.com/images/I/51el11zcGRL._AC_AA180_.jpg"
@@ -27,6 +27,14 @@ const App = () => {
           productTitle={"Sony Pulse 3D PS Headset"}
           productDesc={"A wireless headset fine-tuned for 3D audio on PS5 Consoles."}
           price={100}
+        />
+        <Product
+          imageURL={
+            "https://m.media-amazon.com/images/I/61sV4Yo6cDL._AC_SX569_.jpg"
+          }
+          productTitle={"Eilik - Robot Pet"}
+          productDesc={"Meet Eilik, Perfect interactive companion for your desk."}
+          price={300}
         />
       </div>
     </>
