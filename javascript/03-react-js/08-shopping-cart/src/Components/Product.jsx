@@ -6,15 +6,18 @@ const Product = ({
   productDesc,
   usage = "New",
   price,
+  setProductValue
 }) => {
   const [value, setValue] = useState(1);
 
   const handleIncrement = () => {
     setValue(value + 1);
+    setProductValue((value + 1) * price)
   };
 
   const handleDecrement = () => {
     setValue(value - 1);
+    setProductValue((value - 1) * price)
   };
 
   return (
@@ -33,9 +36,6 @@ const Product = ({
               <span className="text-3xl tracking-normal font-medium">
                 ${value ? price * value : price}
               </span>
-              {/* <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
-                {usage}
-              </span> */}
               {usage === "New" ? (
                 <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
                   {usage}
