@@ -8,11 +8,19 @@ const MainForm = () => {
 
   const [value, setValue] = useState([]);
 
-  const formReset = useRef()
+  const formReset = useRef();
 
   const formSubmit = (data) => {
     setValue([data, ...value]);
-    formReset.current.reset()
+    formReset.current.reset();
+  };
+
+  const handleDelete = (data) => {
+    const newList = value.filter((list) => {
+      return data !== list;
+    });
+
+    setValue(newList);
   };
 
   const finalOutput = value.map((data, index) => {
@@ -22,7 +30,10 @@ const MainForm = () => {
         key={index}
       >
         {data.bucketList}
-        <span className="bg-black text-white px-2 text-xs rounded-md py-1 hover:bg-gray-300 hover:text-black cursor-pointer">
+        <span
+          onClick={() => handleDelete(data)}
+          className="bg-black text-white px-2 text-xs rounded-md py-1 hover:bg-gray-300 hover:text-black cursor-pointer"
+        >
           Delete
         </span>
       </li>
