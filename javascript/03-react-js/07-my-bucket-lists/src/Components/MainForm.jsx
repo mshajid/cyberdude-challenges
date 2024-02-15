@@ -30,7 +30,7 @@ const MainForm = () => {
   const finalOutput = value.map((data, index) => {
     return (
       <li
-        className="flex items-center justify-between bg-[#36393e] my-2 px-2 py-2 text-gray-400 text-[16px] tracking-wide rounded hover:bg-[#282b30] hover:text-white transition-all"
+        className="flex items-center justify-between bg-[#36393e] my-2 px-2 py-2 text-gray-400 text-[16px] tracking-wide rounded hover:bg-[#282b30] hover:text-white transition-all hover:shadow-sm hover:shadow-white/50"
         key={index}
       >
         {data.bucketList}
