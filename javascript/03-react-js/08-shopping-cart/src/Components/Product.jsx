@@ -33,9 +33,18 @@ const Product = ({
               <span className="text-3xl tracking-normal font-medium">
                 ${value ? price * value : price}
               </span>
-              <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
+              {/* <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
                 {usage}
-              </span>
+              </span> */}
+              {usage === "New" ? (
+                <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
+                  {usage}
+                </span>
+              ) : (
+                <span className="px-2 py-0.5 bg-emerald-500 text-white rounded text-xs">
+                  {usage}
+                </span>
+              )}
             </div>
           </div>
         </div>

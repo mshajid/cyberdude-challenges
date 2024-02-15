@@ -11,6 +11,7 @@ const App = () => {
           productTitle={"Logitech MX Master 3S"}
           productDesc={"Wireless perfomance mouse with Ultra fast scrolling."}
           price={85}
+          usage="used"
         />
         <Product
           imageURL={
