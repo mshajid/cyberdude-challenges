@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Product = ({
   imageURL,
   productTitle,
@@ -5,6 +7,16 @@ const Product = ({
   usage = "New",
   price,
 }) => {
+  const [value, setValue] = useState(0);
+
+  const handleIncrement = () => {
+    setValue(value + 1);
+  };
+
+  const handleDecrement = () => {
+    setValue(value - 1);
+  };
+
   return (
     <div className="max-w-5xl">
       <div className="flex items-center justify-between gap-x-5 border px-5">
@@ -13,7 +25,7 @@ const Product = ({
             <img src={imageURL} />
           </div>
           <div>
-            <h3 className="text-lg font-semibold tracking-wide">
+            <h3 className="text-2xl font-semibold tracking-wide">
               {productTitle}
             </h3>
             <span>{productDesc}</span>
@@ -28,9 +40,19 @@ const Product = ({
           </div>
         </div>
         <div className="flex items-center gap-x-5">
-          <span className="px-2 bg-red-500 text-lg rounded-md">+</span>
-          <span className="text-xl font-medium">0</span>
-          <span className="px-2 bg-red-500 text-lg rounded-md">-</span>
+          <span
+            onClick={handleIncrement}
+            className="px-2 bg-red-500 text-lg rounded-md"
+          >
+            +
+          </span>
+          <span className="text-xl font-medium">{value}</span>
+          <span
+            onClick={handleDecrement}
+            className="px-2 bg-red-500 text-lg rounded-md"
+          >
+            -
+          </span>
         </div>
       </div>
     </div>
