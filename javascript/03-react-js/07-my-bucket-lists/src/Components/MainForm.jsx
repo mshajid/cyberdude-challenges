@@ -30,13 +30,13 @@ const MainForm = () => {
   const finalOutput = value.map((data, index) => {
     return (
       <li
-        className="flex items-center justify-between bg-[#E2B4BD] my-2 px-2 py-0.5 rounded"
+        className="flex items-center justify-between bg-[#36393e] my-2 px-2 py-2 text-gray-400 text-[16px] tracking-wide rounded hover:bg-[#282b30] hover:text-white transition-all"
         key={index}
       >
         {data.bucketList}
         <span
           onClick={() => handleDelete(data)}
-          className="bg-black text-white px-2 text-xs rounded-md py-1 hover:bg-gray-300 hover:text-black cursor-pointer"
+          className="bg-black text-white px-2 text-xs rounded-md py-1 hover:bg-rose-300 hover:text-black cursor-pointer transition-all"
         >
           Delete
         </span>
@@ -58,10 +58,12 @@ const MainForm = () => {
             name="bucketList"
             placeholder={"Enter your bucket list?"}
             register={register("bucketList", {
-              required: "Bucket lists cannot be empty, Instead add one you like to achieve this year! 😁",
+              required:
+                "Bucket lists cannot be empty, Instead add one you like to achieve this year! 😁",
               minLength: {
                 value: 5,
-                message: "Enter a valid bucket list not trash, Atleast 5 characters or more!",
+                message:
+                  "Enter a valid bucket list not trash, Atleast 5 characters or more!",
               },
             })}
           />
@@ -73,7 +75,9 @@ const MainForm = () => {
           </div>
         )}
         <div>
-          <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">My Bucket Lists</h2>
+          <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">
+            My Bucket Lists
+          </h2>
           <ul>{finalOutput}</ul>
         </div>
       </div>
