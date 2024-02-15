@@ -58,7 +58,7 @@ const MainForm = () => {
             name="bucketList"
             placeholder={"Enter your bucket list?"}
             register={register("bucketList", {
-              required: "Bucket lists cannot be empty, Instead Add one! 😁",
+              required: "Bucket lists cannot be empty, Instead add one you like to achieve this year! 😁",
               minLength: {
                 value: 5,
                 message: "Enter a valid bucket list not trash, Atleast 5 characters or more!",
@@ -68,12 +68,12 @@ const MainForm = () => {
           <Button label={"Submit now"} />
         </form>
         {errors.bucketList && (
-          <div className="text-white flex justify-center bg-rose-500 w-full items-center rounded my-5">
+          <div className="text-rose-300 tracking-wider text-sm py-0.5 flex justify-center bg-[#424549] w-full items-center rounded mt-2 h-10">
             {errors.bucketList.message}
           </div>
         )}
         <div>
-          <h2>My Bucket Lists</h2>
+          <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">My Bucket Lists</h2>
           <ul>{finalOutput}</ul>
         </div>
       </div>
