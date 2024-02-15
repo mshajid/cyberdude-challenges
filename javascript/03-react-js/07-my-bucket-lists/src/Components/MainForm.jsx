@@ -1,12 +1,23 @@
-// import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import Input from "./Input";
+import Button from "./Button";
 
 const MainForm = () => {
-  //   const { register } = useForm();
+  const { register, handleSubmit } = useForm();
+  const formSubmit = (data) => {
+    console.log(data);
+  }
   return (
     <>
-      <div>
-        <Input name={"bucketList"} placeholder={"Enter your bucket list?"}/>
+      <div className="max-w-2xl mx-auto">
+        <form onSubmit={handleSubmit(formSubmit)}>
+          <Input
+            name={"bucketList"}
+            placeholder={"Enter your bucket list?"}
+            register={register}
+          />
+          <Button label={"Submit now"} />
+        </form>
       </div>
     </>
   );
