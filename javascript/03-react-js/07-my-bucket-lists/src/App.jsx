@@ -1,10 +1,10 @@
-import Form from "./Components/Form";
+import MainForm from "./Components/MainForm";
 
 const App = () => {
   return (
     <>
       <div>
-        <Form />
+        <MainForm />
       </div>
     </>
   );
