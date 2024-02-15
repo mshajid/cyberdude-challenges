@@ -13,7 +13,11 @@ const MainForm = () => {
   };
 
   const finalOutput = value.map((data, index) => {
-    return <li key={index}>{data.bucketList}</li>;
+    return (
+      <li className="bg-[#E2B4BD] my-2 px-2 py-0.5 rounded" key={index}>
+        {data.bucketList}
+      </li>
+    );
   });
 
   return (
