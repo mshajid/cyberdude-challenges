@@ -78,7 +78,11 @@ const MainForm = () => {
           <h2 className="text-3xl text-center mt-20 mb-10 font-semibold text-white">
             My Bucket Lists
           </h2>
-          <ul>{finalOutput}</ul>
+          {value.length > 0 ? (
+            <ul>{finalOutput}</ul>
+          ) : (
+            <p className="text-2xl bg-[#424549] h-56 flex items-center justify-center rounded-md font-medium text-white">No Bucket Lists Added Yet 😭</p>
+          )}
         </div>
       </div>
     </>
