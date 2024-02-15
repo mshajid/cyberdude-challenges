@@ -31,7 +31,7 @@ const Product = ({
             <span>{productDesc}</span>
             <div className="flex items-center gap-x-2">
               <span className="text-3xl tracking-normal font-medium">
-                ${price}
+                ${value ? price * value : price}
               </span>
               <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
                 {usage}
@@ -42,14 +42,14 @@ const Product = ({
         <div className="flex items-center gap-x-5">
           <span
             onClick={handleIncrement}
-            className="px-2 bg-red-500 text-lg rounded-md"
+            className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
           >
             +
           </span>
           <span className="text-xl font-medium">{value}</span>
           <span
             onClick={handleDecrement}
-            className="px-2 bg-red-500 text-lg rounded-md"
+            className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
           >
             -
           </span>
