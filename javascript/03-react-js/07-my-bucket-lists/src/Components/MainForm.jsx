@@ -1,15 +1,18 @@
 import { useForm } from "react-hook-form";
 import Input from "./Input";
 import Button from "./Button";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const MainForm = () => {
   const { register, handleSubmit } = useForm();
 
   const [value, setValue] = useState([]);
 
+  const formReset = useRef()
+
   const formSubmit = (data) => {
     setValue([data, ...value]);
+    formReset.current.reset()
   };
 
   const finalOutput = value.map((data, index) => {
@@ -32,6 +35,7 @@ const MainForm = () => {
         <form
           className="flex justify-center items-center gap-x-2"
           onSubmit={handleSubmit(formSubmit)}
+          ref={formReset}
         >
           <Input
             name="bucketList"
