@@ -14,8 +14,14 @@ const MainForm = () => {
 
   const finalOutput = value.map((data, index) => {
     return (
-      <li className="bg-[#E2B4BD] my-2 px-2 py-0.5 rounded" key={index}>
+      <li
+        className="flex items-center justify-between bg-[#E2B4BD] my-2 px-2 py-0.5 rounded"
+        key={index}
+      >
         {data.bucketList}
+        <span className="bg-black text-white px-2 text-xs rounded-md py-1 hover:bg-gray-300 hover:text-black cursor-pointer">
+          Delete
+        </span>
       </li>
     );
   });
