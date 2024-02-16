@@ -6,18 +6,24 @@ const App = () => {
 
   const [total, setTotal] = useState(0);
 
-  useEffect(() => {
+
+  //* UseEffect is working, but It doesn't re-rendering. 
+  // useEffect(() => {
+  //   const sum = productValue.reduce((acc, current) => {
+  //     return acc + current;
+  //   }, 0);
+  //   setTotal(sum);
+  // }, [productValue, setProductValue]);
+
+  const handleTotal = (data, index) => {
+    const currentValue = productValue;
+    currentValue[index] = data; 
+    //* Adding the index to the values. [index:value]
+    setProductValue(currentValue);
     const sum = productValue.reduce((acc, current) => {
       return acc + current;
     }, 0);
     setTotal(sum);
-  }, [productValue, setProductValue]);
-
-  const handleTotal = (data, index) => {
-    const currentValue = productValue;
-    currentValue[index] = data; //Adding the index to the values. 
-    console.log(data);
-    setProductValue(currentValue);
   };
 
   return (
