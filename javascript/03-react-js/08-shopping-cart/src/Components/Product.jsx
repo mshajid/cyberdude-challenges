@@ -54,14 +54,14 @@ const Product = ({
           <div className="flex items-center gap-x-5">
             <span
               onClick={handleIncrement}
-              className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
+              className="px-2 bg-slate-800 text-white hover:bg-gray-600 hover:text-white transition-all text-lg rounded-md cursor-pointer"
             >
               +
             </span>
             <span className="text-xl font-medium">{value}</span>
             <span
               onClick={handleDecrement}
-              className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
+              className="px-2 bg-slate-800 text-white hover:bg-gray-600 hover:text-white transition-all  text-lg rounded-md cursor-pointer"
             >
               -
             </span>
