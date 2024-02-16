@@ -7,15 +7,16 @@ const App = () => {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    const sum = productValue.reduce((total, current) => {
-      return total + current;
+    const sum = productValue.reduce((acc, current) => {
+      return acc + current;
     }, 0);
     setTotal(sum);
   }, [productValue, setProductValue]);
 
   const handleTotal = (data, index) => {
     const currentValue = productValue;
-    currentValue[index] = data;
+    currentValue[index] = data; //Adding the index to the values. 
+    console.log(data);
     setProductValue(currentValue);
   };
 
