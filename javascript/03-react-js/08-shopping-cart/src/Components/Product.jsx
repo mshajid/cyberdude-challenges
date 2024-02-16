@@ -24,7 +24,7 @@ const Product = ({
 
   return (
     <div className="max-w-5xl">
-      <div className="flex items-center justify-between gap-x-5 border px-5">
+      <div className="flex items-center justify-between gap-x-5 border px-5 hover:bg-gray-100 transition-all hover:border-b-2 hover:border-b-slate-800/70">
         <div className="flex items-center gap-x-5">
           <div className="size-36 flex items-center">
             <img src={imageURL} />
