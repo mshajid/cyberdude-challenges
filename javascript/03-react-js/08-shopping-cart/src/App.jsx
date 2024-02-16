@@ -1,27 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Product from "./Components/Product";
-import Total from "./Components/Total";
 
 const App = () => {
   const [productValue, setProductValue] = useState([]);
 
-  const handleTotal = (data) => {
-    setProductValue([...productValue, data]);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const sum = productValue.reduce((total, current) => {
+      return total + current;
+    }, 0);
+    setTotal(sum);
+  }, [productValue, setProductValue]);
+
+  const handleTotal = (data, index) => {
+    const currentValue = productValue;
+    currentValue[index] = data;
+    setProductValue(currentValue);
   };
-
-  const reduceval = productValue.reduce((prev,current) => {
-    return prev + current
-  }, 0)
-
-  console.log(reduceval)
-
-  // console.log(productValue)
 
   return (
     <>
       <div className="px-5 py-4">
-        <h2>Total: {reduceval}</h2>
-        <Total productValue={reduceval} />
+        <h2>Total: {total}</h2>
         <Product
           imageURL={
             "https://m.media-amazon.com/images/I/51el11zcGRL._AC_AA180_.jpg"
@@ -31,6 +32,7 @@ const App = () => {
           price={85}
           usage="Used"
           setProductValue={handleTotal}
+          index={0}
         />
         <Product
           imageURL={
@@ -42,6 +44,7 @@ const App = () => {
           }
           price={100}
           setProductValue={handleTotal}
+          index={1}
         />
         <Product
           imageURL={
@@ -53,6 +56,7 @@ const App = () => {
           }
           price={100}
           setProductValue={handleTotal}
+          index={2}
         />
         <Product
           imageURL={
@@ -64,6 +68,7 @@ const App = () => {
           }
           price={300}
           setProductValue={handleTotal}
+          index={3}
         />
       </div>
     </>

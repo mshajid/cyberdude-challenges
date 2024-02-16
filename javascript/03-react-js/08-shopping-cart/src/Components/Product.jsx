@@ -1,23 +1,25 @@
 import { useState } from "react";
 
 const Product = ({
+  index,
   imageURL,
   productTitle,
   productDesc,
   usage = "New",
   price,
-  setProductValue
+  setProductValue,
 }) => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(0);
 
   const handleIncrement = () => {
     setValue(value + 1);
-    setProductValue((value + 1) * price)
+    setProductValue((value + 1) * price, index);
+    // console.log("running", index)
   };
 
   const handleDecrement = () => {
     setValue(value - 1);
-    setProductValue((value - 1) * price)
+    setProductValue((value - 1) * price, index);
   };
 
   return (
@@ -34,7 +36,7 @@ const Product = ({
             <span>{productDesc}</span>
             <div className="flex items-center gap-x-2">
               <span className="text-3xl tracking-normal font-medium">
-                ${value ? price * value : price}
+                ${price}
               </span>
               {usage === "New" ? (
                 <span className="px-2 py-0.5 bg-red-500 text-white rounded text-xs">
@@ -48,20 +50,25 @@ const Product = ({
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-x-5">
-          <span
-            onClick={handleIncrement}
-            className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
-          >
-            +
-          </span>
-          <span className="text-xl font-medium">{value}</span>
-          <span
-            onClick={handleDecrement}
-            className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
-          >
-            -
-          </span>
+        <div>
+          <div className="flex items-center gap-x-5">
+            <span
+              onClick={handleIncrement}
+              className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
+            >
+              +
+            </span>
+            <span className="text-xl font-medium">{value}</span>
+            <span
+              onClick={handleDecrement}
+              className="px-2 bg-red-500 text-lg rounded-md cursor-pointer"
+            >
+              -
+            </span>
+          </div>
+          <div>
+            <span>Total cost {value ? price * value : ""} </span>
+          </div>
         </div>
       </div>
     </div>
