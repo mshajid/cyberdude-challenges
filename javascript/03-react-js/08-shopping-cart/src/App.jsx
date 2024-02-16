@@ -78,8 +78,8 @@ const App = () => {
             index={3}
           />
         </div>
-        <div className="bg-gray-300 px-5 py-2 w-full flex gap-x-2 h-fit justify-end items-end rounded-md">
-          <h2 className="text-xl font-bold">Total Checkout</h2>
+        <div className="bg-slate-800 text-white px-5 py-2 w-full flex gap-x-2 h-fit justify-end items-end rounded">
+          <h2 className="text-xl font-bold tracking-wide">Total Checkout</h2>
           <span className="text-xl font-medium">${total}.00</span>
         </div>
       </div>
