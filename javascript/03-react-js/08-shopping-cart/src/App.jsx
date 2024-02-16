@@ -27,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl mx-auto">
       <div className="px-5 py-4 flex flex-col gap-x-2">
         <div>
           <Product

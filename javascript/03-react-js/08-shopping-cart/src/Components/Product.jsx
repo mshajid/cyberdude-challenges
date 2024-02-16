@@ -67,7 +67,7 @@ const Product = ({
             </span>
           </div>
           <div>
-            <span>Total cost {value ? "$ " + price * value : ""} </span>
+            <span>{value ? "Total cost $ " + price * value : ""} </span>
           </div>
         </div>
       </div>
