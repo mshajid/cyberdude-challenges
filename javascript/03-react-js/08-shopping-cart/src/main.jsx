@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="font-fredoka">
+  <div className="font-fredoka max-w-4xl mx-auto">
     <App />
   </div>
 );
