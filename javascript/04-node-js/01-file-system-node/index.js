@@ -1,4 +1,7 @@
 import * as fs from "fs";
+import internsData from "./data/interns.json" assert {type: 'json'}
+
+console.log(internsData);
 
 // This is to create a directory or folder. 
 
