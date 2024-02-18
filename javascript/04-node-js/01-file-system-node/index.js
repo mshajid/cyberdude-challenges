@@ -1,10 +1,9 @@
-import { error } from "console";
 import * as fs from "fs";
 
 fs.writeFile(
   "HelloWorld.txt",
-  "What's happening inside the Hello World text",
+  `What's happening inside the Hello World text ${new Date()}`,
   (err) => {
-    console.log("writing the file");
+    err ? console.log(err) : console.log("File is updating")
   }
 );
