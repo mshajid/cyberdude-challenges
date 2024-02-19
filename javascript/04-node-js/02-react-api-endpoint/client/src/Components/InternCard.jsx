@@ -1,8 +1,13 @@
-const InternCard = () => {
+const InternCard = ({ internName, country }) => {
   return (
-    <>
-      <div>Interns Card</div>
-    </>
+    <div className="m-2 max-w-xs border p-2">
+      <div className="font-bold">
+        Intern Name: <span className="font-normal">{internName}</span>
+      </div>
+      <span>
+        {internName} is from {country}
+      </span>
+    </div>
   );
 };
 
