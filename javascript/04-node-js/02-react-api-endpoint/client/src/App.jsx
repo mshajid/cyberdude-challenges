@@ -17,12 +17,16 @@ const App = () => {
 
   return (
     <>
-      <h1 className="bg-red-500 px-5 py-1 text-white">Interns Details</h1>
+      <h1 className="bg-red-500 px-5 py-3 text-xl text-white font-semibold">Interns Details</h1>
       {data.length === 0 ? <div>No Data Available Right Now </div> : ""}
       <div>
         {data.map((intern) => {
           return (
-            <InternCard key={intern.id} internName={intern.name} country={intern.country} />
+            <InternCard
+              key={intern.id}
+              internName={intern.name}
+              country={intern.country}
+            />
           );
         })}
       </div>
