@@ -12,13 +12,14 @@ const App = () => {
   //     return acc + current;
   //   }, 0);
   //   setTotal(sum);
-  // }, [productValue, setProductValue]);
+  // }, [productValue]);
 
   const handleTotal = (data, index) => {
     const currentValue = productValue;
     currentValue[index] = data;
     //* Adding the index to the values. [index:value]
     setProductValue(currentValue);
+    console.log(currentValue);
 
     const sum = productValue.reduce((acc, current) => {
       return acc + current;

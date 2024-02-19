@@ -14,7 +14,7 @@ const Product = ({
   const handleIncrement = () => {
     setValue(value + 1);
     setProductValue((value + 1) * price, index);
-    // console.log("running", index)
+    // console.log("running", price)
   };
 
   const handleDecrement = () => {
