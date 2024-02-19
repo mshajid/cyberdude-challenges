@@ -1,7 +1,12 @@
+import InternCard from "./Components/InternCard";
+
 const App = () => {
   return (
     <>
-      <h1 className="bg-red-500 px-5 py-1 text-white">Hello React</h1>
+      <h1 className="bg-red-500 px-5 py-1 text-white">Interns Details</h1>
+      <div>
+        <InternCard />
+      </div>
     </>
   );
 };
