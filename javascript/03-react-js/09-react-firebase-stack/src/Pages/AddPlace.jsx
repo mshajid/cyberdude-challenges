@@ -19,7 +19,7 @@ const AddPlace = () => {
           </span>
         </div>
       </div>
-      <div className="max-w-4xl mx-auto bg-gray-300 h-56">
+      <div className="max-w-4xl mx-auto bg-gray-300 p-4">
         <MainForm />
       </div>
     </>
