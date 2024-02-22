@@ -1,3 +1,4 @@
+import MainForm from "../Components/MainForm";
 import travelBg from "../assets/travel-form-bg.jpg";
 
 const AddPlace = () => {
@@ -18,8 +19,8 @@ const AddPlace = () => {
           </span>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto bg-gray-300 h-56">
-
+      <div className="max-w-4xl mx-auto bg-gray-300 h-56">
+        <MainForm />
       </div>
     </>
   );
