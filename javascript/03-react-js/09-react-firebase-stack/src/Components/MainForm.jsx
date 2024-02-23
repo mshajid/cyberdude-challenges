@@ -47,6 +47,12 @@ const MainForm = () => {
         placeholder={"eg: Beach"}
         register={register("leisureType")}
       />
+      <FormInput
+        label={"Add an Image URL of the Location"}
+        name={"addImage"}
+        placeholder={"eg: Colombo-clock-tower.jpg"}
+        register={register("addImage")}
+      />
       <FormButton label={"Submit Your Place Here"} />
     </form>
   );
