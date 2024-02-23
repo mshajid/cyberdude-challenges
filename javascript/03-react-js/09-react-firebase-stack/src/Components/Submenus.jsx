@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 const Submenus = () => {
   return (
     <div className="flex gap-x-5">
-      <div className="max-w-[250px] bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center px-2 justify-center gap-x-2 rounded-md">
+      <div className="max-w-[250px] bg-[#0353A4] hover:bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center px-2 justify-center gap-x-2 rounded-md transition-all">
         <img
           className="size-14 rounded-full object-cover"
           src="https://www.sankileisure.com/wp-content/uploads/2020/07/demodara-bridge.jpg"
@@ -35,7 +35,7 @@ const Submenus = () => {
           ></path>
         </svg>
       </div>
-      <div className="max-w-[250px] bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
+      <div className="max-w-[250px] bg-[#0353A4] hover:bg-gradient-to-r from-indigo-500 to-blue-500 transition-all h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
         <img
           className="size-14 rounded-full object-cover"
           src="https://www.shutterstock.com/image-photo/view-colombo-city-skyline-modern-600nw-1887281944.jpg"
@@ -56,7 +56,7 @@ const Submenus = () => {
           ></path>
         </svg>
       </div>
-      <div className="max-w-[250px] bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
+      <div className="max-w-[250px] bg-[#0353A4] hover:bg-gradient-to-r from-indigo-500 to-blue-500 transition-all h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
         <img
           className="size-14 rounded-full object-cover"
           src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/09/og-image-for-trincomalee-tourist-attractions.jpg"
@@ -77,7 +77,7 @@ const Submenus = () => {
           ></path>
         </svg>
       </div>
-      <div className="max-w-[250px] bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
+      <div className="max-w-[250px] bg-[#0353A4] hover:bg-gradient-to-r from-indigo-500 to-blue-500 transition-all h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
         <img
           className="size-14 rounded-full object-cover"
           src="https://www.ugaescapes.com/ugabay/wp-content/uploads/sites/4/2017/07/batticaloa-lagoon-1.jpg"
@@ -98,7 +98,7 @@ const Submenus = () => {
           ></path>
         </svg>
       </div>
-      <div className="max-w-[250px] bg-gradient-to-r from-indigo-500 to-blue-500 h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
+      <div className="max-w-[250px] bg-[#0353A4] hover:bg-gradient-to-r from-indigo-500 to-blue-500 transition-all h-20 flex items-center justify-center px-2 gap-x-2 rounded-md">
         <img
           className="size-14 rounded-full object-cover"
           src="https://www.srilankainstyle.com/storage/app/media/uploaded-files/7-reasons-to-visit-kandy-in-sri-lanka-slider-1.jpg"
