@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-[#001845] px-5 py-4 flex items-center justify-between">
+      <div className="bg-[#001845] px-5 py-4 flex items-center justify-between sticky top-0 left-0 right-0 z-10">
         <h2 className="text-3xl font-semibold tracking-wide text-white">
           Hello Sri Lanka
         </h2>
