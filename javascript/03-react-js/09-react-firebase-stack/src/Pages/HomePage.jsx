@@ -31,7 +31,7 @@ const HomePage = () => {
                 </h1>
               </div>
               <div className="flex flex-col gap-y-3 p-2">
-                <ul>
+                <ul className="flex flex-col gap-y-1">
                   <li className="font-semibold flex gap-x-1">
                     District:
                     <span className="font-normal">{district.districts}</span>
@@ -60,6 +60,7 @@ const HomePage = () => {
                 </p>
               </div>
 
+              {/* Either way I need to create a separeate del/upd button component */}
               <div className="flex gap-x-2 px-2">
                 <button className="bg-rose-400 hover:bg-rose-600 transition-all px-2 py-1 text-white rounded">
                   Delete Place
@@ -69,11 +70,6 @@ const HomePage = () => {
                   Update Place
                 </button>
               </div>
-
-              {/* <p>{district.favoritePlace}</p>
-              <p>{district.review}</p>
-              <p>Location: {district.location}</p>
-              <p>District: {district.districts}</p> */}
             </div>
           </>
         );
