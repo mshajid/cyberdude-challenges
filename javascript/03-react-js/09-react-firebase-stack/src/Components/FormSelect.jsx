@@ -4,12 +4,12 @@ const FormSelect = ({ label, name, register }) => {
       <label htmlFor={name}>{label}</label>
       <select name={name} className="px-2 py-1 rounded outline-none text-sm" {...register}>
         <option value={""}>-- Districts Starts Here --</option>
-        <option value={"colombo"}>Colombo 🏙️</option>
-        <option value={"trincomalee"}>Trincomalee 🌴</option>
-        <option value={"batticaloa"}>Batticaloa 🌞</option>
-        <option value={"badulla"}>Badulla ⛰️</option>
-        <option value={"kandy"}>Kandy 😎</option>
-        <option value={"nuwara-eliya"}>Nuwara Eliya 🥶</option>
+        <option value={"Colombo"}>Colombo 🏙️</option>
+        <option value={"Trincomalee"}>Trincomalee 🌴</option>
+        <option value={"Batticaloa"}>Batticaloa 🌞</option>
+        <option value={"Badulla"}>Badulla ⛰️</option>
+        <option value={"Kandy"}>Kandy 😎</option>
+        <option value={"Nuwara-eliya"}>Nuwara Eliya 🥶</option>
       </select>
     </div>
   );
