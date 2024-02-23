@@ -6,7 +6,7 @@ const HeroBanner = () => {
       <div className="bg-red-500">
         <div className="relative">
           <img
-            className="object-cover w-full h-96 relative"
+            className="object-cover w-full h-[500px] relative"
             src="https://images.pexels.com/photos/2937148/pexels-photo-2937148.jpeg?cs=srgb&dl=pexels-shaani-sewwandi-2937148.jpg&fm=jpg"
           />
 
