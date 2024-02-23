@@ -5,6 +5,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./Pages/HomePage.jsx";
 import AddPlace from "./Pages/AddPlace.jsx";
+import Badulla from "./Pages/Badulla.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: "/add-place",
         element: <AddPlace />,
       },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      }
     ],
   },
 ]);
