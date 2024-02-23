@@ -11,7 +11,7 @@ const MainForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(formSubmit)}>
+    <form className="flex flex-col gap-y-5" onSubmit={handleSubmit(formSubmit)}>
       <h2>MainForm</h2>
       <FormInput
         label={"Traveler's Name Here"}
@@ -19,7 +19,7 @@ const MainForm = () => {
         placeholder={"eg: Billa Ranga"}
         register={register("travelerName")}
       />
-      <FormSelect label={"Select The District"}/>
+      <FormSelect name={"districts"} label={"Select The District"} />
       <FormInput
         label={"Add Your Favorite Place"}
         name={"favoritePlace"}
