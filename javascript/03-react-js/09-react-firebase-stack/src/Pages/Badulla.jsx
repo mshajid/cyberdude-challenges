@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 const Badulla = () => {
   const [districts, setDistricts] = useState([]);
 
-
   const handleDelete = async (data) => {
     const docRef = await deleteDoc(doc(db, "Badulla", data.id));
-    // const newList = districts.filter((place) => {
-    //   return data !== place;
-    // });
   };
+
+  // const handleUpdate = async(data) => {
+  //   console.log(data);
+  // }
 
 
   useEffect(() => {
     async function getDataFromFirebase() {
       const querySnapshot = await getDocs(collection(db, "Badulla"));
-      console.log(querySnapshot)
+      console.log(querySnapshot);
       const mappedData = querySnapshot.docs.map((doc) => {
         // * Trying deStrcuturing the inside contents.
         // const { id, ...getData } = doc.data();
@@ -36,7 +36,6 @@ const Badulla = () => {
     getDataFromFirebase();
   }, [handleDelete]);
 
-  
   return (
     <div className="flex gap-x-2 p-2 h-screen">
       {districts?.map((district, index) => {
@@ -89,13 +88,16 @@ const Badulla = () => {
               {/* Either way I need to create a separeate del/upd button component */}
               <div className="flex gap-x-2 px-2">
                 <button
-                  onClick={() => handleDelete(district)}
+                  onClick={handleDelete}
                   className="bg-rose-400 hover:bg-rose-600 transition-all px-2 py-1 text-white rounded"
                 >
                   Delete Place
                 </button>
 
-                <button className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded">
+                <button
+                  
+                  className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded"
+                >
                   Update Place
                 </button>
               </div>
