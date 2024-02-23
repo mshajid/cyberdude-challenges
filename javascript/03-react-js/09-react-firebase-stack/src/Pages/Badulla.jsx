@@ -13,19 +13,10 @@ const Badulla = () => {
   //   console.log(data);
   // }
 
-
   useEffect(() => {
     async function getDataFromFirebase() {
       const querySnapshot = await getDocs(collection(db, "Badulla"));
-      console.log(querySnapshot);
       const mappedData = querySnapshot.docs.map((doc) => {
-        // * Trying deStrcuturing the inside contents.
-        // const { id, ...getData } = doc.data();
-        // return {
-        //   id,
-        //   ...getData,
-        // };
-
         const getID = doc.id;
         const getDocs = doc.data();
         const mergedData = { id: getID, ...getDocs };
@@ -34,7 +25,7 @@ const Badulla = () => {
       setDistricts(mappedData);
     }
     getDataFromFirebase();
-  }, [handleDelete]);
+  }, [districts]);
 
   return (
     <div className="flex gap-x-2 p-2 h-screen">
@@ -88,16 +79,13 @@ const Badulla = () => {
               {/* Either way I need to create a separeate del/upd button component */}
               <div className="flex gap-x-2 px-2">
                 <button
-                  onClick={handleDelete}
+                  onClick={() => handleDelete(district)}
                   className="bg-rose-400 hover:bg-rose-600 transition-all px-2 py-1 text-white rounded"
                 >
                   Delete Place
                 </button>
 
-                <button
-                  
-                  className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded"
-                >
+                <button className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded">
                   Update Place
                 </button>
               </div>
