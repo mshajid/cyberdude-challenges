@@ -1,13 +1,14 @@
 import { useForm } from "react-hook-form";
 import FormInput from "./FormInput";
 import FormButton from "./FormButton";
+import FormSelect from "./FormSelect";
 
 const MainForm = () => {
   const { register, handleSubmit } = useForm();
 
   const formSubmit = (data) => {
-    return console.log(data)
-  } 
+    return console.log(data);
+  };
 
   return (
     <form onSubmit={handleSubmit(formSubmit)}>
@@ -18,6 +19,7 @@ const MainForm = () => {
         placeholder={"eg: Billa Ranga"}
         register={register("travelerName")}
       />
+      <FormSelect label={"Select The District"}/>
       <FormInput
         label={"Add Your Favorite Place"}
         name={"favoritePlace"}
