@@ -6,6 +6,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./Pages/HomePage.jsx";
 import AddPlace from "./Pages/AddPlace.jsx";
 import Badulla from "./Pages/Badulla.jsx";
+import Colombo from "./Pages/Colombo.jsx";
+import Trincomalee from "./Pages/Trincomalee.jsx";
+import Kandy from "./Pages/Kandy.jsx";
+import NuwaraEliya from "./Pages/NuwaraEliya.jsx";
+import Batticaloa from "./Pages/Batticaloa.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,24 +30,24 @@ const router = createBrowserRouter([
         element: <Badulla />
       },
       {
-        path: "/badulla",
-        element: <Badulla />
+        path: "/colombo",
+        element: <Colombo />
       },
       {
-        path: "/badulla",
-        element: <Badulla />
+        path: "/trincomalee",
+        element: <Trincomalee />
       },
       {
-        path: "/badulla",
-        element: <Badulla />
+        path: "/kandy",
+        element: <Kandy />
       },
       {
-        path: "/badulla",
-        element: <Badulla />
+        path: "/nuwara-eliya",
+        element: <NuwaraEliya />
       },
       {
-        path: "/badulla",
-        element: <Badulla />
+        path: "/batticaloa",
+        element: <Batticaloa />
       },
     ],
   },
