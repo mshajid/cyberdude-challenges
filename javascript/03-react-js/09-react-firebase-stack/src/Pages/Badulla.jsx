@@ -38,7 +38,7 @@ const Badulla = () => {
 
   
   return (
-    <div className="flex gap-x-2 p-2">
+    <div className="flex gap-x-2 p-2 h-screen">
       {districts?.map((district, index) => {
         return (
           <>
