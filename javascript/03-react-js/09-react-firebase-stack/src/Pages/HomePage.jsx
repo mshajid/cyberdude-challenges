@@ -15,8 +15,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="px-5">
-      <div>HomePage Is Here</div>
+    <div className="flex p-2 gap-x-2">
       {districts?.map((district) => {
         return (
           <>
