@@ -4,6 +4,7 @@ import FormButton from "./FormButton";
 import FormSelect from "./FormSelect";
 import { db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
+import FormTextArea from "./FormTextArea";
 
 const MainForm = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -11,7 +12,7 @@ const MainForm = () => {
   const formSubmit = async (data) => {
     console.log(data);
     // const docRef = await addDoc(collection(db, data.districts), data);
-    const docRef = await addDoc(collection(db,data.districts), data);
+    const docRef = await addDoc(collection(db, data.districts), data);
     reset();
   };
 
@@ -52,6 +53,12 @@ const MainForm = () => {
         name={"addImage"}
         placeholder={"eg: Colombo-clock-tower.jpg"}
         register={register("addImage")}
+      />
+      <FormTextArea
+        label={"Enter Your Review Here"}
+        name={"review"}
+        placeholder={"Enter your review here"}
+        register={register("review")}
       />
       <FormButton label={"Submit Your Place Here"} />
     </form>
