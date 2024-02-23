@@ -23,7 +23,27 @@ const router = createBrowserRouter([
       {
         path: "/badulla",
         element: <Badulla />
-      }
+      },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      },
+      {
+        path: "/badulla",
+        element: <Badulla />
+      },
     ],
   },
 ]);

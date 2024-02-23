@@ -6,32 +6,32 @@ const Submenus = () => {
       <div className="flex gap-x-2">
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Badulla"}>Badulla</Link>
+            <Link to={"/badulla"}>Badulla</Link>
           </span>
         </div>
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Colombo"}>Colombo</Link>
+            <Link to={"/colombo"}>Colombo</Link>
           </span>
         </div>
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Trincomalee"}>Trincomalee</Link>
+            <Link to={"/trincomalee"}>Trincomalee</Link>
           </span>
         </div>
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Kandy"}>Badulla</Link>
+            <Link to={"/kandy"}>Badulla</Link>
           </span>
         </div>
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Nuwara-Eliya"}>Nuwara Eliya</Link>
+            <Link to={"/nuwara-eliya"}>Nuwara Eliya</Link>
           </span>
         </div>
         <div>
           <span className="bg-red-500 px-5 py-1 rounded text-white">
-            <Link to={"/Batticaloa"}>Batticaloa</Link>
+            <Link to={"/batticaloa"}>Batticaloa</Link>
           </span>
         </div>
       </div>
