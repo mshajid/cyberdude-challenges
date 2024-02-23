@@ -15,26 +15,26 @@ const MainForm = () => {
       <FormInput
         label={"Traveler's Name Here"}
         name={"travelerName"}
-        placeholder={"Enter traveler's full name here"}
+        placeholder={"eg: Billa Ranga"}
         register={register("travelerName")}
       />
       <FormInput
-        label={"Traveler's Name Here"}
-        name={"travelerName"}
-        placeholder={"Enter traveler's full name here"}
-        register={register("travelerName")}
+        label={"Add Your Favorite Place"}
+        name={"favoritePlace"}
+        placeholder={"eg: Galle Face Green"}
+        register={register("favoritePlace")}
       />
       <FormInput
-        label={"Traveler's Name Here"}
-        name={"travelerName"}
-        placeholder={"Enter traveler's full name here"}
-        register={register("travelerName")}
+        label={"Add Location"}
+        name={"location"}
+        placeholder={"eg: Colombo 12"}
+        register={register("location")}
       />
       <FormInput
-        label={"Traveler's Name Here"}
-        name={"travelerName"}
-        placeholder={"Enter traveler's full name here"}
-        register={register("travelerName")}
+        label={"Leisure Type"}
+        name={"lesiureType"}
+        placeholder={"eg: Beach"}
+        register={register("leisureType")}
       />
       <FormButton label={"Submit Your Place Here"} />
     </form>
