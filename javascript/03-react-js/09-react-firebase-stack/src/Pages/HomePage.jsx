@@ -45,7 +45,7 @@ const HomePage = () => {
                   </li>
                 </ul>
                 <div>
-                  <p className="font-semibold flex flex-col">
+                  <p className="font-semibold flex flex-col h-10">
                     Review:{" "}
                     <span className="font-normal">{district.review}</span>
                   </p>
