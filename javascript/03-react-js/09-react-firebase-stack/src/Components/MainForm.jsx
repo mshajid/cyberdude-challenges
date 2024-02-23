@@ -4,10 +4,11 @@ import FormButton from "./FormButton";
 import FormSelect from "./FormSelect";
 
 const MainForm = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const formSubmit = (data) => {
-    return console.log(data);
+    console.log(data);
+    reset()
   };
 
   return (
@@ -19,7 +20,11 @@ const MainForm = () => {
         placeholder={"eg: Billa Ranga"}
         register={register("travelerName")}
       />
-      <FormSelect name={"districts"} label={"Select The District"} />
+      <FormSelect
+        name={"districts"}
+        label={"Select The District"}
+        register={register("districts")}
+      />
       <FormInput
         label={"Add Your Favorite Place"}
         name={"favoritePlace"}
