@@ -2,13 +2,17 @@ import { useForm } from "react-hook-form";
 import FormInput from "./FormInput";
 import FormButton from "./FormButton";
 import FormSelect from "./FormSelect";
+import { db } from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const MainForm = () => {
   const { register, handleSubmit, reset } = useForm();
 
-  const formSubmit = (data) => {
+  const formSubmit = async (data) => {
     console.log(data);
-    reset()
+    // const docRef = await addDoc(collection(db, data.districts), data);
+    const docRef = await addDoc(collection(db,data.districts), data);
+    reset();
   };
 
   return (
