@@ -11,8 +11,8 @@ const MainForm = () => {
 
   const formSubmit = async (data) => {
     console.log(data);
-    // const docRef = await addDoc(collection(db, data.districts), data);
     const docRef = await addDoc(collection(db, data.districts), data);
+    console.log(docRef.id)
     reset();
   };
 

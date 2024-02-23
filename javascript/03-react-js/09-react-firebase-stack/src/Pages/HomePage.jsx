@@ -1,14 +1,34 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { useEffect, useState } from "react";
 
 const HomePage = () => {
   const [districts, setDistricts] = useState([]);
 
+  const handleDelete = async (data) => {
+    const docRef = await deleteDoc(doc(db, "badulla", data.id));
+    // const newList = districts.filter((place) => {
+    //   return data !== place;
+    // });
+    // setDistricts(newList);
+  };
+
   useEffect(() => {
     async function getDataFromFirebase() {
       const querySnapshot = await getDocs(collection(db, "badulla"));
-      const mappedData = querySnapshot.docs.map((doc) => doc.data());
+      const mappedData = querySnapshot.docs.map((doc) => {
+        // * Trying deStrcuturing the inside contents.
+        // const { id, ...getData } = doc.data();
+        // return {
+        //   id,
+        //   ...getData,
+        // };
+
+        const getID = doc.id;
+        const getDocs = doc.data();
+        const mergedData = { id: getID, ...getDocs };
+        return mergedData;
+      });
       setDistricts(mappedData);
     }
     getDataFromFirebase();
@@ -16,10 +36,14 @@ const HomePage = () => {
 
   return (
     <div className="flex p-2 gap-x-2">
-      {districts?.map((district) => {
+      {districts?.map((district, index) => {
         return (
           <>
-            <div className="bg-gray-300 max-w-xs h-[350px] leading-4 text-sm rounded-md">
+            <div
+              key={index}
+              id={district.id}
+              className="bg-gray-300 max-w-xs h-[350px] leading-4 text-sm rounded-md"
+            >
               <div className="relative">
                 <img
                   className="h-36 w-full object-cover"
@@ -61,7 +85,10 @@ const HomePage = () => {
 
               {/* Either way I need to create a separeate del/upd button component */}
               <div className="flex gap-x-2 px-2">
-                <button className="bg-rose-400 hover:bg-rose-600 transition-all px-2 py-1 text-white rounded">
+                <button
+                  onClick={() => handleDelete(district)}
+                  className="bg-rose-400 hover:bg-rose-600 transition-all px-2 py-1 text-white rounded"
+                >
                   Delete Place
                 </button>
 
