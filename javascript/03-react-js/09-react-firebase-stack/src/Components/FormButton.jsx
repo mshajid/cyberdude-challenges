@@ -1,7 +1,7 @@
-const FormButton = ({ label }) => {
+const FormButton = ({ label, onClick }) => {
   return (
     <>
-      <button className="bg-red-500 px-2 py-1 my-2 rounded-md text-white">{label}</button>
+      <button onClick={onClick} className="bg-red-500 px-2 py-1 my-2 rounded-md text-white">{label}</button>
     </>
   );
 };

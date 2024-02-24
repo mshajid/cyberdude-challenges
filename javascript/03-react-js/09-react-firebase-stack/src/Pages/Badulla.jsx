@@ -1,6 +1,7 @@
 import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Badulla = () => {
   const [districts, setDistricts] = useState([]);
@@ -8,10 +9,6 @@ const Badulla = () => {
   const handleDelete = async (data) => {
     const docRef = await deleteDoc(doc(db, "Badulla", data.id));
   };
-
-  // const handleUpdate = async(data) => {
-  //   console.log(data);
-  // }
 
   useEffect(() => {
     async function getDataFromFirebase() {
@@ -85,9 +82,9 @@ const Badulla = () => {
                   Delete Place
                 </button>
 
-                <button className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded">
+                <Link to={`/${district.id}/update-place`} className="bg-emerald-400 hover:bg-emerald-600 transition-all px-2 py-1 text-white rounded">
                   Update Place
-                </button>
+                </Link>
               </div>
             </div>
           </>

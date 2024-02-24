@@ -11,6 +11,7 @@ import Trincomalee from "./Pages/Trincomalee.jsx";
 import Kandy from "./Pages/Kandy.jsx";
 import NuwaraEliya from "./Pages/NuwaraEliya.jsx";
 import Batticaloa from "./Pages/Batticaloa.jsx";
+import UpdateForm from "./Components/UpdateForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/batticaloa",
         element: <Batticaloa />
+      },
+      {
+        path: "/:id/update-place",
+        element: <UpdateForm />
       },
     ],
   },
