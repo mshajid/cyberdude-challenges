@@ -3,6 +3,7 @@ const FormInput = ({ name, placeholder, label, register }) => {
     <div>
       <label className="font-medium flex flex-col gap-y-0.5" htmlFor={name}>
         {label}
+
         <input
           name={name}
           placeholder={placeholder}

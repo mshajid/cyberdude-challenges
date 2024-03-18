@@ -4,20 +4,26 @@ import FormSelect from "./FormSelect";
 import FormTextArea from "./FormTextArea";
 import FormButton from "./FormButton";
 import { db } from "../firebase";
-import { doc, setDoc } from "firebase/firestore";
+import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const UpdateForm = () => {
   const { register, handleSubmit } = useForm();
 
+  const [update, setUpdate] = useState([]);
+  //   const [form, setForm] = useState({
+  //     travelerName: "",
+  //     districts: "",
+  //     favoritePlace: "",
+  //     districts: "",
+  //     addImage: "",
+  //     review: "",
+  //   });
+
   const { id } = useParams();
 
   const updateForm = (data) => {
-    console.log(data);
-    //   async function getData() {
-    //     await setDoc(doc(db, "Badulla", id),{
-    //         addImage: data.
-    //     });
     async function getData() {
       await setDoc(doc(db, "Badulla", id), {
         addImage: data.addImage,
@@ -28,9 +34,24 @@ const UpdateForm = () => {
         travelerName: data.travelerName,
       });
     }
-    getData()
+    getData();
   };
 
+  useEffect(() => {
+    async function fetchData() {
+      const querySnapshot = await getDocs(collection(db, "Badulla"));
+      const mappedData = querySnapshot.docs.map((doc) => {
+        const newid = doc.id;
+        const data = doc.data();
+        const finalData = { id: newid, ...data };
+        console.log(data);
+        return finalData;
+      });
+      setUpdate(mappedData);
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <div className="max-w-xl mx-auto my-12 h-screen">
